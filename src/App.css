@@ -1,42 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/fonnts.com-Mont_Bold.ttf");
+  font-weight: 800;
+}
+@font-face{
+  font-family: Mont;
+  src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
+  font-weight: 600;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+@theme {
+
+  --color-primary: #3E4C57;
+  --font-mont: Mont
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+  color: var(--color-primary);
+  font-family: Mont, monospace;
+}
+
+@layer components {
+  .container {
+    @apply  w-[95%]! mx-auto max-w-[81.8125rem]!
   }
-  to {
-    transform: rotate(360deg);
+  .button {
+    @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A]  h-14 cursor-pointer
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 10px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
