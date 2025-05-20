@@ -15,6 +15,17 @@
   src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
   font-weight: 600;
 }
+@font-face{
+  font-family: Mont;
+  src: url("./assets/fonts/fonnts.com-Mont_Thin.ttf");
+  font-weight: 200;
+}
+@font-face{
+  font-family: Mont;
+  src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
+  font-weight:500;
+}
+
 
 @theme {
 
@@ -37,11 +48,14 @@ body {
   .button {
     @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A]  h-14 cursor-pointer
   }
+  .navLinks {
+    @apply hover:text-[#3e4c57bd] transition-all duration-400
+  }
 }
 
 
 @media (max-width: 1440px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
