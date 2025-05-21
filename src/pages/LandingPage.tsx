@@ -10,13 +10,19 @@ import recruitmentIcon from "../assets/images/fluent-mdl2_recruitment-management
 import softwareDevelopmentIcon from "../assets/images/carbon_development.png"
 import cloudSolutionIcon from "../assets/images/eos-icons_cloud-computing-outlined.png"
 import trainingDevelopmentIcon from "../assets/images/oui_training.png" 
-import agapeSpringSiteImg from "../assets/images/Group 45.png"
+import desktopAgapeSpringSiteImg from "../assets/images/Group 45.png"
+import mobileAgapeSpringSiteImg from "../assets/images/Group 40.png"
 import edulyncxaSiteImg from "../assets/images/Group 44.png"
 import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png"
 import companiesLogo1 from "../assets/Logos/Frame 313.png"
 import companiesLogo2 from "../assets/Logos/Frame 314.png"
 import clientImage from "../assets/images/Group 14 (2).png"
 import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png"
+import { FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
 
 const LandingPage = () => {
   return (
@@ -75,27 +81,27 @@ const LandingPage = () => {
 	  {/* Second Section */}
 
 		<div className="container pt-[3.625rem]">
-			<div className="flex justify-between">
-				<p className="text-5xl w-56 ">See What Drives Us</p>
+			<div className="flex justify-between items-center sm:items-start">
+				<p className="sm:text-5xl text-[1.75rem] sm:w-56 w-[13.375rem] font-bold ">See What Drives Us</p>
 				<button className="button w-[14.25rem]">
 					<p>Learn more</p>
 					<FaArrowRight />
 				</button>
 			</div>
-			<div className="flex justify-between ">
-				<div className="w-[40.1875rem] mb-5">
-					<div className="mb-[12.5625rem] text-[1.25rem] flex justify-end">
-						<p className="w-[23.9375rem]">As a leading software and training company in Africa, we are dedicated to fostering a culture of innovation, collaboration, and continuous learning</p>
+			<div className="flex flex-col sm:flex-row justify-between mt-[1.125rem]">
+				<div className="sm:w-[40.1875rem] flex flex-col gap-[0rem] sm:gap-[12.5625rem] mb-5">
+					<div className="text-[1.25rem] flex justify-end">
+						<p className="sm:w-[23.9375rem] w-full">As a leading software and training company in Africa, we are dedicated to fostering a culture of innovation, collaboration, and continuous learning</p>
 					</div>
 					<img src={secondSectionleftImage} alt="" className="h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
 				</div>
-				<div className="w-[34.8125rem]">
-					<div className="relative w-[34.8125rem] h-[44.0625rem]">
-						<img src={secondSectionRightImage} alt="" className="w-full h-full" />
+				<div className="flex sm:flex-col flex-col-reverse gap-[4.3125rem] sm:w-[34.8125rem]">
+					<div className="relative sm:w-full w-full h-[27.625rem] sm:h-[44.0625rem]">
+						<img src={secondSectionRightImage} alt="" className="w-full h-full object-fit" />
 					</div>
-					<div className="mt-[4.3125rem]">
-						<p className="text-[#3E4C57] text-[2.5rem]">The Mission we are on</p>
-						<p className="mt-8 text-[1.25rem] font-medium"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
+					<div className="">
+						<p className="text-[#3E4C57] text-[1.25rem] font-bold sm:text-[2.5rem] w-[9.5rem] sm:w-full">The Mission we are on</p>
+						<p className="mt-8 text-[1.25rem] font-medium w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
 				</div>
 			</div>
@@ -103,90 +109,100 @@ const LandingPage = () => {
 
 		{/* Third Section */}
 
-		<div className="h-[62.625rem] bg-[#00011B] mt-[10.0625rem] pt-[10.625rem]">
-			<div className="container flex justify-between">
+
+		<div className="sm:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[10.0625rem] sm:pt-[10.625rem] pt-[2.4375rem]">
+			<div className="container flex flex-col sm:flex-row   gap-[1.375rem] sm:justify-between">
 				<div className="w-[24.1875rem] leading-[1.75rem]">
-					<p className="text-5xl font-bold text-white">What We Do</p>
-					<p className="mt-8 text-[1.75rem] font-light text-white">As a leading sottware and training company in Africa, we offer a range of services designed to meet the diverse needs of our clients.</p>
-				<button className="button bg-[#CCCDE7] mt-16 w-[12.875rem] text-[#00036A]">
+					<p className="sm:text-5xl text-[1.75rem] font-bold text-white">What We Do</p>
+					<p className="mt-8 sm:text-[1.75rem] text-[0.875rem] font-light text-white">As a leading sottware and training company in Africa, we offer a range of services designed to meet the diverse needs of our clients.</p>
+					<button className="button bg-[#CCCDE7] mt-16 w-[12.875rem] sm:flex hidden text-[#00036A]">
 						<p className="font-bold">View our Services</p>
 						<FaArrowRight />
 					</button>
 				</div>
-				<div>
-					<div className="flex">
-						<div className="w-[23.8125rem] h-[23.8125rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
-							<div className="w-20 h-20 rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
+				<div className="flex flex-col gap-[1.25rem] sm:gap-0">
+					<div className="flex flex-col sm:flex-row gap-[1.25rem] sm:gap-0">
+						<div className="sm:w-[23.8125rem] flex flex-col gap-[1.25rem] sm:gap-[5.375rem] sm:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
+							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={recruitmentIcon} alt="" className="w-12 h-12"/>
 							</div>
-							<div className="mt-[5.375rem]">
-								<p className="text-2xl text-white w-[10.125rem]">Technical Recruitment</p>
+							<div className="w-full">
+								<p className="sm:text-2xl text-white sm:w-[10.125rem] text-[1.125rem]">Technical Recruitment</p>
 								<p className="text-[0.875rem] text-white font-extralight mt-2">Our recruitment services ensure you find the right candidates who fit your company culture and technical requirements.</p>
 							</div>
 						</div>
-						<div className="w-[23.8125rem] h-[23.8125rem] px-[1.25rem] py-[2.5rem] ">
-							<div className="w-20 h-20 rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
+						<div className="sm:w-[23.8125rem] flex flex-col gap-[1.25rem] sm:gap-[5.375rem] sm:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] ">
+							<div className="w-20 h-20    rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={softwareDevelopmentIcon} alt="" className="w-12 h-12"/>
 							</div>
-							<div className="mt-[5.375rem]">
-								<p className="text-2xl text-white w-[10.125rem]">Software Development</p>
+							<div className="w-full">
+								<p className="sm:text-2xl text-white sm:w-[10.125rem] text-[1.125rem]">Software Development</p>
 								<p className="text-[0.875rem] text-white font-extralight mt-2">Custom software solutions tailored to your business needs. </p>
 							</div>
 						</div>
 					</div>
-					<div className="flex">
-						<div className="w-[23.8125rem] h-[23.8125rem] px-[1.25rem] py-[2.5rem]">
-							<div className="w-20 h-20 rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
+					<div className="flex flex-col-reverse gap-[1.25rem] sm:gap-0 sm:flex-row">
+						<div className="sm:w-[23.8125rem] flex flex-col gap-[1.25rem] sm:gap-[5.375rem] sm:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]">
+							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={cloudSolutionIcon} alt="" className="w-12 h-12"/>
 							</div>
-							<div className="mt-[5.375rem]">
-								<p className="text-2xl text-white w-[10.125rem]">Cloud Solutions</p>
+							<div className="w-full">
+								<p className="sm:text-2xl text-white sm:w-[10.125rem] text-[1.125rem]">Cloud Solutions</p>
 								<p className="text-[0.875rem] text-white font-extralight mt-2">We help you leverage cloud technology for improved scalability, flexibility, and cost-effectiveness</p>
 							</div>
-						</div>
-						<div className="w-[23.8125rem] h-[23.8125rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
-							<div className="w-20 h-20 rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
+						</div> 
+						<div className="sm:w-[23.8125rem] flex flex-col gap-[1.25rem] sm:gap-[5.375rem] sm:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
+							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={trainingDevelopmentIcon} alt="" className="w-12 h-12"/>
 							</div>
-							<div className="mt-[5.375rem]">
-								<p className="text-2xl text-white w-[10.125rem]">Training and Development</p>
+							<div className="w-full">
+								<p className="sm:text-2xl text-white sm:w-[10.125rem] text-[1.125rem]">Training and Development</p>
 								<p className="text-[0.875rem] text-white font-extralight mt-2">Comprehensive training programs in various fields, including web development, cloud computing, product and design, data analysis etc </p>
 							</div>
 						</div>
 					</div>
+					<button className="button bg-[#CCCDE7] mt-0 sm:mt-16 w-[12.875rem] sm:hidden flex text-[#00036A]">
+						<p className="font-bold">View our Services</p>
+						<FaArrowRight />
+					</button>
 				</div>
 			</div>
 		</div>
 
 		{/* Fourth Section */}
 
-		<div className="h-[69.5rem] relative">
-			<img src={circuitLinesBackground} alt="" className="w-full h-full absolute top-0 left-0"  />
+		<div className="relative">
+			<img src={circuitLinesBackground} alt="" className="w-full h-full hidden sm:block absolute top-0 left-0"  />
 			<div className="container pt-[3.875rem] ">
-				<div className="flex justify-between">
+				<div className="flex flex-col-reverse sm:flex-row gap-[1rem] sm: text-[1.125rem] justify-between">
 					<div>
-						<p className="text-[2.5rem] font-extrabold">Things we are currently building</p>
-						<p className="w-[48.0625rem] text-[1.75rem]">Explore our expanding portfolio of products we are building and start-ups we are growing.</p>
+						<p className="sm:text-[2.5rem] w-full text-2xl font-bold sm:font-extrabold">Things we are currently building</p>
+						<p className="sm:w-[48.0625rem] w-full text-[1rem] sm:text-[1.75rem]">Explore our expanding portfolio of products we are building and start-ups we are growing.</p>
 					</div>
 					<a href="" className="w-[13.9375rem] h-14 border-[1px] border-[#3E4C57] flex justify-center items-center text-2xl cursor-pointer">See more</a>
 				</div>
-				<div className="flex justify-between mt-[5.6875rem] border-b-[#C9C5C5CC] border-b-8 pb-5">
-					<div className="w-[40.1875rem]">
-						<div className="w-[40.1875rem] h-[32.6875rem] flex justify-center items-center bg-[#CCCDE74D] rounded-[4px] shadow-md">
-							<img src={agapeSpringSiteImg} alt="" className="w-[37.25rem] h-[28.75rem]"/>
+				<div className="flex flex-col h-full w-full sm:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] sm:border-b-[#C9C5C5CC] sm:border-b-8 pb-5">
+					<div className="sm:w-[40.1875rem] w-full">
+						<div className="w-full sm:h-[32.6875rem]  h-[28.125rem]  flex justify-center items-center sm:bg-[#CCCDE74D] rounded-[4px] sm:shadow-md">
+							{/* Mobile image */}
+							<img src={mobileAgapeSpringSiteImg} alt="" className="sm:hidden w-full sm:w-[37.25rem] sm:h-[28.75rem] object-contain"/>
+
+							{/* Desktop image */}
+							<img src={desktopAgapeSpringSiteImg} alt="" className="hidden sm:block sm:w-[37.25rem] sm:h-[28.75rem] object-contain"/>
 						</div>
-						<div className="mt-[1.375rem] w-[35rem]">
-							<p className="text-[1.75rem] text-[#323D46] font-bold">Agapesprings</p>
-							<p className="text-[1.125rem]">Informational website for Agapesprings ministries international</p>
+
+						<div className="mt-[1.375rem] sm:w-[35rem] w-full ">
+							<p className="sm:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Agapesprings</p>
+							<p className="sm:text-[1.125rem] text-[0.875rem] font-medium w-full">Informational website for Agapesprings ministries international</p>
 						</div>
 					</div>
-					<div className="w-[40.1875rem]">
-						<div className="w-[40.1875rem] h-[32.6875rem] flex justify-center items-center bg-white rounded-[4px] shadow-md">
-							<img src={edulyncxaSiteImg} alt="" className="w-[37.25rem] h-[28.75rem]"/>
+					<div className="sm:w-[40.1875rem] w-full">
+						<div className="w-full sm:h-[32.6875rem] flex justify-center items-center bg-white rounded-[4px] shadow-md">
+							<img src={edulyncxaSiteImg} alt="" className="sm:w-[37.25rem] sm:h-[28.75rem] w-full object-contain"/>
 						</div>
-						<div className="mt-[1.375rem] w-[35rem]">
-							<p className="text-[1.75rem] text-[#323D46] font-bold">Edulyncx: software management tool</p>
-							<p className="text-[1.125rem]">EdulyncX is a comprehensive school management application designed to enhance efficiency, transparency, and collaboration within the educational ecosystem</p>
+						<div className="mt-[1.375rem] sm:w-[35rem] w-full">
+							<p className="sm:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Edulyncx: software management tool</p>
+							<p className="sm:text-[1.125rem] text-[0.875rem] font-medium w-full">EdulyncX is a comprehensive school management application designed to enhance efficiency, transparency, and collaboration within the educational ecosystem</p>
 						</div>
 					</div>
 				</div>
@@ -195,17 +211,22 @@ const LandingPage = () => {
 
 		{/* Fifth Section */}
 
-		<div className="h-[28.0625rem] mt-16 bg-[#000000]">
-			<div className="container text-center pt-[3.875rem]">
-				<p className="text-[2.5rem] text-[#F2F2F2CC] ">Our services are trusted by  companies around the world</p>
-				<div className="flex flex-col justify-center items-center gap-[2.34375rem] mt-[2.21875rem]">
+		<div className="sm:h-[28.0625rem] h-[10.625rem] mt-16 bg-[#000000]">
+			<div className="container text-center flex flex-col justify-center sm:gap-[2.21875rem]  h-full sm:pt-[3.875rem]">
+				<p className="sm:text-[2.5rem] text-[1rem] text-[#F2F2F2CC] w-[20rem] sm:w-full mx-auto font-bold">Our services are trusted by  companies around the world</p>
+				<div className="sm:flex hidden flex-col  justify-center items-center gap-[2.34375rem]">
 					<img src={companiesLogo1} alt="" className="w-[45.496875rem] h-[6.25rem]"/>
 					<img src={companiesLogo2} alt="" className="w-[45.496875rem] h-[6.25rem]"/>
 				</div>
+				<Marquee className="sm:hidden flex flex-row  justify-center items-center gap-[2.34375rem]" speed={50} >
+					<img src={companiesLogo1} alt="" className="w-[25.068125rem] h-[3.5rem] sm:w-0 sm:h-0"/>
+					<img src={companiesLogo2} alt="" className="w-[25.068125rem] h-[3.5rem] sm:w-0 sm:h-0"/>
+				</Marquee>
 			</div>
 		</div>
 
 		{/* Sixth Section */}
+
 		<div className="bg-[#F7F7F8] h-[68.3125rem]">
 			<div className="container pt-[5.8125rem]">
 				<div className="w-[44.3125rem] text-center mx-auto">
@@ -281,51 +302,62 @@ const LandingPage = () => {
 				</div>
 			</div>
 			<div className="container pt-[12.3125rem]">
-				<div className="flex justify-between ">
-					<img src={footerXapicLogo} alt="" className="w-[19rem] h-[6.1875rem]" />
-					<div className="flex justify-between text-white text-1rem font-500 w-[57.53125rem]">
-						<div className="w-[11.6875rem]">
-							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Schools</p>
-							<div className="flex flex-col gap-3">
-								<p>Design and Product</p>
-								<p>Engineering and Development</p>
-								<p>Summer Tech School</p>
-								<p>NYSC Training Programme</p>
+				<div className="flex flex-col ">
+					<div className="flex flex-col gap-[3.296875rem]">
+						<div className="flex justify-between ">
+							<img src={footerXapicLogo} alt="" className="w-[19rem] h-[6.1875rem]" />
+							<div className="flex justify-between text-white text-1rem font-500 w-[57.53125rem]">
+								<div className="w-[11.6875rem]">
+									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Schools</p>
+									<div className="flex flex-col gap-3">
+										<p>Design and Product</p>
+										<p>Engineering and Development</p>
+										<p>Summer Tech School</p>
+										<p>NYSC Training Programme</p>
+									</div>
+								</div>
+								<div>
+									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Quicklinks</p>
+									<div className="flex flex-col gap-3 cursor-pointer">
+										<p className="navLinks"><a href="">About Us</a></p>
+										<p className="navLinks"><a href="">Our Services</a></p>
+										<p className="navLinks"><a href="">Career</a></p>
+										<p  className="navLinks"><a href="">Contact Us</a></p>
+										<p className="navLinks"><a href="">Design and Products</a></p>
+									</div>
+								</div>
+								<div>
+									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
+									<div className="flex flex-col gap-3">
+										<p>Devops Engineering</p>
+										<p>Product Management</p>
+										<p>Front-end Engineering</p>
+										<p>Product Design</p>
+										<p>Graphics Design</p>
+										<p>Backend Engineering</p>
+									</div>
+								</div>
+								<div className="w-[14.75rem]">
+									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
+									<div className="flex flex-col gap-3">
+										<p>Lagos : 2nd floor, Leasing House, C & I Leasing Drive, Off Bisola Durosinmi Etti Drive, Off Admiralty way, Lekki Phase 1, Lagos</p>
+										<p>Akure: Xapic Technologies Building, Opposite State High Court, Arakale Road, Akure</p>
+										<p>08167001859</p>
+										<p>info@xapictech.com</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Quicklinks</p>
-							<div className="flex flex-col gap-3 cursor-pointer">
-								<p className="navLinks"><a href="">About Us</a></p>
-								<p className="navLinks"><a href="">Our Services</a></p>
-								<p className="navLinks"><a href="">Career</a></p>
-								<p  className="navLinks"><a href="">Contact Us</a></p>
-								<p className="navLinks"><a href="">Design and Products</a></p>
-							</div>
-						</div>
-						<div>
-							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
-							<div className="flex flex-col gap-3">
-								<p>Devops Engineering</p>
-								<p>Product Management</p>
-								<p>Front-end Engineering</p>
-								<p>Product Design</p>
-								<p>Graphics Design</p>
-								<p>Backend Engineering</p>
-							</div>
-						</div>
-						<div className="w-[14.75rem]">
-							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
-							<div className="flex flex-col gap-3">
-								<p>Lagos : 2nd floor, Leasing House, C & I Leasing Drive, Off Bisola Durosinmi Etti Drive, Off Admiralty way, Lekki Phase 1, Lagos</p>
-								<p>Akure: Xapic Technologies Building, Opposite State High Court, Arakale Road, Akure</p>
-								<p>08167001859</p>
-								<p>info@xapictech.com</p>
-							</div>
-						</div>
+						<p className="text-center">Copyright © 2024. All right reserved.</p>
+					</div>
+					<div className="flex justify-end items-center gap-[1rem] text-white">
+						<a href=""><FaFacebook className="w-[1rem] h-[1rem]"/></a>
+						<a href=""><FaXTwitter className="w-[1rem] h-[1rem]"/></a>
+						<a href=""><FaInstagram className="w-[1rem] h-[1rem]"/></a>
+						<a href=""><FaLinkedin className="w-[1rem] h-[1rem]"/></a>	
 					</div>
 				</div>
-				<p className="text-center">Copyright © 2024. All right reserved.</p>
+				
 
 
 			</div>
