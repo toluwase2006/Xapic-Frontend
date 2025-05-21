@@ -28,7 +28,7 @@ const LandingPage = () => {
   return (
 	<>
 	{/* Hero Section */}
-		<div className="bg-gradient-to-br from-[#00BBFF1A] to-[#FE006F1A] sm:h-[66.625rem] h-[55rem] w-full overflow-hidden">
+		<div className="bg-gradient-to-br from-[#00BBFF1A] to-[#FE006F1A] sm:h-[66.625rem] w-full overflow-hidden">
 			<div className="container pt-[10.375rem]">
 			<div className="relative">
 				<div className="relative z-1">
@@ -47,13 +47,13 @@ const LandingPage = () => {
 			</div>
 			<div className="relative sm:flex items-center mt-[1.625rem] sm:mt-[5.8125rem] justify-between">
 				<div className="w-full h-[9.25rem] sm:w-[48.5625rem] sm:h-[20.4375rem] z-5 relative">
-					<img src={heroImage} alt="" className="w-full h-full object-center" />
+					<img src={heroImage} alt="" className="w-full h-full object-cover" />
 					<button className="hidden sm:flex button w-[13.4375rem] absolute bottom-0 -right-0">
 						<p>Know More</p>
 						<RiArrowRightUpLine />
 					</button>
 				</div>
-				<div className="-top-[3rem] sm:top-0 relative w-full h-[16.136875rem] sm:w-[27.6875rem] sm:h-[21.8125rem]">
+				<div className="-top-[2rem] relative w-full h-[16.136875rem] sm:w-[27.6875rem] sm:h-[21.8125rem]">
 					<img src={heroVector} alt="" className="w-full h-full" />
 					<div className="absolute top-[4.5625rem] left-[2.5rem]">
 						<p className="font-semibold text-[1rem] sm:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
@@ -71,7 +71,7 @@ const LandingPage = () => {
 					</div>
 				</div>
 			</div>
-			<button className="flex sm:hidden button sm:w-[13.4375rem] w-[8.375rem] h-10">
+			<button className="flex sm:hidden button mt-[1.0875rem] mb-[1.3125rem] sm:w-[13.4375rem] w-[8.375rem]  h-10">
 					<p>Know More</p>
 					<RiArrowRightUpLine />
 			</button>
@@ -97,7 +97,7 @@ const LandingPage = () => {
 				</div>
 				<div className="flex sm:flex-col flex-col-reverse gap-[4.3125rem] sm:w-[34.8125rem]">
 					<div className="relative sm:w-full w-full h-[27.625rem] sm:h-[44.0625rem]">
-						<img src={secondSectionRightImage} alt="" className="w-full h-full object-fit" />
+						<img src={secondSectionRightImage} alt="" className="w-full h-full smobject-contain object-cover" />
 					</div>
 					<div className="">
 						<p className="text-[#3E4C57] text-[1.25rem] font-bold sm:text-[2.5rem] w-[9.5rem] sm:w-full">The Mission we are on</p>
@@ -227,14 +227,14 @@ const LandingPage = () => {
 
 		{/* Sixth Section */}
 
-		<div className="bg-[#F7F7F8] h-[68.3125rem]">
-			<div className="container pt-[5.8125rem]">
-				<div className="w-[44.3125rem] text-center mx-auto">
-					<p className="text-[#FE006F] text-2xl">WHAT PEOPLE ARE SAYING</p>
-					<p className="mt-10 text-[2.5rem] text-[#323D46] font-bold">Don’t Just Take Our Words For It, Hear Our Client’s Review</p>
+		<div className="bg-[#F7F7F8]">
+			<div className="container py-[5.8125rem]">
+				<div className="sm:w-[44.3125rem] w-full text-center mx-auto">
+					<p className="text-[#FE006F] sm:text-2xl text-[0.875rem]">WHAT PEOPLE ARE SAYING</p>
+					<p className="mt-10 sm:text-[2.5rem] text-2xl text-[#323D46] font-bold">Don’t Just Take Our Words For It, Hear Our Client’s Review</p>
 				</div>
 				<div className="mt-16 flex gap-[1.5625rem]">
-					<div className="grid grid-cols-2 gap-[1.5625rem]">
+					<div className="sm:grid hidden sm:grid-cols-2 grid-cols-4 overflow-hidden gap-[1.5625rem]">
 						<div className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
 							<img src={clientImage} alt="" className="w-[9.5625rem] h-full"/>
 							<div className="">
@@ -267,6 +267,20 @@ const LandingPage = () => {
 								<p className="text-[#3E4C57] w-[26.75rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
 							</div>
 						</div>
+					</div>
+					<div className="flex sm:hidden gap-[1rem] overflow-x-auto ">
+						{[...Array(4)].map((_, i) => (
+							<div key={i} className="flex-shrink-0 h-[13.3125rem] w-[13.9375rem] bg-white p-[0.75rem]">
+								<p className="text-[#3E4C57] text-[0.875rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
+								<div className="flex mt-[1.25rem] gap-[0.625rem] items-center">
+									<img src={clientImage} alt="" className="w-[2.75rem] h-[2.75rem] rounded-[12px]" />
+									<div>
+									<p className="text-[1rem] font-bold">Dr. Summy Smart</p>
+									<p className="text-[0.875rem] font-medium">SA to the Ondo State Governor</p>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
@@ -275,38 +289,38 @@ const LandingPage = () => {
 		{/* Seventh Section */}
 
 		<div className="bg-[#00011B] mt-[6.9375rem] h-[18.375rem] flex justify-center items-center">
-			<div className="container flex justify-between h-[9rem]">
-				<p className="w-[36.0625rem] text-[2.5rem] text-white">Interested in joining Xapic team or partnering with us for a project?</p>
+			<div className="container flex flex-col sm:flex-row  justify-between h-[9rem]">
+				<p className="max-w-[36.0625rem] w-full sm:text-[2.5rem] text-[1.25rem] text-white">Interested in joining Xapic team or partnering with us for a project?</p>
 				<div className="flex items-center text-[#F2F2F2CC] gap-[1.9375rem]">
 					<p className="text-[1.25rem] border-b-[#F2F2F2CC] border-b-2"><a href="">Join our Team</a></p>
-					<a href="" className="w-[15.9375rem] h-14 border-[1px] border-[#F2F2F2CC] font-medium flex justify-center items-center text-2xl cursor-pointer  ">Send a message</a>
+					<a href="" className="w-[15.9375rem] h-14 border-[1px] border-[#F2F2F2CC] font-medium justify-center items-center text-2xl cursor-pointer hidden sm:flex">Send a message</a>
 				</div>
 			</div>
 		</div>
 
 		{/* Footer Section */}
 
-		<div className="bg-[#00011B] relative mt-[8.4375rem] h-[41rem]">
-			<div className="flex justify-center items-center">
-				<div className="flex justify-center items-center gap-[3rem] bg-[#000250] w-[90.8125rem] h-[10.875rem] absolute -top-20">
+		<div className="bg-[#00011B] relative mt-[8.4375rem] w-full">
+			<div className="flex justify-center w-full items-center">
+				<div className="flex justify-center items-center gap-[3rem] bg-[#000250] sm:w-[90.8125rem] w-full h-[10.875rem] absolute -top-20">
 					<p className="text-[1.75rem] text-white font-600">We are excited to be part of your educational journey!</p>
 					<div className="flex gap-6">
 						<button className="button bg-[#0096CC] w-[12.4375rem] text-[1.25rem]">
 							<p>APPLY HERE</p>
 							<FaArrowRight />
 						</button>
-						<button className="w-[15.5625rem] text-[1.25rem] text-white cursor-pointer border-white border-[1px]">
+						<button className="w-[15.5625rem] hidden sm:block text-[1.25rem] text-white cursor-pointer border-white border-[1px]">
 							BOOK A CONSULTATION
 						</button>
 					</div>
 				</div>
 			</div>
 			<div className="container pt-[12.3125rem]">
-				<div className="flex flex-col ">
+				<div className="flex sm:flex-col flex-row ">
 					<div className="flex flex-col gap-[3.296875rem]">
-						<div className="flex justify-between ">
+						<div className="flex flex-col sm:flex-row justify-between ">
 							<img src={footerXapicLogo} alt="" className="w-[19rem] h-[6.1875rem]" />
-							<div className="flex justify-between text-white text-1rem font-500 w-[57.53125rem]">
+							<div className="flex flex-col sm:flex-row sm:gap-[1.25rem] justify-between text-white text-1rem font-500 sm:w-[57.53125rem]">
 								<div className="w-[11.6875rem]">
 									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Schools</p>
 									<div className="flex flex-col gap-3">
