@@ -16,7 +16,6 @@ import edulyncxaSiteImg from "../assets/images/Group 44.png"
 import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png"
 import companiesLogo1 from "../assets/Logos/Frame 313.png"
 import companiesLogo2 from "../assets/Logos/Frame 314.png"
-import clientImage from "../assets/images/Group 14 (2).png"
 import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
