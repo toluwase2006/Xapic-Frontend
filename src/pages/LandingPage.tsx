@@ -72,7 +72,7 @@ const LandingPage = () => {
 					</div>
 				</div>
 			</div>
-			<button className="flex md:hidden button mt-[1.0875rem] mb-[1.3125rem] md:w-[13.4375rem] w-[8.375rem]  h-10">
+			<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[13.4375rem]">
 					<p>Know More</p>
 					<RiArrowRightUpLine />
 			</button>
@@ -98,10 +98,10 @@ const LandingPage = () => {
 				</div>
 				<div className="flex md:flex-col flex-col-reverse gap-[4.3125rem] md:w-[34.8125rem]">
 					<div className="relative md:w-full w-full h-[27.625rem] md:h-[44.0625rem]">
-						<img src={secondSectionRightImage} alt="" className="w-full h-full mdobject-contain object-cover" />
+						<img src={secondSectionRightImage} alt="" className="w-full h-full" />
 					</div>
 					<div className="">
-						<p className="text-[#3E4C57] text-[1.25rem] font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
+						<p className="text-[#3E4C57] text-[1.5rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
 						<p className="mt-8 text-[1.25rem] font-medium w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
 				</div>
@@ -302,7 +302,7 @@ const LandingPage = () => {
 
 		<div className="bg-[#00011B] relative mt-[8.4375rem] w-full">
 			<div className="flex justify-center w-[95%]! md:w-full mx-auto! items-center md[21.875rem]">
-				<div className="flex flex-col md:flex-row pt-[2.125rem] md:justify-center w-[95%]!  max-w-[81.8125rem] mx-auto md:items-center gap-6 ps-6 md:gap-[3rem] bg-[#000250] md:w-[90.8125rem]  h-[10.875rem] absolute -top-20">
+				<div className="flex flex-col md:flex-row justify-center w-[95%] mx-auto md:items-center gap-6 ps-6 md:gap-[3rem] bg-[#000250] max-w-[90.8125rem]  h-[10.875rem] absolute -top-20">
 					<p className="md:text-[1.75rem] text-white font-600 text-[1rem]">We are excited to be part of your educational journey!</p>
 					<div className="flex gap-6">
 						<button className="button bg-[#0096CC] w-[12.4375rem] text-[1.25rem]">
