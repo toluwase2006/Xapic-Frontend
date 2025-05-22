@@ -5,7 +5,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import heroVector from "../assets/images/Vector 165.png"
 import secondSectionleftImage from "../assets/images/Group 17 (1) (2).png"
 import { FaArrowRight } from "react-icons/fa6";
-import secondSectionRightImage from "../assets/images/Vision.png"
+import secondSectionRightImage from "../assets/gif/xap gif 1.gif"
 import recruitmentIcon from "../assets/images/fluent-mdl2_recruitment-management.png"
 import softwareDevelopmentIcon from "../assets/images/carbon_development.png"
 import cloudSolutionIcon from "../assets/images/eos-icons_cloud-computing-outlined.png"
@@ -97,11 +97,15 @@ const LandingPage = () => {
 					<img src={secondSectionleftImage} alt="" className="h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
 				</div>
 				<div className="flex md:flex-col flex-col-reverse gap-[4.3125rem] md:w-[34.8125rem]">
-					<div className="relative md:w-full w-full h-[27.625rem] md:h-[44.0625rem]">
-						<img src={secondSectionRightImage} alt="" className="w-full h-full" />
+					<div className="relative md:w-full w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
+						<img src={secondSectionRightImage} alt="" className="h-96 w-96  mx-auto rounded-full"/>
+						<div className="ms-6 my-10 md:mt-10  max-w-96">
+							<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
+							<p className="text-white font-medium text-[1.25rem]">Our vision is to be the leading catalyst for technological advancement and personal growth across Africa.</p>
+						</div>
 					</div>
 					<div className="">
-						<p className="text-[#3E4C57] text-[1.75rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
+						<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
 						<p className="mt-8 text-[1.25rem] font-medium w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
 				</div>
