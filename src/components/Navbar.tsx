@@ -49,7 +49,7 @@ const Navbar = () => {
             {navOpen && (
                 <div className={`flex flex-col gap-[2.6875rem] p-10  h-screen bg-white fixed top-0 left-0 transform transition-transform duration-600 ease-in-out w-full ${navOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className='flex justify-between items-center'>
-                        <img src={xapicLogo} alt="" className='w-[4.65rem] h-6' />
+                        <img src={xapicLogo} alt="" className='w-[7rem] h-10' />
                         <CancelIcon className="fa-solid fa-xmark w-6 h-6 cursor-pointer" onClick={()=>setNavOpen(false)} />
                     </div>
                     <nav className='flex flex-col gap-10 '>
