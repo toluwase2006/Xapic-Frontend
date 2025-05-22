@@ -3,7 +3,7 @@ import VideoPlayerBg from "../assets/images/videoplayer.png";
 import heroImage from "../assets/images/Mask group (2).png";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import heroVector from "../assets/images/Vector 165.png"
-import secondSectionleftImage from "../assets/images/Group 17.png"
+import secondSectionleftImage from "../assets/images/Group 17 (1) (2).png"
 import { FaArrowRight } from "react-icons/fa6";
 import secondSectionRightImage from "../assets/images/Vision.png"
 import recruitmentIcon from "../assets/images/fluent-mdl2_recruitment-management.png"
@@ -11,7 +11,7 @@ import softwareDevelopmentIcon from "../assets/images/carbon_development.png"
 import cloudSolutionIcon from "../assets/images/eos-icons_cloud-computing-outlined.png"
 import trainingDevelopmentIcon from "../assets/images/oui_training.png" 
 import desktopAgapeSpringSiteImg from "../assets/images/Group 45.png"
-import mobileAgapeSpringSiteImg from "../assets/images/Group 40.png"
+import mobileAgapeSpringSiteImg from "../assets/images/Frame 1618872418 (1).png"
 import edulyncxaSiteImg from "../assets/images/Group 44.png"
 import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png"
 import companiesLogo1 from "../assets/Logos/Frame 313.png"
