@@ -23,8 +23,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import { Testimonial } from "../components/Testimonial";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
+
   return (
 	<>
 	{/* Hero Section */}
@@ -84,10 +86,10 @@ const LandingPage = () => {
 		<div className="container pt-[3.625rem]">
 			<div className="flex justify-between items-center md:items-start">
 				<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold ">See What Drives Us</p>
-				<button className="button w-[14.25rem]">
+				<Link className="button w-[14.25rem]" to="/AboutUs">
 					<p>Learn more</p>
 					<FaArrowRight />
-				</button>
+				</Link>
 			</div>
 			<div className="flex flex-col md:flex-row justify-between mt-[1.125rem]">
 				<div className="md:w-[40.1875rem] flex flex-col gap-[0rem] md:gap-[12.5625rem] mb-5">
@@ -119,10 +121,10 @@ const LandingPage = () => {
 				<div className="max-w-[24.1875rem] w-full leading-[1.75rem]">
 					<p className="md:text-5xl text-[1.75rem] font-bold text-white">What We Do</p>
 					<p className="mt-8 md:text-[1.75rem] text-[0.875rem] font-light w-full text-white">As a leading sottware and training company in Africa, we offer a range of services designed to meet the diverse needs of our clients.</p>
-					<button className="button bg-[#CCCDE7] mt-16 w-[12.875rem] md:flex hidden text-[#00036A]">
+					<Link to="/services" className="button bg-[#CCCDE7] mt-16 w-[12.875rem] md:flex hidden text-[#00036A]">
 						<p className="font-bold">View our Services</p>
 						<FaArrowRight />
-					</button>
+					</Link>
 				</div>
 				<div className="flex flex-col gap-[1.25rem] md:gap-0">
 					<div className="flex flex-col md:flex-row gap-[1.25rem] md:gap-0">
@@ -165,10 +167,10 @@ const LandingPage = () => {
 							</div>
 						</div>
 					</div>
-					<button className="button bg-[#CCCDE7] mt-0 md:mt-16 w-[12.875rem] md:hidden flex text-[#00036A]">
+					<Link to="/services" className="button bg-[#CCCDE7] mt-0 md:mt-16 w-[12.875rem] md:hidden flex text-[#00036A]">
 						<p className="font-bold">View our Services</p>
 						<FaArrowRight />
-					</button>
+					</Link>
 				</div>
 			</div>
 		</div>
@@ -183,7 +185,7 @@ const LandingPage = () => {
 						<p className="md:text-[2.5rem] w-full text-2xl font-bold md:font-extrabold">Things we are currently building</p>
 						<p className="md:w-[48.0625rem] w-full text-[1rem] md:text-[1.75rem]">Explore our expanding portfolio of products we are building and start-ups we are growing.</p>
 					</div>
-					<a href="" className="w-[13.9375rem] h-14 border-[1px] border-[#3E4C57] flex justify-center items-center text-2xl cursor-pointer">See more</a>
+					<Link to="/portfolio" className="w-[13.9375rem] h-14 border-[1px] border-[#3E4C57] flex justify-center items-center text-2xl cursor-pointer">See more</Link>
 				</div>
 				<div className="flex flex-col h-full w-full md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5">
 					<div className="md:w-[40.1875rem] w-full">
