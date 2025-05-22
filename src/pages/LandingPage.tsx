@@ -189,7 +189,7 @@ const LandingPage = () => {
 				</div>
 				<div className="flex flex-col h-full w-full md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5">
 					<div className="md:w-[40.1875rem] w-full">
-						<div className="w-full md:h-[32.6875rem] flex justify-center items-center md:bg-[#CCCDE74D] rounded-[4px] md:shadow-md">
+						<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
 							{/* Mobile image */}
 							<img src={mobileAgapeSpringSiteImg} alt="" className="md:hidden md:w-[37.25rem] md:h-[28.75rem] h-full w-full object-contain"/>
 
@@ -197,16 +197,16 @@ const LandingPage = () => {
 							<img src={desktopAgapeSpringSiteImg} alt="" className="hidden md:block md:w-[37.25rem] md:h-[28.75rem] w-full object-contain"/>
 						</div>
 
-						<div className="mt-[1.375rem] md:w-[35rem] w-full ">
+						<div className="my-[1.5rem] p-6 md:p-0 md:w-[35rem] w-full bg-[#CCCDE74D] md:bg-white ">
 							<p className="md:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Agapesprings</p>
 							<p className="md:text-[1.125rem] text-[0.875rem] font-medium w-full">Informational website for Agapesprings ministries international</p>
 						</div>
 					</div>
-					<div className="md:w-[40.1875rem] w-full">
+					<div className="md:w-[40.1875rem] w-full ">
 						<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white rounded-[4px] shadow-md">
 							<img src={edulyncxaSiteImg} alt="" className="md:w-[37.25rem] md:h-[28.75rem] w-full object-contain"/>
 						</div>
-						<div className="mt-[1.375rem] md:w-[35rem] w-full">
+						<div className="mt-[1.5rem] p-6 md:p-0 md:w-[35rem] w-full bg-[#CCCDE74D] md:bg-white">
 							<p className="md:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Edulyncx: software management tool</p>
 							<p className="md:text-[1.125rem] text-[0.875rem] font-medium w-full">EdulyncX is a comprehensive school management application designed to enhance efficiency, transparency, and collaboration within the educational ecosystem</p>
 						</div>
