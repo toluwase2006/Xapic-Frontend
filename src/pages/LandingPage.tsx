@@ -249,8 +249,8 @@ const LandingPage = () => {
 					</div>
 					<div className="flex md:hidden gap-[1rem] overflow-x-auto ">
 						{Testimonial.map((testimonial,index) => (
-							<div key={index} className="flex-shrink-0 h-[13.3125rem] w-[13.9375rem] bg-white p-[0.75rem]">
-								<p className="text-[#3E4C57] text-[0.875rem]">{testimonial.message}</p>
+							<div key={index} className="flex-shrink-0 my-5 w-[13.9375rem] bg-white p-[0.75rem]">
+								<p className="text-[#3E4C57] text-[0.875rem] ">{testimonial.message}</p>
 								<div className="flex mt-[1.25rem] gap-[0.625rem] items-center">
 									<img src={testimonial.imgSrc} alt="" className="w-[2.75rem] h-[2.75rem] rounded-[12px]" />
 									<div>
