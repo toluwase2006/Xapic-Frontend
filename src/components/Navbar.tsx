@@ -3,7 +3,7 @@ import xapicLogo from '../assets/Xapic Logo - Full Colour with Blue 2.png'
 import { FaArrowRight } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
 import { MenuIcon } from '../assets/icons'; 
-import { MdCancel } from "react-icons/md";
+import { CancelIcon } from '../assets/icons';
 
 const Navbar = () => {
     const location = useLocation().pathname
@@ -47,8 +47,12 @@ const Navbar = () => {
                 </nav>
             </div>
             {navOpen && (
-                <div className={`flex justify-between p-10  h-screen bg-[#00011B] fixed top-0 left-0 transform transition-transform duration-600 ease-in-out w-full ${navOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                    <nav className='flex flex-col gap-10 mt-24'>
+                <div className={`flex flex-col gap-[2.6875rem] p-10  h-screen bg-white fixed top-0 left-0 transform transition-transform duration-600 ease-in-out w-full ${navOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                    <div className='flex justify-between items-center'>
+                        <img src={xapicLogo} alt="" className='w-[4.65rem] h-6' />
+                        <CancelIcon className="fa-solid fa-xmark w-6 h-6 cursor-pointer" onClick={()=>setNavOpen(false)} />
+                    </div>
+                    <nav className='flex flex-col gap-10 '>
                         <ul className='flex flex-col gap-10 text-[1.25rem] text-[#3E4C57]'>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Schools</a></li>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Services</a></li>
@@ -61,7 +65,7 @@ const Navbar = () => {
                             <FaArrowRight />
                         </button>
                     </nav>
-                    <MdCancel className='w-10 h-10 cursor-pointer' onClick={()=>setNavOpen(false)}/>
+                    
                 </div>
             )}
         </div>

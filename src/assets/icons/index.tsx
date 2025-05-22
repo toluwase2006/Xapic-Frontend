@@ -73,6 +73,11 @@ export const reccruitmentIcon: React.FC<IconProps> = (props) => (
     />
   </svg>
 );
+export const CancelIcon: React.FC<IconProps> = (props) => (
+  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+<path d="M6.95798 17.243L12.201 12L17.444 17.243M17.444 6.757L12.2 12L6.95798 6.757" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
+);
 
 

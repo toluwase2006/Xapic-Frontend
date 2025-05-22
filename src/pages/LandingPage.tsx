@@ -23,6 +23,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
+import { Testimonial } from "../components/Testimonial";
 
 const LandingPage = () => {
   return (
@@ -101,7 +102,7 @@ const LandingPage = () => {
 						<img src={secondSectionRightImage} alt="" className="w-full h-full" />
 					</div>
 					<div className="">
-						<p className="text-[#3E4C57] text-[1.5rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
+						<p className="text-[#3E4C57] text-[1.75rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
 						<p className="mt-8 text-[1.25rem] font-medium w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
 				</div>
@@ -235,48 +236,27 @@ const LandingPage = () => {
 				</div>
 				<div className="mt-16 flex gap-[1.5625rem]">
 					<div className="md:grid hidden md:grid-cols-2 grid-cols-4 overflow-hidden gap-[1.5625rem]">
-						<div className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
-							<img src={clientImage} alt="" className="w-[9.5625rem] h-full"/>
-							<div className="">
-								<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">DR. Summy mdart Francis</p>
-								<p className="text-[0.875rem] mb-4">SA to the Ondo State Governor on Entrepreneurship and youth Development</p>
-								<p className="text-[#3E4C57] w-[26.75rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
-							</div>
-						</div>
-						<div className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
-							<img src={clientImage} alt="" className="w-[9.5625rem] h-full"/>
-							<div className="">
-								<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">DR. Summy mdart Francis</p>
-								<p className="text-[0.875rem] mb-4">SA to the Ondo State Governor on Entrepreneurship and youth Development</p>
-								<p className="text-[#3E4C57] w-[26.75rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
-							</div>
-						</div>
-						<div className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
-							<img src={clientImage} alt="" className="w-[9.5625rem] h-full"/>
-							<div className="">
-								<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">DR. Summy mdart Francis</p>
-								<p className="text-[0.875rem] mb-4">SA to the Ondo State Governor on Entrepreneurship and youth Development</p>
-								<p className="text-[#3E4C57] w-[26.75rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
-							</div>
-						</div>
-						<div className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
-							<img src={clientImage} alt="" className="w-[9.5625rem] h-full"/>
-							<div className="">
-								<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">DR. Summy mdart Francis</p>
-								<p className="text-[0.875rem] mb-4">SA to the Ondo State Governor on Entrepreneurship and youth Development</p>
-								<p className="text-[#3E4C57] w-[26.75rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
-							</div>
-						</div>
+							{Testimonial.map((testimonial,index) => (
+								<div key={index} className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
+									<img src={testimonial.imgSrc} alt="" className="w-[9.5625rem] h-full"/>
+									<div className="">
+										<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">{testimonial.name}</p>
+										<p className="text-[0.875rem] mb-4">{testimonial.position}</p>
+										<p className="text-[#3E4C57] w-[26.75rem]">{testimonial.message}</p>
+									</div>
+								</div>
+							))}
+						
 					</div>
 					<div className="flex md:hidden gap-[1rem] overflow-x-auto ">
-						{[...Array(4)].map((_, i) => (
-							<div key={i} className="flex-shrink-0 h-[13.3125rem] w-[13.9375rem] bg-white p-[0.75rem]">
-								<p className="text-[#3E4C57] text-[0.875rem]">I commend Xapictech for their dedication to excellence and for partnering with us to create opp...</p>
+						{Testimonial.map((testimonial,index) => (
+							<div key={index} className="flex-shrink-0 h-[13.3125rem] w-[13.9375rem] bg-white p-[0.75rem]">
+								<p className="text-[#3E4C57] text-[0.875rem]">{testimonial.message}</p>
 								<div className="flex mt-[1.25rem] gap-[0.625rem] items-center">
-									<img src={clientImage} alt="" className="w-[2.75rem] h-[2.75rem] rounded-[12px]" />
+									<img src={testimonial.imgSrc} alt="" className="w-[2.75rem] h-[2.75rem] rounded-[12px]" />
 									<div>
-									<p className="text-[1rem] font-bold">Dr. Summy mdart</p>
-									<p className="text-[0.875rem] font-medium">SA to the Ondo State Governor</p>
+									<p className="text-[1rem] font-bold">{testimonial.name}</p>
+									<p className="text-[0.875rem] font-medium">{testimonial.position}</p>
 									</div>
 								</div>
 							</div>
