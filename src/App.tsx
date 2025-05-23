@@ -6,12 +6,14 @@ import { Route, Routes } from "react-router-dom";
 import WhoWeAre from "./pages/WhoWeAre";
 import ContactUs from "./pages/ContactUs";
 import Portfolio from "./pages/Portfolio";
+import Schools from "./pages/Schools";
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/schools" element={<Schools />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/whoWeAre" element={<WhoWeAre />}></Route>

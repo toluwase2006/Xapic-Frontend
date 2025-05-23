@@ -33,51 +33,51 @@ const LandingPage = () => {
 
 		<div className="bg-gradient-to-br from-[#00BBFF1A] to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
 			<div className="container pt-[10.375rem]">
-			<div className="relative">
-				<div className="relative z-1">
-					<h1 className="font-extrabold text-[2rem] md:text-[4.75rem] max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10">
-					Your Partner in Innovation and Learning
-					</h1>
-					<div className="md:flex justify-end w-full max-w-[62rem] gap-14">
-					<LongArrowIcon className="mt-6 hidden md:flex"/>
-					<p className="text-[1rem] md:text-2xl font-medium w-full max-w-[38.875rem]">We empower businesses and individuals through cutting-edge technology solutions and comprehensive learning programs. </p>
+				<div className="relative">
+					<div className="relative z-1">
+						<h1 className="font-extrabold text-[2rem] md:text-[4.75rem] max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10">
+						Your Partner in Innovation and Learning
+						</h1>
+						<div className="md:flex justify-end w-full max-w-[62rem] gap-14">
+						<LongArrowIcon className="mt-6 hidden md:flex"/>
+						<p className="text-[1rem] md:text-2xl font-medium w-full max-w-[38.875rem]">We empower businesses and individuals through cutting-edge technology solutions and comprehensive learning programs. </p>
+						</div>
+					</div>
+
+					<div className="hero-img absolute h-[23.375rem] w-[23.375rem] top-0 -right-20 ">
+					<img src={VideoPlayerBg} alt="" className="w-full hidden md:block" />
 					</div>
 				</div>
-
-				<div className="hero-img absolute h-[23.375rem] w-[23.375rem] top-0 -right-20 ">
-				<img src={VideoPlayerBg} alt="" className="w-full hidden md:block" />
-				</div>
-			</div>
-			<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] justify-between">
-				<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative">
-					<img src={heroImage} alt="" className="w-full h-full object-cover" />
-					<button className="hidden md:flex button w-[13.4375rem] absolute bottom-0 -right-0">
-						<p>Know More</p>
-						<RiArrowRightUpLine />
-					</button>
-				</div>
-				<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
-					<img src={heroVector} alt="" className="w-full h-full" />
-					<div className="absolute top-[4.5625rem] left-[2.5rem]">
-						<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
-						<div className="flex items-center mt-[2.625rem] gap-[2.2rem]">
-							<div className="leading-10">
-								<p className="text-5xl font-extrabold text-[#101010]">20+</p>
-								<p className="">Projects Done</p>
-							</div>
-							<div className="h-12 w-1 bg-[#D6D6D6]"></div>
-							<div className="leading-10">
-								<p className="text-5xl font-extrabold text-[#101010]">1000+</p>
-								<p>Students Trained</p>
+				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] justify-between">
+					<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative">
+						<img src={heroImage} alt="" className="w-full h-full object-cover" />
+						<button className="hidden md:flex button w-[13.4375rem] absolute bottom-0 -right-0">
+							<p>Know More</p>
+							<RiArrowRightUpLine />
+						</button>
+					</div>
+					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
+						<img src={heroVector} alt="" className="w-full h-full" />
+						<div className="absolute top-[4.5625rem] left-[2.5rem]">
+							<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
+							<div className="flex items-center mt-[2.625rem] gap-[2.2rem]">
+								<div className="leading-10">
+									<p className="text-5xl font-extrabold text-[#101010]">20+</p>
+									<p className="">Projects Done</p>
+								</div>
+								<div className="h-12 w-1 bg-[#D6D6D6]"></div>
+								<div className="leading-10">
+									<p className="text-5xl font-extrabold text-[#101010]">1000+</p>
+									<p>Students Trained</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[13.4375rem]">
-					<p>Know More</p>
-					<RiArrowRightUpLine />
-			</button>
+				<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[13.4375rem]">
+						<p>Know More</p>
+						<RiArrowRightUpLine />
+				</button>
 			</div>
 		</div>
 
@@ -148,7 +148,7 @@ const LandingPage = () => {
 						</div>
 					</div>
 					<div className="flex flex-col-reverse gap-[1.25rem] md:gap-0 md:flex-row">
-						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]">
+						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]">
 							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={cloudSolutionIcon} alt="" className="w-12 h-12"/>
 							</div>
@@ -157,7 +157,7 @@ const LandingPage = () => {
 								<p className="text-[0.875rem] text-white font-extralight mt-2">We help you leverage cloud technology for improved scalability, flexibility, and cost-effectiveness</p>
 							</div>
 						</div> 
-						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
+						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
 							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={trainingDevelopmentIcon} alt="" className="w-12 h-12"/>
 							</div>

@@ -2,29 +2,35 @@
 
 @font-face {
   font-family: Mont;
-  src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
+  src: url("./assets/fonts/Mont-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: Mont;
-  src: url("./assets/fonts/fonnts.com-Mont_Bold.ttf");
-  font-weight: 800;
+  src: url("./assets/fonts/Mont-Bold.ttf");
+  font-weight: 700;
 }
 @font-face{
   font-family: Mont;
-  src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
+  src: url("./assets/fonts/Mont-Light.ttf");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-Light.ttf");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-Regular.ttf");
   font-weight: 600;
 }
 @font-face{
   font-family: Mont;
-  src: url("./assets/fonts/fonnts.com-Mont_Thin.ttf");
+  src: url("./assets/fonts/Mont-Light.ttf");
   font-weight: 200;
 }
-@font-face{
-  font-family: Mont;
-  src: url("./assets/fonts/fonnts.com-Mont_Regular.ttf");
-  font-weight:500;
-}
+
 
 
 @theme {

@@ -4,10 +4,12 @@ import { FaArrowRight } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
 import { MenuIcon } from '../assets/icons'; 
 import { CancelIcon } from '../assets/icons';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const location = useLocation().pathname
     const navStyle = "bg-white"
+    const navActiveStyle = "border-b-[1.5px] border-b-[#000485]"
     const [navOpen, setNavOpen]= useState(false) 
 
     useEffect(() => {
@@ -33,11 +35,11 @@ const Navbar = () => {
                 <nav className='flex items-center w-full  py-6 h-[6.75rem] justify-between'>
                     <a href="/"><img src={xapicLogo} alt="" className='w-[11.4375rem] h-[3.75rem]'  /></a>
                     <ul className='text-[1.25rem] text-[#3E4C57] gap-[1.875rem] hidden md:flex'>
-                        <li><a href="">Schools</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portolio</a></li>
-                        <li><a href="">Who we are</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li className={`${location == "/schools" && navActiveStyle} px-2`}><Link to="/schools">Schools</Link></li>
+                        <li className={`${location == "/services" && navActiveStyle} px-2`}><Link to="/services">Services</Link></li>
+                        <li className={`${location == "/portfolio" && navActiveStyle} px-2`}><Link to="/portfolio">Portolio</Link></li>
+                        <li className={`${location == "/whoWeAre" && navActiveStyle} px-2`}><Link to="/whoWeAre">Who we are</Link></li>
+                        <li className={`${location == "/contactUs" && navActiveStyle} px-2`}><Link to="/contactUs">Contact Us</Link></li>
                     </ul>
                     <button className='button w-[14.3125rem] hidden md:flex'>
                         <p>Book a Consultation</p>
@@ -56,7 +58,7 @@ const Navbar = () => {
                         <ul className='flex flex-col gap-10 text-[1.25rem] text-[#3E4C57]'>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Schools</a></li>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Services</a></li>
-                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Portolio</a></li>
+                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Portfolio</a></li>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Who we are</a></li>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Contact Us</a></li>
                         </ul>
