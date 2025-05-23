@@ -14,6 +14,7 @@ import communityImage from "../assets/images/Frame (5).png"
 import startLearningImg from "../assets/images/image (3).png"
 import { School } from "../components/SchoolsDetails";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { CurveArrowIcon } from "../assets/icons";
 
 const Schools = () => {
   const typedRef = useRef<HTMLSpanElement | null>(null);
