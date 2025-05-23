@@ -12,7 +12,6 @@ import masterDemandSkillsImage from "../assets/images/Frame (3).png"
 import careerGrowthImage from "../assets/images/Frame (4).png"
 import communityImage from "../assets/images/Frame (5).png"
 import startLearningImg from "../assets/images/image (3).png"
-import { CircleRightArrowIcon, CurveArrowIcon } from "../assets/icons";
 import { School } from "../components/SchoolsDetails";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
