@@ -125,7 +125,7 @@ const Schools = () => {
 
       <div className="bg-[#F2F2F266]">
         <div className="container pt-[8.375rem] pb-[3.6875rem]">
-          <div className="flex flex-col justify-center items-center gap-[2rem] w-[75rem]">
+          <div className="flex flex-col justify-center mx-auto text-center items-center gap-[2rem] w-[75rem]">
             <p className="text-[#3E4C57] text-5xl font-bold">Explore Our Schools</p>
             <p className="text-[1.75rem] max-w-[75rem] font-normal">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
           </div>
