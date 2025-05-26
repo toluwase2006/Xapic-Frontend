@@ -15,7 +15,6 @@ import startLearningImg from "../assets/images/image (3).png"
 import { School } from "../components/SchoolsDetails";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { CurveArrowIcon } from "../assets/icons";
-import secondTestimonialsVideo from "../assets/videos/AQNKg-KBh9aWAMKNCkKo83QET_Nz872rj-Z53my-JlYrAhqhAjpV2m08jLkDCTMwXPACDqrKRp-Fly0-tE84NmbC4_0tHC4ODY_JI5o.mp4"
 import firstTestimonialsVideo from "../assets/videos/AQOi3iCFCuOdUaQi6uLvrB51SbOxrmDKTkM35XubRJ38C3c2JoCojHxPnhooBLhiDckMu_4RwQyj71ZAJjiyOr5Nbh1yGvvOs2ObTnk.mp4"
 import ceoImageWithStudent from "../assets/images/Container (4).png"
 import { FaFacebook } from "react-icons/fa";
