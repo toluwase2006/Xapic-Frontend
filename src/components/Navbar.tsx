@@ -51,16 +51,16 @@ const Navbar = () => {
             {navOpen && (
                 <div className={`flex flex-col gap-[2.6875rem] p-10  h-screen bg-white fixed top-0 left-0 transform transition-transform duration-600 ease-in-out w-full ${navOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                     <div className='flex justify-between items-center'>
-                        <img src={xapicLogo} alt="" className='w-[7rem] h-10' />
+                        <a href="/"><img src={xapicLogo} alt="" className='w-[7rem] h-10' /></a>
                         <CancelIcon className="fa-solid fa-xmark w-6 h-6 cursor-pointer" onClick={()=>setNavOpen(false)} />
                     </div>
                     <nav className='flex flex-col gap-10 '>
                         <ul className='flex flex-col gap-10 text-[1.25rem] text-[#3E4C57]'>
-                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Schools</a></li>
-                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Services</a></li>
-                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Portfolio</a></li>
-                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Who we are</a></li>
-                            <li onClick={()=>setNavOpen(false)} className='navLinks'><a href="">Contact Us</a></li>
+                            <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/schools">Schools</Link></li>
+                            <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/services">Services</Link></li>
+                            <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/portfolio">Portfolio</Link></li>
+                            <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/whoWeAre">Who we are</Link></li>
+                            <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/contactUs">Contact Us</Link></li>
                         </ul>
                         <button className='button w-[14.3125rem]' onClick={()=>setNavOpen(false)}>
                             <p>Book a Consultation</p>
