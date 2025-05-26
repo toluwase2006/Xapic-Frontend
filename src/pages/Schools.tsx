@@ -65,7 +65,7 @@ const Schools = () => {
               <button className="button bg-white border-[1px] border-[#00036A] text-[#00036A] w-[13.5625rem] font-bold">EXPLORE COURSES</button>
             </div>
           </div>
-          <div className="flex justify-between md:w-full mt-[6.9375rem] overflow-x-scroll">
+          <div className="flex justify-between md:w-full mt-[6.9375rem] overflow-auto">
               <div className="flex items-center justify-between w-[17.375rem]">
                 <img src={learnFromIndustrialExpertImage1} alt="" className="w-[6.25rem] h-[6.25rem]"/>
                 <p className="w-[9.625rem]">Learn from Industry experts</p>
