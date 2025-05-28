@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const location = useLocation().pathname
-    const navStyle = "bg-white"
+    const navStyle = "sm:bg-white bg-transparent"
     const navActiveStyle = "border-b-[1.5px] border-b-[#000485]"
     const [navOpen, setNavOpen]= useState(false) 
 
