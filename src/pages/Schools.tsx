@@ -47,44 +47,44 @@ const Schools = () => {
     <>
     {/* heroSection */}
 
-      <div className="md:h-[63.8125rem] bg-[#F2F2F266] w-full relative overflow-hidden">
+      <div className="pb-12 bg-[#F2F2F266] w-full relative overflow-hidden">
         <img src={circuitLinesBackground} alt="" className="w-full h-full absolute top-0 left-0" />
         <div className="container pt-[14.375rem] flex flex-col justify-center items-center">
           <div className="max-w-[49.3125rem]  pt-[1.0625rem] text-center relative">
-            <img src={actionKeyImage} alt="" className="md:w-24 md:h-24 w-10 h-10 absolute md:top-0 md:left-0 top-20 left-0" />
-            <img src={browseActivityImage} alt="" className="md:w-24 md:h-24 w-10 h-10 absolute md:top-0 md:right-0 top-20 right-0" />
-            <p className="md:w-[26.6rem] w-[14.4375rem] h-[3.875rem] flex justify-center items-center text-[0.875rem] md:text-[1.25rem] font-medium mx-auto bg-[#CCCDE7] text-[#00036A]">Master-In Demand Tech Skills</p>
+            <img src={actionKeyImage} alt="" className="sm:w-24 sm:h-24 w-10 h-10 absolute sm:top-0 sm:left-0 top-20 left-0" />
+            <img src={browseActivityImage} alt="" className="sm:w-24 sm:h-24 w-10 h-10 absolute sm:top-0 sm:right-0 top-20 right-0" />
+            <p className="sm:w-[26.6rem] w-[14.4375rem] h-[3.875rem] flex justify-center items-center text-[0.875rem] sm:text-[1.25rem] font-medium mx-auto bg-[#CCCDE7] text-[#00036A]">Master-In Demand Tech Skills</p>
             <div className="flex flex-col justify-center gap-[2rem] items-center mt-[1.4375rem] w-full">
-              <h2 className="md:max-w-[37.3125rem] max-w-[20.8125rem] text-[#3E4C57] md:text-5xl text-2xl font-bold" >Elevate Your Skills, <span ref={typedRef}></span>.</h2>
-              <p className="font-normal text-[#3E4C57] md:text-[1.75rem] text-[1rem] max-w-[20.8125rem] md:max-w-[40.8125rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise.</p>
+              <h2 className="sm:max-w-[37.3125rem] max-w-[20.8125rem] text-[#3E4C57] sm:text-5xl text-2xl font-bold" >Elevate Your Skills, <span ref={typedRef}></span>.</h2>
+              <p className="font-normal text-[#3E4C57] sm:text-[1.75rem] text-[1rem] max-w-[20.8125rem] sm:max-w-[40.8125rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise.</p>
             </div>
             <div className="flex gap-6 justify-center items-center mt-[4.125rem]">
-              <button className="button md:w-[13.5625rem] w-[9.1875rem] font-bold">
+              <button className="button sm:w-[13.5625rem] w-[9.1875rem] font-bold">
                 <p>Apply Here</p>
                  <FaArrowRight />
               </button>
-              <button className="button bg-white border-[1px] hidden md:block border-[#00036A] text-[#00036A] w-[13.5625rem] font-bold">EXPLORE COURSES</button>
+              <button className="button bg-white border-[1px] hidden sm:block border-[#00036A] text-[#00036A] w-[13.5625rem] font-bold">EXPLORE COURSES</button>
             </div>
           </div>
-          <div className="hidden md:flex justify-between md:w-full mt-[6.9375rem] overflow-x-auto">
+          <div className="md:flex hidden justify-between sm:w-full mt-[6.9375rem] overflow-x-auto">
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={learnFromIndustrialExpertImage1} alt="" className="w-[6.25rem] h-[6.25rem]"/>
+                <img src={learnFromIndustrialExpertImage1} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem] w-[2.5rem] h-[2.5rem]"/>
                 <p className="w-[9.625rem]">Learn from Industry experts</p>
               </div>
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={getCertifiedOnCompletionImage1} alt="" className="w-[6.340625rem] h-[6.25rem]" />
+                <img src={getCertifiedOnCompletionImage1} alt="" className="sm:w-[6.340625rem] sm:h-[6.25rem] w-[2.5625rem] h-[2.5rem]" />
                 <p className="w-[9.625rem]">Get certified on completion</p>
               </div>
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={learnFromIndustrialExpertImage2} alt="" className="w-[6.25rem] h-[6.25rem]" />
+                <img src={learnFromIndustrialExpertImage2} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem]  w-[2.5rem] h-[2.5rem]" />
                 <p className="w-[9.625rem]">Learn from Industry experts</p>
               </div>
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={getCertifiedOnCompletionImage2} alt="" className="w-[6.25rem] h-[6.25rem]" />
+                <img src={getCertifiedOnCompletionImage2} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem]  w-[2.5rem] h-[2.5rem]" />
                 <p className="w-[9.625rem]">Get certified on completion</p>
               </div>
           </div>
-          <Marquee className="flex md:hidden justify-between md:w-full mt-[2rem] overflow-x-auto" speed={50}>
+          <Marquee className="md:hidden flex flex-row justify-between md:w-0 md:h-0 mt-[2rem] overflow-x-auto" speed={50}>
               <div className="flex items-center justify-between w-[17.375rem]">
                 <img src={learnFromIndustrialExpertImage1} alt="" className="w-[6.25rem] h-[6.25rem]"/>
                 <p className="w-[9.625rem]">Learn from Industry experts</p>
@@ -109,25 +109,25 @@ const Schools = () => {
 
       <div className="container  flex flex-col justify-center gap-[4.4375rem] py-[4.5rem] items-center">
         <div className="text-center max-w-[56.4375rem] flex flex-col justify-center items-center gap-8">
-          <p className="font-semibold md:text-5xl text-2xl w-full md:max-w-[51.9375rem]">Unlock Your Potential with Expert Software Training</p>
-          <p className="md:text-[1.75rem] text-[1rem]"> Our comprehensive software training programs are designed to equip you with the essential skills needed in today’s competitive job market.</p>
+          <p className="font-semibold sm:text-5xl text-2xl w-full sm:max-w-[51.9375rem]">Unlock Your Potential with Expert Software Training</p>
+          <p className="sm:text-[1.75rem] text-[1rem]"> Our comprehensive software training programs are designed to equip you with the essential skills needed in today’s competitive job market.</p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-[1.25rem] md:justify-between w-full">
-          <div className="w-[26.3125rem] h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
+        <div className="flex flex-col md:flex-row items-center gap-[1.25rem] sm:justify-between w-full">
+          <div className="md:w-[26.3125rem] w-full h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
             <img src={masterDemandSkillsImage} alt="" className="w-24 h-24 "/>
             <div className="w-[24.0625rem] flex flex-col gap-[1.0625rem]">
               <p className="font-semibold text-2xl">Master in-Demand Skills</p>
               <p className="font-normal text-[0.875rem]">Learn from industry experts and gain hands-on experience with the latest software tools and technologies.</p>
             </div>
           </div>
-          <div className="w-[26.3125rem] h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
+          <div className="md:w-[26.3125rem] w-full h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
             <img src={careerGrowthImage} alt="" className="w-24 h-24 "/>
             <div className="w-[24.0625rem] flex flex-col gap-[1.0625rem]">
               <p className="font-semibold text-2xl">Accelerate Your Career Growth</p>
               <p className="font-normal text-[0.875rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise</p>
             </div>
           </div>
-          <div className="w-[26.3125rem] h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
+          <div className="md-w-[26.3125rem] w-full h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
             <img src={communityImage} alt="" className="w-24 h-24 "/>
             <div className="w-[24.0625rem] flex flex-col gap-[1.0625rem]">
               <p className="font-semibold text-2xl">Join a Thriving Community</p>
@@ -139,10 +139,10 @@ const Schools = () => {
 
       {/* Third Section */}
 
-      <div className="md:h-[38.375rem] h-[14.75rem] relative">
+      <div className="sm:h-[38.375rem] h-[14.75rem] relative">
         <img src={startLearningImg} alt="" className="w-full h-full object-cover"/>
         <div className="w-full h-full absolute top-0 letf-0 text-center text-white gap-[2rem]  flex flex-col justify-center items-center">
-          <p className="font-semibold max-w-[49.3125rem] md:text-[4rem] text-2xl">Start your Learning Journey Today!</p>
+          <p className="font-semibold max-w-[49.3125rem] sm:text-[4rem] text-2xl">Start your Learning Journey Today!</p>
           <button className="button border-[1px] border-white w-[23.609375rem] h-[4.711875rem] bg-transparent">
             <p>Book a consultation</p>
             <CurveArrowIcon />
@@ -155,16 +155,16 @@ const Schools = () => {
       <div className="bg-[#F2F2F266]">
         <div className="container pt-[8.375rem] pb-[3.6875rem]">
           <div className="flex flex-col justify-center mx-auto text-center items-center gap-[2rem] max-w-[75rem]">
-            <p className="text-[#3E4C57] md:text-5xl text-2xl font-bold">Explore Our Schools</p>
-            <p className="md:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
+            <p className="text-[#3E4C57] sm:text-5xl text-2xl font-bold">Explore Our Schools</p>
+            <p className="sm:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 w-full justify-between md:mt-[7.5rem]">
-            {School.map((school) => (<div className="max-w-[40.1875rem] md:h-[42.1875rem] h-[26.86rem] bg-white mt-[4.0625rem]">
-              <img src={school.imgSrc} alt="" className="object-cover md:h-[25.25rem] h-[13.43rem] w-full" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 w-full justify-between sm:mt-[7.5rem]">
+            {School.map((school) => (<div className="max-w-[40.1875rem] sm:h-[42.1875rem] h-[26.86rem] bg-white mt-[4.0625rem]">
+              <img src={school.imgSrc} alt="" className="object-cover sm:h-[25.25rem] h-[13.43rem] w-full" />
               <div className="flex flex-col h-[16.875rem] justify-between pb-[3.3125rem] pt-[1.45875rem] ps-2">
-                <p className="text-2xl font-semibold underline">{school.schoolTitle}</p>
+                <p className="text-2xl font-semibold underline cursor-pointer">{school.schoolTitle}</p>
                 <p className="text-[1rem] font-normal max-w-[36.9375rem]">{school.message}</p>
-                <button className="button font-medium md:text-[1.125rem] text-[0.875rem] p-2 justify-between w-[13.125rem] bg-[#EBECFF] text-[#3E4C57]">
+                <button className="button font-medium sm:text-[1.125rem] text-[0.875rem] p-2 justify-between w-[13.125rem] bg-[#EBECFF] text-[#3E4C57]">
                   <p>Explore School</p>
                   <FaCircleArrowRight className={`${school.btnColor} h-[1.875rem] w-[1.875rem]`} />
                 </button>
@@ -177,13 +177,13 @@ const Schools = () => {
       {/* Fifth Section */}
 
       <div className="container py-[4.5rem]">
-        <div className="max-w-[81.75rem] flex flex-col text-center justify-center md:gap-12 gap-4 items-center mb-16">
-          <p className="md:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold">TESTIMONIALS</p>
-          <p className="md:text-[2.5rem] font-semibold md:text-[#3E4C57rem] text-[1.25rem] w-[20.375rem] md:max-w-[73.0625rem]">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
+        <div className="max-w-[81.75rem] flex flex-col text-center justify-center sm:gap-12 gap-4 items-center mb-16">
+          <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold">TESTIMONIALS</p>
+          <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
         </div>
         <div className="w-full">
           <div className="h-[30.0625rem] w-full rounded-tl-2xl rounded-tr-2xl">
-            <video src={firstTestimonialsVideo} className="h-full w-full rounded-tl-2xl rounded-tr-2xl object-fill"></video>
+            <a href="https://www.youtube.com/shorts/MMt5nJnRmNA"><video src={firstTestimonialsVideo} className="h-full w-full rounded-tl-2xl rounded-tr-2xl object-fill"></video></a>
             <div>
 
             </div>
@@ -193,9 +193,9 @@ const Schools = () => {
       
       {/* Sixth Section */}
 
-      <div className="container flex flex-col-reverse md:flex-row gap-[0.75rem]">
-        <img src={ceoImageWithStudent} alt="" className="md:h-[32.125rem] max-w-[39.6875rem] h-[17.25rem] object-cover" />
-        <div className="bg-[#E9F0F666] md:p-[3.625rem] p-[1rem]">
+      <div className="container flex flex-col-reverse sm:flex-row gap-[0.75rem]">
+        <img src={ceoImageWithStudent} alt="" className="sm:h-[32.125rem] max-w-[39.6875rem] h-[17.25rem] object-cover" />
+        <div className="bg-[#E9F0F666] sm:p-[3.625rem] p-[1rem]">
           <div>
             <p className="text-[#1A202C] text-[1.75rem] font-bold">Hear from our CEO</p>
             <p className="text-2xl font-medium">Mr. Daniel Ademeso. MBA</p>
@@ -212,7 +212,7 @@ const Schools = () => {
 
       <div className="container mt-[6rem]">
         <p className="font-semibold text-[2.5rem] text-center">Frequently  Asked Questions</p>
-        <div className="bg-[#00011B]  flex flex-col mt-24 gap-[2rem] text-white md:py-[6.625rem] py-[2.5rem]">
+        <div className="bg-[#00011B]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
           <div className="max-w-[69.8125rem] container mx-auto">
             <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between h-[4.4375rem] border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({[1] : true})}>
               <p className=" font-semibold md:text-2xl text-[1rem]">How do I register?</p>

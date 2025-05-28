@@ -45,7 +45,7 @@ const LandingPage = () => {
 					</div>
 
 					<div className="hero-img absolute h-[23.375rem] w-[23.375rem] top-0 -right-20 ">
-					<img src={VideoPlayerBg} alt="" className="w-full hidden md:block" />
+					<img src={VideoPlayerBg} alt="" className="animate-ping duration-[30s] w-full hidden md:block" />
 					</div>
 				</div>
 				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] justify-between">
