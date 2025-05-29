@@ -63,7 +63,7 @@
 
 body {
   color: var(--color-primary);
-  font-family: Mont, 'Segoe UI', sans-serif;
+  font-family: Mont;
 }
 
 @layer components {
