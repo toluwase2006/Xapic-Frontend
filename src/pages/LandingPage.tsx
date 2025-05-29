@@ -27,8 +27,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ModalContext } from "../useContext/ModalContext";
 import VideoModal from "../components/VideoModal";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 const LandingPage = () => {
