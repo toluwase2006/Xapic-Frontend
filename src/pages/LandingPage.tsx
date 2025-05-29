@@ -1,5 +1,4 @@
 import { LongArrowIcon } from "../assets/icons";
-import VideoPlayerBg from "../assets/images/videoplayer.png";
 import heroImage from "../assets/images/Mask group (2).png";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import heroVector from "../assets/images/Vector 165.png"
