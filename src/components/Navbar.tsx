@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className={`${location !== "/" && navStyle} header z-10 fixed  left-0 top-0 w-full`}>
             <div className="container relative w-full">
                 <nav className='flex items-center w-full  py-6 h-[6.75rem] justify-between'>
-                    <a href="/"><img src={xapicLogo} alt="" className='w-[11.4375rem] h-[3.75rem]'  /></a>
+                    <a href="/"><img src={xapicLogo} alt="" className='sm:w-[11.4375rem] sm:h-[3.75rem] h-6 w-[4.65rem] '  /></a>
                     <ul className='text-[1.25rem] text-[#3E4C57] gap-[1.875rem] hidden md:flex'>
                         <li className={`${location == "/schools" && navActiveStyle} px-2`}><Link to="/schools">Schools</Link></li>
                         <li className={`${location == "/services" && navActiveStyle} px-2`}><Link to="/services">Services</Link></li>

@@ -74,13 +74,13 @@ const LandingPage = () => {
 							<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
 							<div className="flex items-center mt-[2.625rem] gap-[2.2rem]">
 								<div className="leading-10">
-									<p className="text-5xl font-extrabold text-[#101010]">20+</p>
-									<p className="">Projects Done</p>
+									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">20+</p>
+									<p className="text-[0.75rem] sm:text-[0.875rem]">Projects Done</p>
 								</div>
 								<div className="hidden sm:block h-12 w-1 bg-[#D6D6D6]"></div>
 								<div className="leading-10">
-									<p className="text-5xl font-extrabold text-[#101010]">1000+</p>
-									<p>Students Trained</p>
+									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">1000+</p>
+									<p className="text-[0.75rem] sm:text-[0.875rem]">Students Trained</p>
 								</div>
 							</div>
 						</div>
