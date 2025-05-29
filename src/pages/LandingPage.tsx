@@ -152,7 +152,7 @@ const LandingPage = () => {
 							</div>
 						</div>
 						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] ">
-							<div className="w-20 h-20    rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
+							<div className="w-20 h-20  rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={softwareDevelopmentIcon} alt="" className="w-12 h-12"/>
 							</div>
 							<div className="w-full">

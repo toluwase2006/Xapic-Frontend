@@ -57,7 +57,7 @@
 
 body {
   color: var(--color-primary);
-  font-family: Mont, monospace;
+  font-family: Mont;
 }
 
 @layer components {
