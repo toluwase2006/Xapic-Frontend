@@ -4,31 +4,37 @@
   font-family: Mont;
   src: url("./assets/fonts/Mont-Regular.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: Mont;
   src: url("./assets/fonts/Mont-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face{
   font-family: Mont;
   src: url("./assets/fonts/Mont-SemiBold.ttf");
   font-weight: 500;
+  font-display: swap;
 }
 @font-face{
   font-family: Mont;
   src: url("./assets/fonts/Mont-Light.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face{
   font-family: Mont;
   src: url("./assets/fonts/Mont-Regular.ttf");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face{
   font-family: Mont;
   src: url("./assets/fonts/Mont-Light.ttf");
   font-weight: 200;
+  font-display: swap;
 }
 
 @keyframes ZoomIn {
@@ -57,7 +63,7 @@
 
 body {
   color: var(--color-primary);
-  font-family: Mont;
+  font-family: Mont, 'Segoe UI', sans-serif;
 }
 
 @layer components {
