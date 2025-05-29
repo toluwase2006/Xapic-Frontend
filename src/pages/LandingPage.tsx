@@ -24,15 +24,28 @@ import { FaLinkedin } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import { Testimonial } from "../components/Testimonial";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ModalContext } from "../useContext/ModalContext";
+import VideoModal from "../components/VideoModal";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const LandingPage = () => {
+	const context = useContext(ModalContext);
+
+	 if (!context) throw new Error("ModalContext is missing");
+
+	 const {isOpen, setIsOpen} = context;
+	 
 
   return (
-	<>
+	<div className={isOpen ? "fixed inset-0" : ""}>
 	{/* Hero Section */}
 
+		<VideoModal />
 		<div className="bg-gradient-to-br from-[#00BBFF1A] to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
-			<div className="container pt-[10.375rem]">
+			<div className="container md:pt-[10.375rem] pt-[9.375rem]">
 				<div className="relative">
 					<div className="relative z-1">
 						<h1 className="font-extrabold text-[2rem] md:text-[4.75rem] max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10">
@@ -40,12 +53,12 @@ const LandingPage = () => {
 						</h1>
 						<div className="md:flex justify-end w-full max-w-[62rem] gap-14">
 						<LongArrowIcon className="mt-6 hidden md:flex"/>
-						<p className="text-[1rem] md:text-2xl font-medium w-full max-w-[38.875rem]">We empower businesses and individuals through cutting-edge technology solutions and comprehensive learning programs. </p>
+						<p className="text-[1rem] md:text-2xl font-extralight w-full max-w-[38.875rem]">We empower businesses and individuals through cutting-edge technology solutions and comprehensive learning programs. </p>
 						</div>
 					</div>
 
-					<div className="hero-img absolute h-[23.375rem] w-[23.375rem] top-0 -right-20 ">
-					<img src={VideoPlayerBg} alt="" className="animate-ping duration-[30s] w-full hidden md:block" />
+					<div className="hero-img absolute h-[23.375rem] w-[23.375rem] z-1 top-0 -right-20" onClick={()=> setIsOpen(true)}>
+						<img src={VideoPlayerBg} alt="" className="videoPlayer w-full hidden md:block cursor-pointer"  />
 					</div>
 				</div>
 				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] justify-between">
@@ -91,24 +104,24 @@ const LandingPage = () => {
 					<FaArrowRight />
 				</Link>
 			</div>
-			<div className="flex flex-col md:flex-row justify-between mt-[1.125rem]">
-				<div className="md:w-[40.1875rem] flex flex-col gap-[0rem] md:gap-[12.5625rem] mb-5">
+			<div className="flex flex-col md:flex-row sm:justify-between gap-9  mt-[1.125rem]">
+				<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5">
 					<div className="text-[1.25rem] flex justify-end">
 						<p className="md:w-[23.9375rem] w-full">As a leading software and training company in Africa, we are dedicated to fostering a culture of innovation, collaboration, and continuous learning</p>
 					</div>
-					<img src={secondSectionleftImage} alt="" className="h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
+					<img src={secondSectionleftImage} alt="" className="max-h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
 				</div>
 				<div className="flex md:flex-col flex-col-reverse gap-[4.3125rem] md:w-[34.8125rem]">
 					<div className="relative md:w-full w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
 						<img src={secondSectionRightImage} alt="" className="h-96 w-96  mx-auto rounded-full"/>
 						<div className="ms-6 my-10 md:mt-10  max-w-96">
 							<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
-							<p className="text-white font-medium text-[1.25rem]">Our vision is to be the leading catalyst for technological advancement and personal growth across Africa.</p>
+							<p className="text-white font-extralight text-[1.25rem]">Our vision is to be the leading catalyst for technological advancement and personal growth across Africa.</p>
 						</div>
 					</div>
 					<div className="">
 						<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
-						<p className="mt-8 text-[1.25rem] font-medium w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
+						<p className="mt-8 text-[1.25rem] font-extralight w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
 				</div>
 			</div>
@@ -199,7 +212,7 @@ const LandingPage = () => {
 
 						<div className="my-[1.5rem] p-6 md:p-0 md:w-[35rem] w-full bg-[#CCCDE74D] md:bg-white ">
 							<p className="md:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Agapesprings</p>
-							<p className="md:text-[1.125rem] text-[0.875rem] font-medium w-full">Informational website for Agapesprings ministries international</p>
+							<p className="md:text-[1.125rem] text-[0.875rem] font-extralight w-full">Informational website for Agapesprings ministries international</p>
 						</div>
 					</div>
 					<div className="md:w-[40.1875rem] w-full ">
@@ -208,7 +221,7 @@ const LandingPage = () => {
 						</div>
 						<div className="mt-[1.5rem] p-6 md:p-0 md:w-[35rem] w-full bg-[#CCCDE74D] md:bg-white">
 							<p className="md:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Edulyncx: software management tool</p>
-							<p className="md:text-[1.125rem] text-[0.875rem] font-medium w-full">EdulyncX is a comprehensive school management application designed to enhance efficiency, transparency, and collaboration within the educational ecosystem</p>
+							<p className="md:text-[1.125rem] text-[0.875rem] font-extralight w-full">EdulyncX is a comprehensive school management application designed to enhance efficiency, transparency, and collaboration within the educational ecosystem</p>
 						</div>
 					</div>
 				</div>
@@ -261,7 +274,7 @@ const LandingPage = () => {
 									<img src={testimonial.imgSrc} alt="" className="w-[2.75rem] h-[2.75rem] rounded-[12px]" />
 									<div>
 									<p className="text-[1rem] font-bold">{testimonial.name}</p>
-									<p className="text-[0.875rem] font-medium">{testimonial.position}</p>
+									<p className="text-[0.875rem] font-extralight">{testimonial.position}</p>
 									</div>
 								</div>
 							</div>
@@ -278,7 +291,7 @@ const LandingPage = () => {
 				<p className="max-w-[36.0625rem] w-full md:text-[2.5rem] text-[1.25rem] text-white">Interested in joining Xapic team or partnering with us for a project?</p>
 				<div className="flex items-center text-[#F2F2F2CC] gap-[1.9375rem]">
 					<p className="text-[1.25rem] border-b-[#F2F2F2CC] border-b-2"><a href="">Join our Team</a></p>
-					<a href="" className="w-[15.9375rem] h-14 border-[1px] border-[#F2F2F2CC] font-medium justify-center items-center text-2xl cursor-pointer hidden md:flex">Send a message</a>
+					<a href="" className="w-[15.9375rem] h-14 border-[1px] border-[#F2F2F2CC] font-extralight justify-center items-center text-2xl cursor-pointer hidden md:flex">Send a message</a>
 				</div>
 			</div>
 		</div>
@@ -290,70 +303,70 @@ const LandingPage = () => {
 				<div className="flex flex-col md:flex-row justify-center w-[95%] mx-auto md:items-center gap-6 ps-6 md:gap-[3rem] bg-[#000250] max-w-[90.8125rem]  h-[10.875rem] absolute -top-20">
 					<p className="md:text-[1.75rem] text-white font-600 text-[1rem]">We are excited to be part of your educational journey!</p>
 					<div className="flex gap-6">
-						<button className="button bg-[#0096CC] w-[12.4375rem] text-[1.25rem]">
-							<p>APPLY HERE</p>
-							<FaArrowRight />
-						</button>
-						<button className="w-[15.5625rem] hidden md:block text-[1.25rem] text-white cursor-pointer border-white border-[1px]">
-							BOOK A CONSULTATION
-						</button>
+					<button className="button bg-[#0096CC] w-[12.4375rem] text-[1.25rem]">
+						<p>APPLY HERE</p>
+						<FaArrowRight />
+					</button>
+					<button className="w-[15.5625rem] hidden md:block text-[1.25rem] text-white cursor-pointer border-white border-[1px]">
+						BOOK A CONSULTATION
+					</button>
 					</div>
 				</div>
-			</div>
-			<div className="container pt-[12.3125rem]">
+				</div>
+				<div className="container pt-[12.3125rem] pb-[3.33125rem]">
 				<div className="flex md:flex-col flex-row justify-between">
 					<div className="flex flex-col gap-[3.296875rem]">
-						<div className="flex flex-col md:flex-row justify-between">
-							<img src={footerXapicLogo} alt="" className="sm:w-[19rem] w-[7.676875rem] h-10 sm:h-[6.1875rem]" />
-							<div className="flex flex-col md:flex-row gap-[1.25rem] justify-between text-white text-1rem font-500 md:w-[57.53125rem]">
-								<div className="w-[11.6875rem]">
-									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Schools</p>
-									<div className="flex flex-col gap-3">
-										<p>Design and Product</p>
-										<p>Engineering and Development</p>
-										<p>Summer Tech School</p>
-										<p>NYSC Training Programme</p>
-									</div>
-								</div>
-								<div>
-									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Quicklinks</p>
-									<div className="flex flex-col gap-3 cursor-pointer">
-										<p className="navLinks"><a href="">About Us</a></p>
-										<p className="navLinks"><a href="">Our Services</a></p>
-										<p className="navLinks"><a href="">Career</a></p>
-										<p  className="navLinks"><a href="">Contact Us</a></p>
-										<p className="navLinks"><a href="">Design and Products</a></p>
-									</div>
-								</div>
-								<div>
-									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
-									<div className="flex flex-col gap-3">
-										<p>Devops Engineering</p>
-										<p>Product Management</p>
-										<p>Front-end Engineering</p>
-										<p>Product Design</p>
-										<p>Graphics Design</p>
-										<p>Backend Engineering</p>
-									</div>
-								</div>
-								<div className="w-[14.75rem]">
-									<p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
-									<div className="flex flex-col gap-3">
-										<p>Lagos : 2nd floor, Leasing House, C & I Leasing Drive, Off Bisola Durosinmi Etti Drive, Off Admiralty way, Lekki Phase 1, Lagos</p>
-										<p>Akure: Xapic Technologies Building, Opposite State High Court, Arakale Road, Akure</p>
-										<p>08167001859</p>
-										<p>info@xapictech.com</p>
-									</div>
-								</div>
+					<div className="flex flex-col md:flex-row justify-between gap-[3.0625rem]">
+						<img src={footerXapicLogo} alt="" className="sm:w-[19rem] w-[7.676875rem] h-10 sm:h-[6.1875rem]" />
+						<div className="flex flex-col md:flex-row sm:gap-[1.25rem] gap-[1.25rem] justify-between text-white text-1rem font-500 md:w-[57.53125rem]">
+						<div className="w-[11.6875rem]">
+							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Schools</p>
+							<div className="flex flex-col gap-3">
+							<p>Design and Product</p>
+							<p>Engineering and Development</p>
+							<p>Summer Tech School</p>
+							<p>NYSC Training Programme</p>
 							</div>
 						</div>
-						<p className="text-center">Copyright © 2024. All right reserved.</p>
+						<div>
+							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Quicklinks</p>
+							<div className="flex flex-col gap-3 cursor-pointer">
+							<p className="navLinks"><a href="">About Us</a></p>
+							<p className="navLinks"><a href="">Our Services</a></p>
+							<p className="navLinks"><a href="">Career</a></p>
+							<p  className="navLinks"><a href="">Contact Us</a></p>
+							<p className="navLinks"><a href="">Design and Products</a></p>
+							</div>
+						</div>
+						<div>
+							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Top Courses</p>
+							<div className="flex flex-col gap-3">
+							<p>Devops Engineering</p>
+							<p>Product Management</p>
+							<p>Front-end Engineering</p>
+							<p>Product Design</p>
+							<p>Graphics Design</p>
+							<p>Backend Engineering</p>
+							</div>
+						</div>
+						<div className="w-[14.75rem]">
+							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Top Courses</p>
+							<div className="flex flex-col gap-3">
+							<p>Lagos : 2nd floor, Leasing House, C & I Leasing Drive, Off Bisola Durosinmi Etti Drive, Off Admiralty way, Lekki Phase 1, Lagos</p>
+							<p>Akure: Xapic Technologies Building, Opposite State High Court, Arakale Road, Akure</p>
+							<p>08167001859</p>
+							<p>info@xapictech.com</p>
+							</div>
+						</div>
+						</div>
 					</div>
-					<div className="flex md:justify-end mb-10 items-start md:items-center  gap-[1rem] text-white">
-						<a href=""><FaFacebook className="w-[1rem] h-[1rem]"/></a>
-						<a href=""><FaXTwitter className="w-[1rem] h-[1rem]"/></a>
-						<a href=""><FaInstagram className="w-[1rem] h-[1rem]"/></a>
-						<a href=""><FaLinkedin className="w-[1rem] h-[1rem]"/></a>	
+					<p className="md:text-center font-extralight text-[0.75rem]">Copyright © 2024. All right reserved.</p>
+					</div>
+					<div className="flex md:justify-end mb-10 items-start md:items-center gap-[1rem] text-white">
+					<a href=""><FaFacebook className="w-[1rem] h-[1rem]"/></a>
+					<a href=""><FaXTwitter className="w-[1rem] h-[1rem]"/></a>
+					<a href=""><FaInstagram className="w-[1rem] h-[1rem]"/></a>
+					<a href=""><FaLinkedin className="w-[1rem] h-[1rem]"/></a>	
 					</div>
 				</div>
 				
@@ -361,9 +374,9 @@ const LandingPage = () => {
 
 			</div>
 
-		</div>
+		  </div>
 
-	</>
+	</div>
   );
 };
 

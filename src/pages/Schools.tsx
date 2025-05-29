@@ -15,7 +15,7 @@ import startLearningImg from "../assets/images/image (3).png"
 import { School } from "../components/SchoolsDetails";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { CurveArrowIcon } from "../assets/icons";
-import firstTestimonialsVideo from "../assets/videos/AQOi3iCFCuOdUaQi6uLvrB51SbOxrmDKTkM35XubRJ38C3c2JoCojHxPnhooBLhiDckMu_4RwQyj71ZAJjiyOr5Nbh1yGvvOs2ObTnk.mp4"
+import firstTestimonialsVideo from "../assets/videos/AQNVpKFykEpwH784wNL7XjoFvXYgbRwSm5FC_MPPk4XC0W-4tyhQXsTYqKD3WVY5WEX7u6rby9MiTi0RDNd_LgubwVoBml-DCyWeBUs (1).mp4"
 import ceoImageWithStudent from "../assets/images/Container (4).png"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -47,13 +47,13 @@ const Schools = () => {
     <>
     {/* heroSection */}
 
-      <div className="pb-12 bg-[#F2F2F266] w-full relative overflow-hidden">
+      <div className="pb-12 pt-36 bg-[#F2F2F266] w-full relative overflow-hidden">
         <img src={circuitLinesBackground} alt="" className="w-full h-full absolute top-0 left-0" />
-        <div className="container sm:pt-[14.375rem] pt-[6.6875rem] flex flex-col justify-center items-center">
-          <div className="max-w-[49.3125rem]  pt-[1.0625rem] text-center relative">
+        <div className="container pt-[2rem] flex flex-col justify-center items-center">
+          <div className="max-w-[49.3125rem] pt-[1.0625rem] text-center relative">
             <img src={actionKeyImage} alt="" className="sm:w-24 sm:h-24 w-10 h-10 absolute sm:top-0 sm:left-0 top-20 left-0" />
             <img src={browseActivityImage} alt="" className="sm:w-24 sm:h-24 w-10 h-10 absolute sm:top-0 sm:right-0 top-20 right-0" />
-            <p className="sm:w-[26.6rem] w-[14.4375rem]! sm:h-[3.875rem] h-[2.5rem] flex justify-center items-center text-[0.875rem] sm:text-[1.25rem] font-sm:font-medium mx-auto bg-[#CCCDE7] sm:text-[#00036A]">Master-In Demand Tech Skills</p>
+            <p className="sm:w-[26.6rem]! w-[14.4375rem]! sm:h-[3.875rem] h-[2.5rem] flex justify-center items-center text-[0.875rem] sm:text-[1.25rem] font-medium mx-auto bg-[#CCCDE7] text-[#00036A]">Master-In Demand Tech Skills</p>
             <div className="flex flex-col justify-center gap-[2rem] items-center mt-[1.4375rem] w-full">
               <h2 className="sm:max-w-[37.3125rem] max-w-[20.8125rem] text-[#3E4C57] sm:text-5xl text-2xl font-bold" >Elevate Your Skills, <span ref={typedRef}></span>.</h2>
               <p className="font-normal text-[#3E4C57] sm:text-[1.75rem] text-[1rem] max-w-[20.8125rem] sm:max-w-[40.8125rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise.</p>
@@ -68,38 +68,38 @@ const Schools = () => {
           </div>
           <div className="md:flex hidden justify-between sm:w-full mt-[6.9375rem] overflow-x-auto">
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={learnFromIndustrialExpertImage1} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem] w-[2.5rem] h-[2.5rem]"/>
+                <img src={learnFromIndustrialExpertImage1} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem]"/>
                 <p className="w-[9.625rem]">Learn from Industry experts</p>
               </div>
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={getCertifiedOnCompletionImage1} alt="" className="sm:w-[6.340625rem] sm:h-[6.25rem] w-[2.5625rem] h-[2.5rem]" />
+                <img src={getCertifiedOnCompletionImage1} alt="" className="sm:w-[6.340625rem] sm:h-[6.25rem]" />
                 <p className="w-[9.625rem]">Get certified on completion</p>
               </div>
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={learnFromIndustrialExpertImage2} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem]  w-[2.5rem] h-[2.5rem]" />
+                <img src={learnFromIndustrialExpertImage2} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem] " />
                 <p className="w-[9.625rem]">Learn from Industry experts</p>
               </div>
               <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={getCertifiedOnCompletionImage2} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem]  w-[2.5rem] h-[2.5rem]" />
+                <img src={getCertifiedOnCompletionImage2} alt="" className="sm:w-[6.25rem] sm:h-[6.25rem] " />
                 <p className="w-[9.625rem]">Get certified on completion</p>
               </div>
           </div>
-          <Marquee className="md:hidden flex flex-row justify-between md:w-0 md:h-0 mt-[2rem] overflow-x-auto" speed={50}>
-              <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={learnFromIndustrialExpertImage1} alt="" className="w-[6.25rem] h-[6.25rem]"/>
-                <p className="w-[9.625rem]">Learn from Industry experts</p>
+          <Marquee className="md:hidden flex flex-row justify-between md:w-0 md:h-0 mt-[2rem] overflow-x-auto" speed={10}>
+              <div className="flex items-center gap-[0.75rem] w-[12.9375rem]">
+                <img src={learnFromIndustrialExpertImage1} alt="" className="w-[2.5rem] h-[2.5rem]"/>
+                <p className="text-[0.875rem] w-[9.625rem]">Learn from Industry experts</p>
               </div>
-              <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={getCertifiedOnCompletionImage1} alt="" className="w-[6.340625rem] h-[6.25rem]" />
-                <p className="w-[9.625rem]">Get certified on completion</p>
+              <div className="flex items-center gap-[0.75rem] w-[12.9375rem]">
+                <img src={getCertifiedOnCompletionImage1} alt="" className="w-[2.5625rem] h-[2.5rem]" />
+                <p className="text-[0.875rem] w-[9.625rem]">Get certified on completion</p>
               </div>
-              <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={learnFromIndustrialExpertImage2} alt="" className="w-[6.25rem] h-[6.25rem]" />
-                <p className="w-[9.625rem]">Learn from Industry experts</p>
+              <div className="flex items-center gap-[0.75rem] w-[12.9375rem]">
+                <img src={learnFromIndustrialExpertImage2} alt="" className="w-[2.5rem] h-[2.5rem]" />
+                <p className="text-[0.875rem] w-[9.625rem]">Learn from Industry experts</p>
               </div>
-              <div className="flex items-center justify-between w-[17.375rem]">
-                <img src={getCertifiedOnCompletionImage2} alt="" className="w-[6.25rem] h-[6.25rem]" />
-                <p className="w-[9.625rem]">Get certified on completion</p>
+              <div className="flex items-center gap-[0.75rem] w-[12.9375rem]">
+                <img src={getCertifiedOnCompletionImage2} alt="" className="w-[2.5rem] h-[2.5rem]" />
+                <p className="text-[0.875rem] w-[9.625rem]">Get certified on completion</p>
               </div>
           </Marquee>
         </div>
@@ -112,24 +112,24 @@ const Schools = () => {
           <p className="font-semibold sm:text-5xl text-2xl w-full sm:max-w-[51.9375rem]">Unlock Your Potential with Expert Software Training</p>
           <p className="sm:text-[1.75rem] text-[1rem]"> Our comprehensive software training programs are designed to equip you with the essential skills needed in today’s competitive job market.</p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-[1.25rem] sm:justify-between w-full">
-          <div className="md:w-[26.3125rem] w-full h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1.25rem] w-full">
+          <div className="h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
             <img src={masterDemandSkillsImage} alt="" className="w-24 h-24 "/>
-            <div className="w-[24.0625rem] flex flex-col gap-[1.0625rem]">
+            <div className="max-w-[24.0625rem] flex flex-col gap-[1.0625rem]">
               <p className="font-semibold text-2xl">Master in-Demand Skills</p>
               <p className="font-normal text-[0.875rem]">Learn from industry experts and gain hands-on experience with the latest software tools and technologies.</p>
             </div>
           </div>
-          <div className="md:w-[26.3125rem] w-full h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
+          <div className="h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
             <img src={careerGrowthImage} alt="" className="w-24 h-24 "/>
-            <div className="w-[24.0625rem] flex flex-col gap-[1.0625rem]">
+            <div className="max-w-[24.0625rem] flex flex-col gap-[1.0625rem]">
               <p className="font-semibold text-2xl">Accelerate Your Career Growth</p>
               <p className="font-normal text-[0.875rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise</p>
             </div>
           </div>
-          <div className="md-w-[26.3125rem] w-full h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
+          <div className="h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center">
             <img src={communityImage} alt="" className="w-24 h-24 "/>
-            <div className="w-[24.0625rem] flex flex-col gap-[1.0625rem]">
+            <div className="max-w-[24.0625rem] flex flex-col gap-[1.0625rem]">
               <p className="font-semibold text-2xl">Join a Thriving Community</p>
               <p className="font-normal text-[0.875rem]">Connect with fellow learners, share insights, and collaborate on projects that enhance your learning experience</p>
             </div>
@@ -158,13 +158,13 @@ const Schools = () => {
             <p className="text-[#3E4C57] sm:text-5xl text-2xl font-bold">Explore Our Schools</p>
             <p className="sm:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 w-full justify-between sm:mt-[7.5rem]">
-            {School.map((school) => (<div className="max-w-[40.1875rem] sm:h-[42.1875rem] h-[26.86rem] bg-white mt-[4.0625rem]">
-              <img src={school.imgSrc} alt="" className="object-cover sm:h-[25.25rem] h-[13.43rem] w-full" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-6 sm:mt-[7.5rem]">
+            {School.map((school) => (<div className="max-w-[40.1875rem] sm:max-h-[42.1875rem]  bg-white mt-[4.0625rem]">
+              <img src={school.imgSrc} alt="" className="sm:h-[25.25rem] h-[13.43rem] object-cover w-full" />
               <div className="flex flex-col h-[16.875rem] justify-between pb-[3.3125rem] pt-[1.45875rem] ps-2">
                 <p className="text-2xl font-semibold underline cursor-pointer">{school.schoolTitle}</p>
                 <p className="text-[1rem] font-normal max-w-[36.9375rem]">{school.message}</p>
-                <button className="button font-medium sm:text-[1.125rem] text-[0.875rem] p-2 justify-between w-[13.125rem] bg-[#EBECFF] text-[#3E4C57]">
+                <button className="button font-medium sm:text-[1.125rem] mt-3 text-[0.875rem] p-2 justify-between w-[13.125rem] bg-[#EBECFF] text-[#3E4C57]">
                   <p>Explore School</p>
                   <FaCircleArrowRight className={`${school.btnColor} h-[1.875rem] w-[1.875rem]`} />
                 </button>
@@ -183,7 +183,7 @@ const Schools = () => {
         </div>
         <div className="w-full">
           <div className="h-[30.0625rem] w-full rounded-tl-2xl rounded-tr-2xl">
-            <a href="https://www.youtube.com/shorts/MMt5nJnRmNA"><video src={firstTestimonialsVideo} className="h-full w-full rounded-tl-2xl rounded-tr-2xl object-fill"></video></a>
+            <video src={firstTestimonialsVideo} controls className=" w-full h-full rounded-tl-2xl rounded-tr-2xl"></video>
             <div>
 
             </div>
@@ -193,14 +193,14 @@ const Schools = () => {
       
       {/* Sixth Section */}
 
-      <div className="container flex flex-col-reverse sm:flex-row gap-[0.75rem]">
-        <img src={ceoImageWithStudent} alt="" className="sm:h-[32.125rem] w-full max-w-[39.6875rem] h-[17.25rem] object-cover" />
+      <div className="container grid grid-cols-1 lg:grid-cols-2 w-full md:flex-row  gap-[0.75rem]">
+        <img src={ceoImageWithStudent} alt="" className="sm:h-[32.125rem] w-full" />
         <div className="bg-[#E9F0F666] sm:p-[3.625rem] p-[1rem]">
           <div>
             <p className="text-[#1A202C] text-[1.75rem] font-bold">Hear from our CEO</p>
             <p className="text-2xl font-medium">Mr. Daniel Ademeso. MBA</p>
           </div>
-          <p className="mt-[1.1875rem] max-w-[37.8125rem] mb-[2.4375rem] leading-8">You are here because you recognize the importance of continuous learning, and I commend you for taking this important step. Our courses are designed by industry experts who bring real-world experience into the classroom, ensuring that you receive not only theoretical knowledge but also practical skills that can be applied immediately.</p>
+          <p className="mt-[1.1875rem] min:w-[37.8125rem] mb-[2.4375rem] leading-8">You are here because you recognize the importance of continuous learning, and I commend you for taking this important step. Our courses are designed by industry experts who bring real-world experience into the classroom, ensuring that you receive not only theoretical knowledge but also practical skills that can be applied immediately.</p>
           <button className="button font-medium text-[1.125rem] p-2 justify-between w-[17.3125rem] text-[white]">
             <p>Begin your journey here</p>
             <FaCircleArrowRight className="text-white w-[1.875rem] h-[1.875rem]" />
@@ -212,47 +212,47 @@ const Schools = () => {
 
       <div className="container mt-[6rem]">
         <p className="font-semibold text-[2.5rem] text-center">Frequently  Asked Questions</p>
-        <div className="bg-[#00011B]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
+        <div className="bg-[#000235]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
           <div className="max-w-[69.8125rem] container mx-auto">
-            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between h-[4.4375rem] border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({[1] : true})}>
-              <p className=" font-semibold md:text-2xl text-[1rem]">How do I register?</p>
-              {dropDown[1] ? <IoIosArrowUp /> : <IoIosArrowDown /> }
+            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({[1]: !dropDown[1]})}>
+              <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">How do I register?</p>
+              {dropDown[1] ? <IoIosArrowUp className="w-6 h-6"/> : <IoIosArrowDown className="w-6 h-6"/> }
             </div>
             <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[1] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
               <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
             </div>
           </div>
           <div className="max-w-[69.8125rem] container mx-auto">
-            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between h-[4.4375rem] border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[2] && "border-[2px] border-white"}`} onClick={() => setDropDown({[2] : true})}>
-              <p className=" font-semibold md:text-2xl text-[1rem]">What is the level of experience required for enrollment?</p>
-              {dropDown[2] ? <IoIosArrowUp /> : <IoIosArrowDown /> }
+            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[2] && "border-[2px] border-white"}`} onClick={() => setDropDown({[2] : !dropDown[2]})}>
+              <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What is the level of experience required for enrollment?</p>
+              {dropDown[2] ? <IoIosArrowUp className="w-6 h-6"/> : <IoIosArrowDown className="w-6 h-6"/> }
             </div>
             <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[2] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
               <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
             </div>
           </div>
           <div className="max-w-[69.8125rem] container mx-auto">
-            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between h-[4.4375rem] border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[3] && "border-[2px] border-white"}`} onClick={() => setDropDown({[3] : true})}>
-              <p className=" font-semibold md:text-2xl text-[1rem]">What payment options do you offer, and can I pay in installments?</p>
-              {dropDown[3] ? <IoIosArrowUp /> : <IoIosArrowDown /> }
+            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[3] && "border-[2px] border-white"}`} onClick={() => setDropDown({[3] : !dropDown[3]})}>
+              <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What payment options do you offer, and can I pay in installments?</p>
+              {dropDown[3] ? <IoIosArrowUp className="w-6 h-6"/> : <IoIosArrowDown className="w-6 h-6"/> }
             </div>
             <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[3] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
               <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
             </div>
           </div>
           <div className="max-w-[69.8125rem] container mx-auto">
-            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between h-[4.4375rem] border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[4] && "border-[2px] border-white"}`} onClick={() => setDropDown({[4] : true})}>
-              <p className=" font-semibold md:text-2xl text-[1rem]">Are the courses offered online, and if so, what is the format like?Does Xapictech offer online learning?</p>
-              {dropDown[4] ? <IoIosArrowUp /> : <IoIosArrowDown /> }
+            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[4] && "border-[2px] border-white"}`} onClick={() => setDropDown({[4] : !dropDown[4]})}>
+              <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">Are the courses offered online, and if so, what is the format like?Does Xapictech offer online learning?</p>
+              {dropDown[4] ? <IoIosArrowUp className="w-6 h-6"/> : <IoIosArrowDown className="w-6 h-6"/> }
             </div>
             <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[4] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
               <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
             </div>
           </div>
           <div className="max-w-[69.8125rem] container mx-auto">
-            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between h-[4.4375rem] border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[5] && "border-[2px] border-white"}`} onClick={() => setDropDown({[5] : true})}>
-              <p className=" font-semibold md:text-2xl text-[1rem]">What kind of certification or credentials will I receive upon completion?</p>
-              {dropDown ? <IoIosArrowUp /> : <IoIosArrowDown /> }
+            <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[5] && "border-[2px] border-white"}`} onClick={() => setDropDown({[5] : !dropDown[5]})}>
+              <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What kind of certification or credentials will I receive upon completion?</p>
+              {dropDown ? <IoIosArrowUp className="w-6 h-6"/> : <IoIosArrowDown className="w-6 h-6"/> }
             </div>
             <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[5] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
               <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
@@ -278,14 +278,14 @@ const Schools = () => {
             </div>
           </div>
         </div>
-        <div className="container pt-[12.3125rem]">
+        <div className="container pt-[12.3125rem] pb-[3.33125rem]">
           <div className="flex md:flex-col flex-row justify-between">
             <div className="flex flex-col gap-[3.296875rem]">
-              <div className="flex flex-col md:flex-row justify-between">
+              <div className="flex flex-col md:flex-row justify-between gap-[3.0625rem]">
                 <img src={footerXapicLogo} alt="" className="sm:w-[19rem] w-[7.676875rem] h-10 sm:h-[6.1875rem]" />
-                <div className="flex flex-col md:flex-row gap-[1.25rem] justify-between text-white text-1rem font-500 md:w-[57.53125rem]">
+                <div className="flex flex-col md:flex-row sm:gap-[1.25rem] gap-[1.25rem] justify-between text-white text-1rem font-500 md:w-[57.53125rem]">
                   <div className="w-[11.6875rem]">
-                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Schools</p>
+                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Schools</p>
                     <div className="flex flex-col gap-3">
                       <p>Design and Product</p>
                       <p>Engineering and Development</p>
@@ -294,7 +294,7 @@ const Schools = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Quicklinks</p>
+                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Quicklinks</p>
                     <div className="flex flex-col gap-3 cursor-pointer">
                       <p className="navLinks"><a href="">About Us</a></p>
                       <p className="navLinks"><a href="">Our Services</a></p>
@@ -304,7 +304,7 @@ const Schools = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
+                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Top Courses</p>
                     <div className="flex flex-col gap-3">
                       <p>Devops Engineering</p>
                       <p>Product Management</p>
@@ -315,7 +315,7 @@ const Schools = () => {
                     </div>
                   </div>
                   <div className="w-[14.75rem]">
-                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold mb-6">Top Courses</p>
+                    <p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Top Courses</p>
                     <div className="flex flex-col gap-3">
                       <p>Lagos : 2nd floor, Leasing House, C & I Leasing Drive, Off Bisola Durosinmi Etti Drive, Off Admiralty way, Lekki Phase 1, Lagos</p>
                       <p>Akure: Xapic Technologies Building, Opposite State High Court, Arakale Road, Akure</p>
@@ -325,9 +325,9 @@ const Schools = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-center">Copyright © 2024. All right reserved.</p>
+              <p className="md:text-center font-medium text-[0.75rem]">Copyright © 2024. All right reserved.</p>
             </div>
-            <div className="flex md:justify-end mb-10 items-start md:items-center  gap-[1rem] text-white">
+            <div className="flex md:justify-end mb-10 items-start md:items-center gap-[1rem] text-white">
               <a href=""><FaFacebook className="w-[1rem] h-[1rem]"/></a>
               <a href=""><FaXTwitter className="w-[1rem] h-[1rem]"/></a>
               <a href=""><FaInstagram className="w-[1rem] h-[1rem]"/></a>

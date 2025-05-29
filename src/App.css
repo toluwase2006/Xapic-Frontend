@@ -31,7 +31,20 @@
   font-weight: 200;
 }
 
-
+@keyframes ZoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.videoPlayer {
+  animation: ZoomIn 2s infinite;
+}
 
 @theme {
 
@@ -63,5 +76,11 @@ body {
 @media (max-width: 1440px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 16px !important;
   }
 }
