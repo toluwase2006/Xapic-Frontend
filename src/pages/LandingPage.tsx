@@ -27,6 +27,8 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ModalContext } from "../useContext/ModalContext";
 import VideoModal from "../components/VideoModal";
+import roundVideoCover from "../assets/images/rounds (1).png"
+import videoPayerIcon from "../assets/images/Link.png"
 
 
 
@@ -56,14 +58,17 @@ const LandingPage = () => {
 						</div>
 					</div>
 
-					<div className="hero-img absolute h-[23.375rem] w-[23.375rem] z-1 top-0 -right-20" onClick={()=> setIsOpen(true)}>
-						<img src={VideoPlayerBg} alt="" className="videoPlayer w-full hidden md:block cursor-pointer"  />
+					<div className="hero-img absolute h-[23.375rem] w-[23.375rem] z-1 top-0 -right-20 cursor-pointer" onClick={()=> setIsOpen(true)}>
+						<img src={roundVideoCover} alt="" className="w-full h-full"/>
+						<div className="w-full absolute top-0 left-0  h-full flex justify-center items-center">
+							<img src={videoPayerIcon} alt=""  className="videoPlayer w-[5.25rem] h-[5.25rem]"/>
+						</div>
 					</div>
 				</div>
-				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] justify-between">
+				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] gap-[3.125rem]">
 					<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative">
 						<img src={heroImage} alt="" className="w-full h-full object-cover" />
-						<button className="hidden md:flex button w-[13.4375rem] absolute bottom-0 -right-0">
+						<button className="hidden md:flex button  w-[13.4375rem] absolute bottom-0 -right-0">
 							<p>Know More</p>
 							<RiArrowRightUpLine />
 						</button>
@@ -86,9 +91,9 @@ const LandingPage = () => {
 						</div>
 					</div>
 				</div>
-				<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[13.4375rem]">
+				<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[8.375rem]">
 						<p>Know More</p>
-						<RiArrowRightUpLine />
+						<RiArrowRightUpLine className="w-6 h-6"/>
 				</button>
 			</div>
 		</div>
@@ -96,39 +101,37 @@ const LandingPage = () => {
 	  {/* Second Section */}
 
 		<div className="container pt-[3.625rem]">
-			<div className="flex justify-between items-center md:items-start">
-				<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold ">See What Drives Us</p>
-				<Link className="button w-[14.25rem]" to="/AboutUs">
-					<p>Learn more</p>
-					<FaArrowRight />
-				</Link>
-			</div>
-			<div className="flex flex-col md:flex-row sm:justify-between gap-9  mt-[1.125rem]">
+			<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9  mt-[1.125rem]">
 				<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5">
-					<div className="text-[1.25rem] flex justify-end">
-						<p className="md:w-[23.9375rem] w-full">As a leading software and training company in Africa, we are dedicated to fostering a culture of innovation, collaboration, and continuous learning</p>
+					<div className="text-[1.25rem] w-full flex flex-col sm:flex-row  justify-between">
+						<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold">See What Drives Us</p>
+						<p className="md:w-[23.9375rem] md:text-[1.25rem] text-[0.875rem] sm:[1.25rem] md:mt-14">As a leading software and training company in Africa, we are dedicated to fostering a culture of innovation, collaboration, and continuous learning</p>
 					</div>
 					<img src={secondSectionleftImage} alt="" className="max-h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
 				</div>
-				<div className="flex md:flex-col flex-col-reverse gap-[4.3125rem] md:w-[34.8125rem]">
+				<div className="flex md:flex-col flex-col-reverse gap-[2rem] md:gap-[4.3125rem] md:w-[34.8125rem] mt-3 md:mt-14">
 					<div className="relative md:w-full w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
 						<img src={secondSectionRightImage} alt="" className="h-96 w-96  mx-auto rounded-full"/>
 						<div className="ms-6 my-10 md:mt-10  max-w-96">
 							<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
-							<p className="text-white font-extralight text-[1.25rem]">Our vision is to be the leading catalyst for technological advancement and personal growth across Africa.</p>
+							<p className="text-white font-extralight text-[0.875rem]md:text-[1.25rem]">Our vision is to be the leading catalyst for technological advancement and personal growth across Africa.</p>
 						</div>
 					</div>
 					<div className="">
 						<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
-						<p className="mt-8 text-[1.25rem] font-extralight w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
+						<p className="mt-8 text-[0.875rem] sm:text-[1.25rem] font-extralight w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
+					<Link className="button w-[8.875rem] md:w-[14.25rem]" to="/AboutUs">
+						<p>Learn more</p>
+						<FaArrowRight />
+					</Link>
 				</div>
 			</div>
 		</div>
 
 		{/* Third Section */}
 
-		<div className="md:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[10.0625rem] md:pt-[10.625rem] pt-[2.4375rem]">
+		<div className="md:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[10.625rem] pt-[2.4375rem]">
 			<div className="container flex flex-col md:flex-row gap-[1.375rem] md:justify-between">
 				<div className="max-w-[24.1875rem] w-full leading-[1.75rem]">
 					<p className="md:text-5xl text-[1.75rem] font-bold text-white">What We Do</p>
@@ -193,17 +196,17 @@ const LandingPage = () => {
 			<img src={circuitLinesBackground} alt="" className="w-full h-full hidden md:block absolute top-0 left-0"  />
 			<div className="container pt-[3.875rem] ">
 				<div className="flex flex-col-reverse md:flex-row gap-[1rem] md: text-[1.125rem] justify-between">
-					<div>
-						<p className="md:text-[2.5rem] w-full text-2xl font-bold md:font-extrabold">Things we are currently building</p>
+					<div className="flex flex-col gap-[0.5rem] md:gap-[0rem]">
+						<p className="md:text-[2.5rem] w-full text-2xl font-bold md:font-extrabold">Things We Are Currently Building</p>
 						<p className="md:w-[48.0625rem] w-full text-[1rem] md:text-[1.75rem]">Explore our expanding portfolio of products we are building and start-ups we are growing.</p>
 					</div>
-					<Link to="/portfolio" className="w-[13.9375rem] h-14 border-[1px] border-[#3E4C57] flex justify-center items-center text-2xl cursor-pointer">See more</Link>
+					<Link to="/portfolio" className="w-[6.625rem] md:w-[13.9375rem] h-14 border-[1px] border-[#00036A] flex justify-center text-[#00036A] items-center text-[0.875rem] md:text-2xl cursor-pointer">See more</Link>
 				</div>
 				<div className="flex flex-col h-full w-full md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5">
 					<div className="md:w-[40.1875rem] w-full">
 						<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
 							{/* Mobile image */}
-							<img src={mobileAgapeSpringSiteImg} alt="" className="md:hidden md:w-[37.25rem] md:h-[28.75rem] h-full w-full object-contain"/>
+							<img src={mobileAgapeSpringSiteImg} alt="" className="md:hidden md:max-w-[37.25rem] md:max-h-[28.75rem] h-full w-full object-contain"/>
 
 							{/* Desktop image */}
 							<img src={desktopAgapeSpringSiteImg} alt="" className="hidden md:block md:w-[37.25rem] md:h-[28.75rem] w-full object-contain"/>
