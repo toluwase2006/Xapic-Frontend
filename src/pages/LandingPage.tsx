@@ -70,14 +70,14 @@ const LandingPage = () => {
 					</div>
 					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
 						<img src={heroVector} alt="" className="w-full h-full" />
-						<div className="absolute top-[4.5625rem] left-[2.5rem]">
+						<div className="absolute top-[4.5625rem] left-[1rem] sm:left-[2.5rem]">
 							<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
 							<div className="flex items-center mt-[2.625rem] gap-[2.2rem]">
 								<div className="leading-10">
 									<p className="text-5xl font-extrabold text-[#101010]">20+</p>
 									<p className="">Projects Done</p>
 								</div>
-								<div className="h-12 w-1 bg-[#D6D6D6]"></div>
+								<div className="hidden sm:block h-12 w-1 bg-[#D6D6D6]"></div>
 								<div className="leading-10">
 									<p className="text-5xl font-extrabold text-[#101010]">1000+</p>
 									<p>Students Trained</p>
