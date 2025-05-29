@@ -68,7 +68,7 @@ const LandingPage = () => {
 				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] gap-[3.125rem]">
 					<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative">
 						<img src={heroImage} alt="" className="w-full h-full object-cover" />
-						<button className="hidden md:flex button  w-[13.4375rem] absolute bottom-0 -right-0">
+						<button className="hidden sm:flex button  w-[13.4375rem] absolute bottom-0 -right-0">
 							<p>Know More</p>
 							<RiArrowRightUpLine />
 						</button>
@@ -91,7 +91,7 @@ const LandingPage = () => {
 						</div>
 					</div>
 				</div>
-				<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[8.375rem]">
+				<button className="flex sm:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[8.375rem]">
 						<p>Know More</p>
 						<RiArrowRightUpLine className="w-6 h-6"/>
 				</button>
