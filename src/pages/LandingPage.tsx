@@ -44,7 +44,7 @@ const LandingPage = () => {
 
 		<VideoModal />
 		<div className="bg-gradient-to-br from-[#00BBFF1A] to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
-			<div className="container md:pt-[10.375rem] pt-[9.375rem]">
+			<div className="container md:pt-[10.375rem] pt-[8.375rem]">
 				<div className="relative">
 					<div className="relative z-1">
 						<h1 className="font-extrabold text-[2rem] md:text-[4.75rem] max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10">
