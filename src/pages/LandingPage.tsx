@@ -177,65 +177,69 @@ const LandingPage = () => {
 
 			{/* Second Section */}
 
-			<div className="container pt-[3.625rem] overflow-hidden">
-				<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9  mt-[1.125rem]">
-					<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-						<div className="text-[1.25rem] w-full flex flex-col sm:flex-row   justify-between">
-							<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold">
-								See What Drives Us
-							</p>
-							<p className="md:w-[23.9375rem] md:text-[1.25rem] text-[0.875rem] sm:[1.25rem] md:mt-14">
-								As a leading software and training company in Africa, we are
-								dedicated to fostering a culture of innovation, collaboration,
-								and continuous learning
-							</p>
-						</div>
-						<img
-							src={secondSectionleftImage1}
-							alt=""
-							className="hidden sm:block max-h-[44.125rem] max-w-[40.1875rem] w-full object-contain"
-						/>
-						<img
-							src={secondSectionLeftImage2}
-							alt=""
-							className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full object-contain"
-						/>
-					</div>
-					<div className="flex md:flex-col flex-col-reverse gap-[2rem] md:gap-[3.3rem] md:w-[34.8125rem] mt-3 md:mt-14" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-						<div className="relative md:w-full w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
-							<img
-								src={secondSectionRightImage}
-								alt=""
-								className="h-96 w-96  mx-auto rounded-full"
-							/>
-							<div className="ms-6 my-10 md:mt-10  max-w-96">
-								<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
-								<p className="text-white font-extralight text-[0.875rem]md:text-[1.25rem]">
-									Our vision is to be the leading catalyst for technological
-									advancement and personal growth across Africa.
+			<div className="overflow-hidden">
+				<div className="container pt-[3.625rem]">
+					<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9  mt-[1.125rem]">
+						<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+							<div className="text-[1.25rem] w-full flex flex-col lg:flex-row   justify-between">
+								<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold">
+									See What Drives Us
+								</p>
+								<p className="md:min-w-[23.9375rem] lg:max-w-[23.9375rem] md:text-[1.25rem] text-[0.875rem] sm:[1.25rem] md:mt-14">
+									As a leading software and training company in Africa, we are
+									dedicated to fostering a culture of innovation, collaboration,
+									and continuous learning
 								</p>
 							</div>
+							<img
+								src={secondSectionleftImage1}
+								alt=""
+								className="hidden sm:block max-w-[40.1875rem] w-full object-contain"
+							/>
+							<img
+								src={secondSectionLeftImage2}
+								alt=""
+								className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full object-contain"
+							/>
 						</div>
-						<div className="">
-							<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">
-								The Mission we are on
-							</p>
-							<p className="mt-8 text-[0.875rem] sm:text-[1.25rem] font-extralight w-full">
-								Our commitment is to simplify technology, making it accessible
-								and impactful for everyone, while nurturing a community of
-								skilled professionals who drive change and inspire innovation.{" "}
-							</p>
+						<div className="flex md:flex-col flex-col-reverse gap-[2rem] md:gap-[3.3rem] md:w-[34.8125rem] mt-3 md:mt-14" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+							<div className="relative w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
+								<img
+									src={secondSectionRightImage}
+									alt=""
+									className="h-96 w-96  mx-auto rounded-full"
+								/>
+								<div className="ms-6 my-10 md:mt-10  max-w-96">
+									<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
+									<p className="text-white font-extralight text-[0.875rem]md:text-[1.25rem]">
+										Our vision is to be the leading catalyst for technological
+										advancement and personal growth across Africa.
+									</p>
+								</div>
+							</div>
+							<div className="">
+								<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">
+									The Mission we are on
+								</p>
+								<p className="mt-8 text-[0.875rem] sm:text-[1.25rem] font-extralight w-full">
+									Our commitment is to simplify technology, making it accessible
+									and impactful for everyone, while nurturing a community of
+									skilled professionals who drive change and inspire innovation.{" "}
+								</p>
+							</div>
+							<Link
+								className="button hover:bg-[#001e6afc] w-[8.875rem] md:w-[14.25rem]"
+								to="/AboutUs"
+							>
+								<p>Learn more</p>
+								<FaArrowRight className="RightArrow" />
+							</Link>
 						</div>
-						<Link
-							className="button hover:bg-[#001e6afc] w-[8.875rem] md:w-[14.25rem]"
-							to="/AboutUs"
-						>
-							<p>Learn more</p>
-							<FaArrowRight className="RightArrow" />
-						</Link>
 					</div>
 				</div>
+
 			</div>
+
 
 			{/* Third Section */}
 
@@ -366,13 +370,13 @@ const LandingPage = () => {
 						</Link>
 					</div>
 					<div className="flex flex-col md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5 overflow-hidden">
-						<div className="md:w-[40.1875rem] w-full">
-							<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
+						<div className="">
+							<div className=" flex flex-col justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
 								{/* Mobile image */}
 								<img
 									src={mobileAgapeSpringSiteImg}
 									alt=""
-									className="md:hidden md:max-w-[37.25rem] md:h-[28.75rem]  w-full object-contain"
+									className="md:hidden w-[37.25rem]"
 									data-aos="fade-right"
 									data-aos-delay="300"
 									data-aos-duration="1000"
@@ -382,7 +386,7 @@ const LandingPage = () => {
 								<img
 									src={desktopAgapeSpringSiteImg}
 									alt=""
-									className="hidden md:block md:max-w-[37.25rem] md:h-[28.75rem]  w-full object-contain"
+									className="hidden md:block w-[37.25rem]"
 									data-aos="fade-left"
 									data-aos-delay="300"
 									data-aos-duration="1000"
@@ -394,17 +398,16 @@ const LandingPage = () => {
 									Agapesprings
 								</p>
 								<p className="md:text-[1.125rem] text-[0.875rem] font-extralight w-full">
-									Informational website for Agapesprings ministries
-									international
+									Informational website for Agapesprings ministries international
 								</p>
 							</div>
 						</div>
-						<div className="md:w-[40.1875rem] w-full ">
-							<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white rounded-[4px] shadow-md">
+						<div className="">
+							<div className="flex justify-center items-center bg-white md:bg-[#CCCDE74D]  rounded-[4px] shadow-md">
 								<img
 									src={edulyncxaSiteImg}
 									alt=""
-									className="md:w-[37.25rem] md:h-[28.75rem] w-full object-contain"
+									className="w-[37.25rem]"
 									data-aos="fade-right"
 									data-aos-delay="200"
 								/>
@@ -484,12 +487,12 @@ const LandingPage = () => {
 							{Testimonial.map((testimonial, index) => (
 								<div
 									key={index}
-									className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white overflow-hidden rounded-[12px]"
+									className="flex gap-2 items-center max-w-[40rem]  bg-white overflow-hidden rounded-[12px]"
 								>
 									<img
 										src={testimonial.imgSrc}
 										alt=""
-										className="w-[9.5625rem] h-full transition-all overflow-hidden duration-200 hover:scale-105"
+										className="max-w-[9.5625rem]  transition-all overflow-hidden duration-200 hover:scale-105 object-contain"
 									/>
 									<div className="">
 										<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">
