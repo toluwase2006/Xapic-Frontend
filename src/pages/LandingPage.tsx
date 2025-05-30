@@ -2,7 +2,7 @@ import { LongArrowIcon } from "../assets/icons";
 import heroImage from "../assets/images/Mask group (2).png";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import heroVector from "../assets/images/Vector 165.png"
-import secondSectionleftImage from "../assets/images/Group 17 (1) (2).png"
+import secondSectionleftImage1 from "../assets/images/Group 17 (1) (2).png"
 import { FaArrowRight } from "react-icons/fa6";
 import secondSectionRightImage from "../assets/gif/xap gif 1.gif"
 import recruitmentIcon from "../assets/images/fluent-mdl2_recruitment-management.png"
@@ -23,29 +23,68 @@ import { FaLinkedin } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import { Testimonial } from "../components/Testimonial";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext,useEffect, useState } from "react";
 import { ModalContext } from "../useContext/ModalContext";
 import VideoModal from "../components/VideoModal";
 import roundVideoCover from "../assets/images/rounds (1).png"
 import videoPayerIcon from "../assets/images/Group 36.png"
-
+import secondSectionLeftImage2 from "../assets/images/bum.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const LandingPage = () => {
 	const context = useContext(ModalContext);
 
-	 if (!context) throw new Error("ModalContext is missing");
+	if (!context) throw new Error("ModalContext is missing");
 
-	 const {isOpen, setIsOpen} = context;
-	 
+	const {isOpen, setIsOpen} = context;
 
-  return (
+	const [projectCount, setProjectCount] = useState(0);
+	const [studentCount, setStudentCount] = useState(0);
+
+	useEffect(() => {
+		const projectInterval = setInterval(() => {
+			setProjectCount((prev) => {
+			if (prev < 20) {
+				return prev + 1;
+			} else {
+				clearInterval(projectInterval);
+				return prev;
+			}
+			});
+		}, 100);
+
+		const studentInterval = setInterval(() => {
+			setStudentCount((prev) => {
+			if (prev < 1000) {
+				return prev + 10; 
+			} else {
+				clearInterval(studentInterval);
+				return prev;
+			}
+			});
+		}, 100); 
+
+		return () => {
+			clearInterval(projectInterval);
+			clearInterval(studentInterval);
+		};
+	}, []);
+	useEffect(() => {
+		AOS.init({
+			duration: 800
+		});
+	}, []);
+
+
+	return (
 	<div className={isOpen ? "fixed inset-0" : ""}>
 	{/* Hero Section */}
 
 		<VideoModal />
-		<div className="bg-gradient-to-br from-[#00BBFF1A] to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
-			<div className="container md:pt-[10.375rem] pt-[8.375rem]">
+		<div className="bg-gradient-to-br from-[#00BBFF1A] pt-12 to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
+			<div className="container md:pt-[10.375rem] pt-[3.375rem]">
 				<div className="relative">
 					<div className="relative z-1">
 						<h1 className="font-extrabold text-[2rem] md:text-[4.75rem] max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10">
@@ -57,42 +96,42 @@ const LandingPage = () => {
 						</div>
 					</div>
 
-					<div className="hero-img absolute h-[5.125rem] w-[5.125rem] sm:h-[23.375rem] sm:w-[23.375rem] z-1 top-20 sm:top-0 right-0 sm:-right-20 cursor-pointer" onClick={()=> setIsOpen(true)}>
+					<div className="hero-img absolute h-[5.125rem] w-[5.125rem] sm:h-[24.375rem] sm:w-[24.375rem] z-1 top-20 sm:top-0 right-0 sm:-right-20 cursor-pointer" onClick={()=> setIsOpen(true)}>
 						<img src={roundVideoCover} alt="" className="w-full h-full"/>
 						<div className="w-full absolute top-0 left-0  h-full flex justify-center items-center">
-							<img src={videoPayerIcon} alt=""  className="videoPlayer w-[1.125rem] h-[1.125rem] sm:w-[5.25rem] sm:h-[5.25rem]"/>
+							<img src={videoPayerIcon} alt=""  className="videoPlayer w-[1.125rem] h-[1.125rem] sm:w-[6.25rem] sm:h-[6.25rem]"/>
 						</div>
 					</div>
 				</div>
 				<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] gap-[3.125rem]">
-					<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative">
-						<img src={heroImage} alt="" className="w-full h-full object-cover" />
-						<button className="hidden sm:flex button  w-[13.4375rem] absolute bottom-0 -right-0">
+					<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative overflow-hidden">
+						<img src={heroImage} alt="" className="heroImage w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+						<button className="hidden md:flex button cursor-pointer  md:w-[10rem] lg:w-[13.4375rem] absolute bottom-0 -right-0 hover:bg-[#00036A] ">
 							<p>Know More</p>
-							<RiArrowRightUpLine />
+							<RiArrowRightUpLine className="diagonalArrow"/>
 						</button>
 					</div>
 					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
-						<img src={heroVector} alt="" className="w-full h-full" />
+						<img src={heroVector} alt="" className="w-full h-full"/>
 						<div className="absolute top-[4.5625rem] left-[1rem] sm:left-[2.5rem]">
 							<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
 							<div className="flex items-center mt-[2.625rem] gap-[2.2rem]">
 								<div className="leading-10">
-									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">20+</p>
+									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">{projectCount}+</p>
 									<p className="text-[0.75rem] sm:text-[0.875rem]">Projects Done</p>
 								</div>
 								<div className="hidden sm:block h-12 w-1 bg-[#D6D6D6]"></div>
 								<div className="leading-10">
-									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">1000+</p>
+									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">{studentCount}+</p>
 									<p className="text-[0.75rem] sm:text-[0.875rem]">Students Trained</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<button className="flex sm:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[8.375rem]">
+				<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[8.375rem]">
 						<p>Know More</p>
-						<RiArrowRightUpLine className="w-6 h-6"/>
+						<RiArrowRightUpLine className="w-6 h-6 diagonalArrow"/>
 				</button>
 			</div>
 		</div>
@@ -102,13 +141,14 @@ const LandingPage = () => {
 		<div className="container pt-[3.625rem]">
 			<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9  mt-[1.125rem]">
 				<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5">
-					<div className="text-[1.25rem] w-full flex flex-col sm:flex-row  justify-between">
+					<div className="text-[1.25rem] w-full flex flex-col sm:flex-row   justify-between">
 						<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold">See What Drives Us</p>
 						<p className="md:w-[23.9375rem] md:text-[1.25rem] text-[0.875rem] sm:[1.25rem] md:mt-14">As a leading software and training company in Africa, we are dedicated to fostering a culture of innovation, collaboration, and continuous learning</p>
 					</div>
-					<img src={secondSectionleftImage} alt="" className="max-h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
+					<img src={secondSectionleftImage1} alt="" className="hidden sm:block max-h-[44.125rem] max-w-[40.1875rem] w-full object-contain"/>
+					<img src={secondSectionLeftImage2} alt="" className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full object-contain" />
 				</div>
-				<div className="flex md:flex-col flex-col-reverse gap-[2rem] md:gap-[4.3125rem] md:w-[34.8125rem] mt-3 md:mt-14">
+				<div className="flex md:flex-col flex-col-reverse gap-[2rem] md:gap-[3.3rem] md:w-[34.8125rem] mt-3 md:mt-14">
 					<div className="relative md:w-full w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
 						<img src={secondSectionRightImage} alt="" className="h-96 w-96  mx-auto rounded-full"/>
 						<div className="ms-6 my-10 md:mt-10  max-w-96">
@@ -118,11 +158,11 @@ const LandingPage = () => {
 					</div>
 					<div className="">
 						<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">The Mission we are on</p>
-						<p className="mt-8 text-[0.875rem] sm:text-[1.25rem] font-extralight w-full"> Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
+						<p className="mt-8 text-[0.875rem] sm:text-[1.25rem] font-extralight w-full">Our commitment is to simplify technology, making it accessible and impactful for everyone, while nurturing a community of skilled professionals who drive change and inspire innovation.  </p>
 					</div>
-					<Link className="button w-[8.875rem] md:w-[14.25rem]" to="/AboutUs">
+					<Link className="button hover:bg-[#001e6afc] w-[8.875rem] md:w-[14.25rem]" to="/AboutUs">
 						<p>Learn more</p>
-						<FaArrowRight />
+						<FaArrowRight className="RightArrow" />
 					</Link>
 				</div>
 			</div>
@@ -142,7 +182,7 @@ const LandingPage = () => {
 				</div>
 				<div className="flex flex-col gap-[1.25rem] md:gap-0">
 					<div className="flex flex-col md:flex-row gap-[1.25rem] md:gap-0">
-						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
+						<div className="md:w-[23.8125rem] hover:bg-[#00036A]  cursor-pointer flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
 							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={recruitmentIcon} alt="" className="w-12 h-12"/>
 							</div>
@@ -151,39 +191,39 @@ const LandingPage = () => {
 								<p className="text-[0.875rem] text-white font-extralight mt-2">Our recruitment services ensure you find the right candidates who fit your company culture and technical requirements.</p>
 							</div>
 						</div>
-						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] ">
+						<div className="md:w-[23.8125rem] cursor-pointer hover:bg-white transition-all duration-500 flex flex-col text-white hover:text-[#00036A] gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] ">
 							<div className="w-20 h-20  rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={softwareDevelopmentIcon} alt="" className="w-12 h-12"/>
 							</div>
 							<div className="w-full">
-								<p className="md:text-2xl text-white md:w-[10.125rem] text-[1.125rem]">Software Development</p>
-								<p className="text-[0.875rem] text-white font-extralight mt-2">Custom software solutions tailored to your business needs. </p>
+								<p className="md:text-2xl md:w-[10.125rem]  text-[1.125rem]">Software Development</p>
+								<p className="text-[0.875rem] font-extralight mt-2">Custom software solutions tailored to your business needs. </p>
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col-reverse gap-[1.25rem] md:gap-0 md:flex-row">
-						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]">
+					<div className="flex flex-col-reverse gap-[1.25rem]  md:gap-0 md:flex-row">
+						<div className="md:w-[23.8125rem] flex flex-col text-white cursor-pointer hover:bg-white hover:text-[#00036A] transition-all duration-500 gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]">
 							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={cloudSolutionIcon} alt="" className="w-12 h-12"/>
 							</div>
 							<div className="w-full">
-								<p className="md:text-2xl text-white md:w-[10.125rem] text-[1.125rem]">Cloud Solutions</p>
-								<p className="text-[0.875rem] text-white font-extralight mt-2">We help you leverage cloud technology for improved scalability, flexibility, and cost-effectiveness</p>
+								<p className="md:text-2xl  md:w-[10.125rem] text-[1.125rem]">Cloud Solutions</p>
+								<p className="text-[0.875rem]  font-extralight mt-2">We help you leverage cloud technology for improved scalability, flexibility, and cost-effectiveness</p>
 							</div>
 						</div> 
-						<div className="md:w-[23.8125rem] flex flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
+						<div className="md:w-[23.8125rem] flex hover:bg-[#00036A]  cursor-pointer text-white transition-all duration-500  flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]">
 							<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 								<img src={trainingDevelopmentIcon} alt="" className="w-12 h-12"/>
 							</div>
 							<div className="w-full">
-								<p className="md:text-2xl text-white md:w-[10.125rem] text-[1.125rem]">Training and Development</p>
-								<p className="text-[0.875rem] text-white font-extralight mt-2">Comprehensive training programs in various fields, including web development, cloud computing, product and design, data analysis etc </p>
+								<p className="md:text-2xl md:w-[10.125rem] text-[1.125rem]">Training and Development</p>
+								<p className="text-[0.875rem] font-extralight mt-2">Comprehensive training programs in various fields, including web development, cloud computing, product and design, data analysis etc </p>
 							</div>
 						</div>
 					</div>
 					<Link to="/services" className="button bg-[#CCCDE7] mt-0 md:mt-16 w-[12.875rem] md:hidden flex text-[#00036A]">
 						<p className="font-bold">View our Services</p>
-						<FaArrowRight />
+						<FaArrowRight className="RightArrow"/>
 					</Link>
 				</div>
 			</div>
@@ -199,16 +239,16 @@ const LandingPage = () => {
 						<p className="md:text-[2.5rem] w-full text-2xl font-bold md:font-extrabold">Things We Are Currently Building</p>
 						<p className="md:w-[48.0625rem] w-full text-[1rem] md:text-[1.75rem]">Explore our expanding portfolio of products we are building and start-ups we are growing.</p>
 					</div>
-					<Link to="/portfolio" className="w-[6.625rem] md:w-[13.9375rem] h-14 border-[1px] border-[#00036A] flex justify-center text-[#00036A] items-center text-[0.875rem] md:text-2xl cursor-pointer">See more</Link>
+					<Link to="/portfolio" className="w-[6.625rem] md:w-[13.9375rem] h-[2.5rem] md:h-14 border-[1px] border-[#00036A] flex justify-center text-[#00036A] items-center text-[0.875rem] md:text-2xl cursor-pointer">See more</Link>
 				</div>
-				<div className="flex flex-col h-full w-full md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5">
+				<div className="flex flex-col md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5">
 					<div className="md:w-[40.1875rem] w-full">
 						<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
 							{/* Mobile image */}
-							<img src={mobileAgapeSpringSiteImg} alt="" className="md:hidden md:max-w-[37.25rem] md:max-h-[28.75rem] h-full w-full object-contain"/>
+							<img src={mobileAgapeSpringSiteImg} alt="" className="md:hidden md:max-w-[37.25rem] md:h-[28.75rem]  w-full object-contain" data-aos="fade-right" data-aos-delay="200"/>
 
 							{/* Desktop image */}
-							<img src={desktopAgapeSpringSiteImg} alt="" className="hidden md:block md:w-[37.25rem] md:h-[28.75rem] w-full object-contain"/>
+							<img src={desktopAgapeSpringSiteImg} alt="" className="hidden md:block md:max-w-[37.25rem] md:h-[28.75rem]  w-full object-contain" data-aos="fade-left" data-aos-delay="200"/>
 						</div>
 
 						<div className="my-[1.5rem] p-6 md:p-0 md:w-[35rem] w-full bg-[#CCCDE74D] md:bg-white ">
@@ -218,7 +258,7 @@ const LandingPage = () => {
 					</div>
 					<div className="md:w-[40.1875rem] w-full ">
 						<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white rounded-[4px] shadow-md">
-							<img src={edulyncxaSiteImg} alt="" className="md:w-[37.25rem] md:h-[28.75rem] w-full object-contain"/>
+							<img src={edulyncxaSiteImg} alt="" className="md:w-[37.25rem] md:h-[28.75rem] w-full object-contain" data-aos="fade-right" data-aos-delay="200"/>
 						</div>
 						<div className="mt-[1.5rem] p-6 md:p-0 md:w-[35rem] w-full bg-[#CCCDE74D] md:bg-white">
 							<p className="md:text-[1.75rem] text-[1.125rem] text-[#323D46] font-bold">Edulyncx: software management tool</p>
@@ -256,12 +296,12 @@ const LandingPage = () => {
 				<div className="mt-16 flex gap-[1.5625rem]">
 					<div className="md:grid hidden md:grid-cols-2 grid-cols-4 overflow-hidden gap-[1.5625rem]">
 							{Testimonial.map((testimonial,index) => (
-								<div key={index} className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white">
-									<img src={testimonial.imgSrc} alt="" className="w-[9.5625rem] h-full"/>
+								<div key={index} className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white overflow-hidden">
+									<img src={testimonial.imgSrc} alt="" className="w-[9.5625rem] h-full transition-all duration-200 hover:scale-105"/>
 									<div className="">
 										<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">{testimonial.name}</p>
-										<p className="text-[0.875rem] mb-4">{testimonial.position}</p>
-										<p className="text-[#3E4C57] w-[26.75rem]">{testimonial.message}</p>
+										<p className="text-[0.875rem] mb-4 max-w-[29.0625rem]">{testimonial.position}</p>
+										<p className="text-[#3E4C57] max-w-[26.75rem]">{testimonial.message}</p>
 									</div>
 								</div>
 							))}
@@ -319,7 +359,7 @@ const LandingPage = () => {
 					<div className="flex flex-col gap-[3.296875rem]">
 					<div className="flex flex-col md:flex-row justify-between gap-[3.0625rem]">
 						<img src={footerXapicLogo} alt="" className="sm:w-[19rem] w-[7.676875rem] h-10 sm:h-[6.1875rem]" />
-						<div className="flex flex-col md:flex-row sm:gap-[1.25rem] gap-[1.25rem] justify-between text-white text-1rem font-500 md:w-[57.53125rem]">
+						<div className="flex flex-col md:flex-row sm:gap-[1.25rem] gap-[1.25rem] justify-between text-white text-1rem font-500 md:max-w-[57.53125rem]">
 						<div className="w-[11.6875rem]">
 							<p className="text-[#CCCDE7] text-[1.25rem] font-semibold sm:mb-6 mb-2 ">Schools</p>
 							<div className="flex flex-col gap-3">

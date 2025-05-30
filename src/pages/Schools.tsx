@@ -47,15 +47,18 @@ const Schools = () => {
     <>
     {/* heroSection */}
 
-      <div className="pb-12 pt-36 bg-[#F2F2F266] w-full relative overflow-hidden">
+      <div className="pb-12 md:pt-36 pt-16 bg-[#F2F2F266] w-full relative overflow-hidden">
         <img src={circuitLinesBackground} alt="" className="w-full h-full absolute top-0 left-0" />
         <div className="container pt-[2rem] flex flex-col justify-center items-center">
-          <div className="max-w-[49.3125rem] pt-[1.0625rem] text-center relative">
+          <div className="max-w-[49.3125rem] pt-[1rem] text-center relative">
             <img src={actionKeyImage} alt="" className="sm:w-24 sm:h-24 w-10 h-10 absolute sm:top-0 sm:left-0 top-20 left-0" />
             <img src={browseActivityImage} alt="" className="sm:w-24 sm:h-24 w-10 h-10 absolute sm:top-0 sm:right-0 top-20 right-0" />
             <p className="sm:w-[26.6rem]! w-[14.4375rem]! sm:h-[3.875rem] h-[2.5rem] flex justify-center items-center text-[0.875rem] sm:text-[1.25rem] font-medium mx-auto bg-[#CCCDE7] text-[#00036A]">Master-In Demand Tech Skills</p>
             <div className="flex flex-col justify-center gap-[2rem] items-center mt-[1.4375rem] w-full">
-              <h2 className="sm:max-w-[37.3125rem] max-w-[20.8125rem] text-[#3E4C57] sm:text-5xl text-2xl font-bold" >Elevate Your Skills, <span ref={typedRef}></span>.</h2>
+              <h2 className="sm:max-w-[37.3125rem] max-w-[20.8125rem] text-[#3E4C57] sm:text-5xl text-2xl font-bold" >
+                <p>Elevate Your Skills,</p>  
+                <span ref={typedRef}></span>.
+              </h2>
               <p className="font-normal text-[#3E4C57] sm:text-[1.75rem] text-[1rem] max-w-[20.8125rem] sm:max-w-[40.8125rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise.</p>
             </div>
             <div className="flex gap-6 justify-center items-center mt-[4.125rem]">

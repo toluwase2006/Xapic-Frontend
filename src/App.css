@@ -48,10 +48,39 @@
     transform: scale(1);
   }
 }
+@keyframes DiagonalUp {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(10px, -10px) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+@keyframes arrowRight {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(12px) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
 .videoPlayer {
   animation: ZoomIn 2s infinite;
 }
 
+.diagonalArrow{
+  animation: DiagonalUp 2s infinite;
+}
+
+.RightArrow{
+  animation: arrowRight 2s infinite;
+}
 @theme {
 
   --color-primary: #3E4C57;
@@ -71,7 +100,7 @@ body {
     @apply  w-[95%]! mx-auto max-w-[81.8125rem]!
   }
   .button {
-    @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A]  h-14 cursor-pointer
+    @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A]  h-14 cursor-pointer hover:scale-105 transition-all duration-300
   }
   .navLinks {
     @apply hover:text-[#3e4c57bd] transition-all duration-300
