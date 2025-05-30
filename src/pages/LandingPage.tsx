@@ -177,7 +177,7 @@ const LandingPage = () => {
 
 			{/* Second Section */}
 
-			<div className="container pt-[3.625rem]">
+			<div className="container pt-[3.625rem] overflow-hidden">
 				<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9  mt-[1.125rem]">
 					<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
 						<div className="text-[1.25rem] w-full flex flex-col sm:flex-row   justify-between">
@@ -258,7 +258,7 @@ const LandingPage = () => {
 							<FaArrowRight />
 						</Link>
 					</div>
-					<div className="flex flex-col gap-[1.25rem] md:gap-0">
+					<div className="flex flex-col gap-[1.25rem] md:gap-0 overflow-hidden">
 						<div className="flex flex-col md:flex-row gap-[1.25rem] md:gap-0">
 							<div className="md:w-[23.8125rem] hover:bg-[#00036A]  cursor-pointer flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
@@ -293,7 +293,7 @@ const LandingPage = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex flex-col-reverse gap-[1.25rem]  md:gap-0 md:flex-row">
+						<div className="flex flex-col-reverse gap-[1.25rem]  md:gap-0 md:flex-row overflow-hidden">
 							<div className="md:w-[23.8125rem] flex flex-col text-white cursor-pointer  transition-all duration-500 gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img src={cloudSolutionIcon} alt="" className="w-12 h-12" />
@@ -365,7 +365,7 @@ const LandingPage = () => {
 							See more
 						</Link>
 					</div>
-					<div className="flex flex-col md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5">
+					<div className="flex flex-col md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5 overflow-hidden">
 						<div className="md:w-[40.1875rem] w-full">
 							<div className="w-full md:h-[32.6875rem] flex justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
 								{/* Mobile image */}
