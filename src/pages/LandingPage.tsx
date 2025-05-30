@@ -58,11 +58,11 @@ const LandingPage = () => {
 							clearInterval(projectInterval);
 							return prev;
 						});
-					}, 100);
+					}, 200);
 
 					const studentInterval = setInterval(() => {
 						setStudentCount((prev) => {
-							if (prev < 1000) return prev + 10;
+							if (prev < 1000) return prev + 1;
 							clearInterval(studentInterval);
 							return prev;
 						});
@@ -124,17 +124,17 @@ const LandingPage = () => {
 							<RiArrowRightUpLine className="diagonalArrow"/>
 						</button>
 					</div>
-					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]" ref={sectionRef}>
+					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]" >
 						<img src={heroVector} alt="" className="w-full h-full"/>
 						<div className="absolute top-[4.5625rem] left-[1rem] sm:left-[2.5rem]">
 							<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
-							<div className="flex items-center mt-[2.625rem] gap-[2.2rem]">
-								<div className="leading-10">
+							<div className="flex items-center mt-[2.625rem] gap-[2.2rem]" >
+								<div className="leading-10" ref={sectionRef}>
 									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">{projectCount}+</p>
 									<p className="text-[0.75rem] sm:text-[0.875rem]">Projects Done</p>
 								</div>
 								<div className="hidden sm:block h-12 w-1 bg-[#D6D6D6]"></div>
-								<div className="leading-10">
+								<div className="leading-10" ref={sectionRef}>
 									<p className="sm:text-5xl text-[2rem] font-extrabold text-[#101010]">{studentCount}+</p>
 									<p className="text-[0.75rem] sm:text-[0.875rem]">Students Trained</p>
 								</div>
