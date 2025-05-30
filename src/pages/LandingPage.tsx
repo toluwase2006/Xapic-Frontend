@@ -96,10 +96,10 @@ const LandingPage = () => {
 						</div>
 					</div>
 
-					<div className="hero-img absolute h-[5.125rem] w-[5.125rem] sm:h-[24.375rem] sm:w-[24.375rem] z-1 top-20 sm:top-0 right-0 sm:-right-20 cursor-pointer" onClick={()=> setIsOpen(true)}>
+					<div className="hero-img absolute h-[7.125rem] w-[7.125rem] sm:h-[23.375rem] sm:w-[23.375rem] z-1 top-10 sm:top-0 right-0 sm:-right-20 cursor-pointer" onClick={()=> setIsOpen(true)}>
 						<img src={roundVideoCover} alt="" className="w-full h-full"/>
 						<div className="w-full absolute top-0 left-0  h-full flex justify-center items-center">
-							<img src={videoPayerIcon} alt=""  className="videoPlayer w-[1.125rem] h-[1.125rem] sm:w-[6.25rem] sm:h-[6.25rem]"/>
+							<img src={videoPayerIcon} alt=""  className="videoPlayer w-[2.125rem] h-[2.125rem] sm:w-[5.25rem] sm:h-[5.25rem]"/>
 						</div>
 					</div>
 				</div>
