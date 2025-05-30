@@ -23,7 +23,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import { Testimonial } from "../components/Testimonial";
 import { Link } from "react-router-dom";
-import { useContext,useEffect, useState } from "react";
+import { useContext,useEffect, useState, useRef } from "react";
 import { ModalContext } from "../useContext/ModalContext";
 import VideoModal from "../components/VideoModal";
 import roundVideoCover from "../assets/images/rounds (1).png"
@@ -42,35 +42,48 @@ const LandingPage = () => {
 
 	const [projectCount, setProjectCount] = useState(0);
 	const [studentCount, setStudentCount] = useState(0);
+	const [hasAnimated, setHasAnimated] = useState(false);
+	const sectionRef = useRef(null);
 
 	useEffect(() => {
-		const projectInterval = setInterval(() => {
-			setProjectCount((prev) => {
-			if (prev < 20) {
-				return prev + 1;
-			} else {
-				clearInterval(projectInterval);
-				return prev;
-			}
-			});
-		}, 100);
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0];
+				if (entry.isIntersecting && !hasAnimated) {
+					setHasAnimated(true); // prevent multiple triggers
 
-		const studentInterval = setInterval(() => {
-			setStudentCount((prev) => {
-			if (prev < 1000) {
-				return prev + 10; 
-			} else {
-				clearInterval(studentInterval);
-				return prev;
+					const projectInterval = setInterval(() => {
+						setProjectCount((prev) => {
+							if (prev < 20) return prev + 1;
+							clearInterval(projectInterval);
+							return prev;
+						});
+					}, 100);
+
+					const studentInterval = setInterval(() => {
+						setStudentCount((prev) => {
+							if (prev < 1000) return prev + 10;
+							clearInterval(studentInterval);
+							return prev;
+						});
+					}, 10);
+				}
+			},
+			{
+				threshold: 0.5, // 50% in view
 			}
-			});
-		}, 100); 
+		);
+
+		if (sectionRef.current) {
+			observer.observe(sectionRef.current);
+		}
 
 		return () => {
-			clearInterval(projectInterval);
-			clearInterval(studentInterval);
+			if (sectionRef.current) {
+				observer.unobserve(sectionRef.current);
+			}
 		};
-	}, []);
+	}, [hasAnimated]);
 	useEffect(() => {
 		AOS.init({
 			duration: 800
@@ -111,7 +124,7 @@ const LandingPage = () => {
 							<RiArrowRightUpLine className="diagonalArrow"/>
 						</button>
 					</div>
-					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
+					<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]" ref={sectionRef}>
 						<img src={heroVector} alt="" className="w-full h-full"/>
 						<div className="absolute top-[4.5625rem] left-[1rem] sm:left-[2.5rem]">
 							<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">We are shaping the future by harnessing the power of technology.</p>
