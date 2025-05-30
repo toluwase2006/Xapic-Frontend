@@ -66,7 +66,7 @@ const Schools = () => {
                 <p>Elevate Your Skills,</p>
                 <span ref={typedRef}></span>.
               </h2>
-              <p className="font-normal text-[#3E4C57] sm:text-[1.75rem] text-[1rem] max-w-[20.8125rem] sm:max-w-[40.8125rem]">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise.</p>
+              <p className="font-normal text-[#3E4C57] sm:text-[1.75rem] text-[1rem] max-w-[20.8125rem] sm:max-w-[40.8125rem]"  data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Stand out to employers and open doors to new opportunities with certifications that showcase your expertise.</p>
             </div>
             <div className="flex gap-6 justify-center items-center mt-[4.125rem]">
               <button className="button sm:w-[13.5625rem] w-[9.1875rem] font-bold">
@@ -119,8 +119,8 @@ const Schools = () => {
 
       <div className="container  flex flex-col justify-center gap-[4.4375rem] py-[4.5rem] items-center">
         <div className="text-center max-w-[56.4375rem] flex flex-col justify-center items-center gap-8">
-          <p className="font-semibold sm:text-5xl text-2xl w-full sm:max-w-[51.9375rem]">Unlock Your Potential with Expert Software Training</p>
-          <p className="sm:text-[1.75rem] text-[1rem]"> Our comprehensive software training programs are designed to equip you with the essential skills needed in today’s competitive job market.</p>
+          <p className="font-semibold sm:text-5xl text-2xl w-full sm:max-w-[51.9375rem]"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Unlock Your Potential with Expert Software Training</p>
+          <p className="sm:text-[1.75rem] text-[1rem]"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"> Our comprehensive software training programs are designed to equip you with the essential skills needed in today’s competitive job market.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1.25rem] w-full overflow-hidden">
           <div className="h-[18.6875rem] flex flex-col gap-[1rem] justify-center items-center bg-[#EFF0FD66] text-center" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000">
@@ -165,8 +165,8 @@ const Schools = () => {
       <div className="bg-[#F2F2F266]">
         <div className="container pt-[8.375rem] pb-[3.6875rem]">
           <div className="flex flex-col justify-center mx-auto text-center items-center gap-[2rem] max-w-[75rem]">
-            <p className="text-[#3E4C57] sm:text-5xl text-2xl font-bold">Explore Our Schools</p>
-            <p className="sm:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
+            <p className="text-[#3E4C57] sm:text-5xl text-2xl font-bold"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Explore Our Schools</p>
+            <p className="sm:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-6 sm:mt-[7.5rem]">
             {School.map((school) => (<div className="max-w-[40.1875rem] sm:max-h-[42.1875rem]  bg-white mt-[4.0625rem] cursor-pointer overflow-hidden">
@@ -190,8 +190,8 @@ const Schools = () => {
 
       <div className="container py-[4.5rem]">
         <div className="max-w-[81.75rem] flex flex-col text-center justify-center sm:gap-12 gap-4 items-center mb-16">
-          <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold">TESTIMONIALS</p>
-          <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
+          <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">TESTIMONIALS</p>
+          <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
         </div>
         <div className="w-full">
           <div className="h-[30.0625rem] w-full rounded-tl-2xl rounded-tr-2xl">
@@ -223,7 +223,7 @@ const Schools = () => {
       {/* Seventh Section */}
 
       <div className="container mt-[6rem]">
-        <p className="font-semibold text-[2.5rem] text-center">Frequently  Asked Questions</p>
+        <p className="font-semibold text-[2.5rem] text-center"  data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
         <div className="bg-[#000235]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
           <div className="max-w-[69.8125rem] container mx-auto">
             <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [1]: !dropDown[1] })}>

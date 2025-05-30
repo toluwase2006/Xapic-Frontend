@@ -98,12 +98,12 @@ const LandingPage = () => {
 				<div className=" max-w-[85.3125rem] mx-auto md:pt-[10.375rem] pt-[3.375rem] flex justify-end ">
 					<div className="flex gap-[2.3125rem]">
 						<div className="relative">
-							<h1 className="font-extrabold text-[2.5rem] md:text-[4.75rem] max-w-[20rem] md:max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10">
+							<h1 className="font-extrabold text-[2.5rem] md:text-[4.75rem] max-w-[20rem] md:max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
 								Your Partner in Innovation and Learning
 							</h1>
 							<div className="md:flex justify-end w-full max-w-[62rem] gap-14">
 								<LongArrowIcon className="mt-6 hidden md:flex" />
-								<p className="text-[1rem] md:text-2xl font-extralight w-full max-w-[38.875rem]">
+								<p className="text-[1rem] md:text-2xl font-extralight w-full max-w-[38.875rem]"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
 									We empower businesses and individuals through cutting-edge
 									technology solutions and comprehensive learning programs.{" "}
 								</p>
@@ -141,7 +141,7 @@ const LandingPage = () => {
 						<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
 							<img src={heroVector} alt="" className="w-full h-full" />
 							<div className="absolute top-[4.5625rem] left-[1rem] sm:left-[2.5rem]">
-								<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]">
+								<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
 									We are shaping the future by harnessing the power of
 									technology.
 								</p>
@@ -241,7 +241,7 @@ const LandingPage = () => {
 
 			<div className="md:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[10.625rem] pt-[2.4375rem]">
 				<div className="container flex flex-col md:flex-row gap-[1.375rem] md:justify-between">
-					<div className="max-w-[24.1875rem] w-full leading-[1.75rem]">
+					<div className="max-w-[24.1875rem] w-full leading-[1.75rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
 						<p className="md:text-5xl text-[1.75rem] font-bold text-white">
 							What We Do
 						</p>
@@ -275,7 +275,7 @@ const LandingPage = () => {
 									</p>
 								</div>
 							</div>
-							<div className="md:w-[23.8125rem] cursor-pointer hover:bg-white transition-all duration-500 flex flex-col text-white hover:text-[#00036A] gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+							<div className="md:w-[23.8125rem] cursor-pointer transition-all duration-500 flex flex-col text-white  gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
 								<div className="w-20 h-20  rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img
 										src={softwareDevelopmentIcon}
@@ -294,7 +294,7 @@ const LandingPage = () => {
 							</div>
 						</div>
 						<div className="flex flex-col-reverse gap-[1.25rem]  md:gap-0 md:flex-row">
-							<div className="md:w-[23.8125rem] flex flex-col text-white cursor-pointer hover:bg-white hover:text-[#00036A] transition-all duration-500 gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+							<div className="md:w-[23.8125rem] flex flex-col text-white cursor-pointer  transition-all duration-500 gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img src={cloudSolutionIcon} alt="" className="w-12 h-12" />
 								</div>
@@ -349,7 +349,7 @@ const LandingPage = () => {
 				/>
 				<div className="container pt-[3.875rem] ">
 					<div className="flex flex-col-reverse md:flex-row gap-[1rem] md: text-[1.125rem] justify-between">
-						<div className="flex flex-col gap-[0.5rem] md:gap-[0rem]">
+						<div className="flex flex-col gap-[0.5rem] md:gap-[0rem]"  data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
 							<p className="md:text-[2.5rem] w-full text-2xl font-bold md:font-extrabold">
 								Things We Are Currently Building
 							</p>
@@ -484,12 +484,12 @@ const LandingPage = () => {
 							{Testimonial.map((testimonial, index) => (
 								<div
 									key={index}
-									className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white overflow-hidden"
+									className="flex gap-2 items-center w-[40rem] h-[9.625rem] bg-white overflow-hidden rounded-[12px]"
 								>
 									<img
 										src={testimonial.imgSrc}
 										alt=""
-										className="w-[9.5625rem] h-full transition-all duration-200 hover:scale-105"
+										className="w-[9.5625rem] h-full transition-all overflow-hidden duration-200 hover:scale-105"
 									/>
 									<div className="">
 										<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">
