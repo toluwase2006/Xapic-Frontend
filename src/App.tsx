@@ -7,6 +7,7 @@ import WhoWeAre from "./pages/WhoWeAre";
 import ContactUs from "./pages/ContactUs";
 import Portfolio from "./pages/Portfolio";
 import Schools from "./pages/Schools";
+import DesignAndSchool from "./pages/DesignAndSchool"
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/whoWeAre" element={<WhoWeAre />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
+        <Route path="/designAndSchool" element={<DesignAndSchool />}></Route>
       </Routes>
     </>
   );

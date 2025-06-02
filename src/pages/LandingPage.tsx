@@ -33,11 +33,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const LandingPage = () => {
-	const context = useContext(ModalContext);
-
-	if (!context) throw new Error("ModalContext is missing");
-
-	const { isOpen, setIsOpen } = context;
+	const {controlVideoModal, videoValues} = useContext(ModalContext)!;
 
 	const [projectCount, setProjectCount] = useState(0);
 	const [studentCount, setStudentCount] = useState(0);
@@ -90,10 +86,11 @@ const LandingPage = () => {
 	}, []);
 
 	return (
-		<div className={isOpen ? "fixed inset-0" : ""}>
+		<div className={videoValues.videoType === "home" ? "fixed inset-0" : ""}>
 			{/* Hero Section */}
 
-			<VideoModal />
+			<VideoModal/>
+
 			<div className="bg-gradient-to-br from-[#00BBFF1A] pt-12 to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
 				<div className=" max-w-[85.3125rem] mx-auto md:pt-[10.375rem] pt-[3.375rem] flex justify-end ">
 					<div className="flex gap-[2.3125rem]">
@@ -105,14 +102,14 @@ const LandingPage = () => {
 								<LongArrowIcon className="mt-6 hidden md:flex" />
 								<p className="text-[1rem] md:text-2xl font-extralight w-full max-w-[38.875rem]"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
 									We empower businesses and individuals through cutting-edge
-									technology solutions and comprehensive learning programs.{" "}
+									technology solutions and comprehensive learning programs.
 								</p>
 							</div>
 						</div>
 
 						<div
 							className="hero-img relative  w-full max-w-[23.375rem] cursor-pointer"
-							onClick={() => setIsOpen(true)}
+							onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/TE023mMMMJM", videoType: "home"})}
 						>
 							<img src={roundVideoCover} alt="" className="w-full h-full" />
 							<div className="w-full absolute inset-0 h-full flex justify-center items-center">
@@ -243,7 +240,7 @@ const LandingPage = () => {
 
 			{/* Third Section */}
 
-			<div className="md:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[10.625rem] pt-[2.4375rem]">
+			<div className="md:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[10.625rem] pt-[2.4375rem] overflow-hidden">
 				<div className="container flex flex-col md:flex-row gap-[1.375rem] md:justify-between">
 					<div className="max-w-[24.1875rem] w-full leading-[1.75rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
 						<p className="md:text-5xl text-[1.75rem] font-bold text-white">
@@ -262,7 +259,7 @@ const LandingPage = () => {
 							<FaArrowRight />
 						</Link>
 					</div>
-					<div className="flex flex-col gap-[1.25rem] md:gap-0 overflow-hidden">
+					<div className="flex flex-col gap-[1.25rem] md:gap-0">
 						<div className="flex flex-col md:flex-row gap-[1.25rem] md:gap-0">
 							<div className="md:w-[23.8125rem] hover:bg-[#00036A]  cursor-pointer flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
