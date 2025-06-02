@@ -55,7 +55,7 @@ const Navbar = () => {
                         <CancelIcon className="fa-solid fa-xmark w-6 h-6 cursor-pointer" onClick={()=>setNavOpen(false)} />
                     </div>
                     <nav className='flex flex-col gap-[1.875rem] '>
-                        <ul className='flex flex-col gap-10 text-[1.25rem] text-[#3E4C57]'>
+                        <ul className='flex flex-col gap-[1.875rem] text-[1.25rem] text-[#3E4C57]'>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/schools">Schools</Link></li>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/services">Services</Link></li>
                             <li onClick={()=>setNavOpen(false)} className='navLinks'><Link to="/portfolio">Portfolio</Link></li>
