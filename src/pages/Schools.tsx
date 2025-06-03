@@ -19,6 +19,7 @@ import tomiwaTestimonialVideo from "../assets/images/image (5).png"
 import tomiwaTestimonialMobileVideo from "../assets/images/image (8).png"
 import mercyTestimonialVideo from "../assets/images/image (6).png"
 import jeffreyTestimonialVideo from "../assets/images/image (7).png"
+import simisolaTestimonialVideo from "../assets/images/image (9).png"
 import ceoImageWithStudent from "../assets/images/Container (4).png"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -34,6 +35,7 @@ import { Link } from "react-router-dom";
 import VideoModal from "../components/VideoModal";
 import { ModalContext } from "../useContext/ModalContext";
 import { useContext } from "react";
+
 
 const Schools = () => {
     const typedRef = useRef<HTMLSpanElement | null>(null);
@@ -59,7 +61,7 @@ const Schools = () => {
     }, []);
 
     return (
-        <div className={""}>
+        <div className="overflow-y-scroll">
             {/* heroSection */}
             <VideoModal />
             <div className="pb-12 md:pt-36 pt-16 bg-[#F2F2F266] w-full relative overflow-hidden">
@@ -81,7 +83,7 @@ const Schools = () => {
                                 <p>Apply Here</p>
                                 <FaArrowRight />
                             </button>
-                            <button className="button bg-white border-[1px] hidden sm:block border-[#00036A] text-[#00036A] w-[13.5625rem] font-bold">EXPLORE COURSES</button>
+                            <a href="#exploreCourses" className="button sm:flex justify-center items-center bg-white border-[1px] hidden border-[#00036A] text-[#00036A] w-[13.5625rem] font-bold">EXPLORE COURSES</a>
                         </div>
                     </div>
                     <div className="md:flex hidden justify-between sm:w-full mt-[6.9375rem] overflow-x-auto">
@@ -174,15 +176,15 @@ const Schools = () => {
 
             {/* Fourth Section */}
 
-            <div className="bg-[#F2F2F266]">
+            <div className="bg-[#F2F2F266] overflow-hidden" id="exploreCourses">
                 <div className="container pt-[8.375rem] pb-[3.6875rem]">
-                    <div className="flex flex-col justify-center mx-auto text-center items-center gap-[2rem] max-w-[75rem] overflow-hidden">
+                    <div className="flex flex-col justify-center mx-auto text-center items-center gap-[2rem] max-w-[75rem]">
                         <p className="text-[#3E4C57] sm:text-5xl text-2xl font-bold" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Explore Our Schools</p>
                         <p className="sm:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-6 sm:mt-[7.5rem]">
                         {School.map((school) => (<Link to='/designAndSchool' className="max-w-[40.1875rem] sm:max-h-[42.1875rem] bg-white mt-[4.0625rem] cursor-pointer overflow-hidden">
-                            <div className="md:h-[25.1875rem] overflow-hidden">
+                            <div className="md:h-[25.1875rem] overflow-hidden" data-aos="zoom-in" data-aos-delay="  200" data-aos-duration="1000">
                                 <img src={school.imgSrc} alt="" className=" w-full md:h-full hover:scale-105 transition-all duration-500" />
                             </div>
                             <div className="flex flex-col h-[16.875rem] justify-between pb-[3.3125rem] pt-[1.45875rem] ps-2">
@@ -205,19 +207,19 @@ const Schools = () => {
                     <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">TESTIMONIALS</p>
                     <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
                 </div>
-                <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MMt5nJnRmNA", videoType:"tommy" })}>
-                    <img src={tomiwaTestimonialVideo} alt="" className="hidden md:block w-full" />
+                <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MMt5nJnRmNA", videoType:"tommy" })}>
+                    <img src={tomiwaTestimonialVideo} alt="" className="hidden md:block w-full hover:scale-105 transition-all duration-500" />
                     <img src={tomiwaTestimonialMobileVideo} alt="" className="md:hidden w-full" />
                 </div>
                 <div className="flex flex-col md:flex-row w-full gap-4">
-                    <div className="cursor-pointer" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/p2OG-Tej0GA", videoType:"mercy"})}>
-                        <img src={mercyTestimonialVideo} alt="" />
+                    <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/p2OG-Tej0GA", videoType:"mercy"})}>
+                        <img src={mercyTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
                     </div>
-                    <div className="cursor-pointer" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/YQNbR6xbvs0", videoType:"jeff"})}>
-                        <img src={jeffreyTestimonialVideo} alt="" />
+                    <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/YQNbR6xbvs0", videoType:"jeff"})}>
+                        <img src={jeffreyTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
                     </div>
-                    <div className="cursor-pointer" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MnCxaEqgAzA", videoType:"ayo"})}>
-                        <img src={jeffreyTestimonialVideo} alt="" />
+                    <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MnCxaEqgAzA", videoType:"ayo"})}>
+                        <img src={simisolaTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
 
                     </div>
                 </div>
@@ -227,7 +229,9 @@ const Schools = () => {
             {/* Sixth Section */}
             <div className="overflow-hidden">
                 <div className="container flex flex-col-reverse md:flex-row  gap-[0.75rem]">
-                    <img src={ceoImageWithStudent} alt="" className="max-w-[40.125rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" />
+                    <div className="max-w-[40.125rem] overflow-hidden">
+                        <img src={ceoImageWithStudent} alt="" className="w-full" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" />
+                    </div>
                     <div className="bg-[#E9F0F666] sm:p-[3.625rem] p-[1rem]" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                         <div>
                             <p className="text-[#1A202C] text-[1.75rem] font-bold">Hear from our CEO</p>
@@ -250,7 +254,7 @@ const Schools = () => {
                 <div className="bg-[#000235]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
                     <div className="max-w-[69.8125rem] container mx-auto">
                         <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [1]: !dropDown[1] })}>
-                            <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">How do I register?</p>
+                            <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">How do I register?</p>
                             {dropDown[1] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
                         </div>
                         <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[1] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
@@ -259,7 +263,7 @@ const Schools = () => {
                     </div>
                     <div className="max-w-[69.8125rem] container mx-auto">
                         <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[2] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [2]: !dropDown[2] })}>
-                            <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What is the level of experience required for enrollment?</p>
+                            <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What is the level of experience required for enrollment?</p>
                             {dropDown[2] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
                         </div>
                         <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[2] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
@@ -268,7 +272,7 @@ const Schools = () => {
                     </div>
                     <div className="max-w-[69.8125rem] container mx-auto">
                         <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[3] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [3]: !dropDown[3] })}>
-                            <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What payment options do you offer, and can I pay in installments?</p>
+                            <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What payment options do you offer, and can I pay in installments?</p>
                             {dropDown[3] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
                         </div>
                         <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[3] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
@@ -277,7 +281,7 @@ const Schools = () => {
                     </div>
                     <div className="max-w-[69.8125rem] container mx-auto">
                         <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[4] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [4]: !dropDown[4] })}>
-                            <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">Are the courses offered online, and if so, what is the format like?Does Xapictech offer online learning?</p>
+                            <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">Are the courses offered online, and if so, what is the format like?Does Xapictech offer online learning?</p>
                             {dropDown[4] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
                         </div>
                         <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[4] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
@@ -286,7 +290,7 @@ const Schools = () => {
                     </div>
                     <div className="max-w-[69.8125rem] container mx-auto">
                         <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[5] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [5]: !dropDown[5] })}>
-                            <p className=" font-semibold md:text-2xl text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What kind of certification or credentials will I receive upon completion?</p>
+                            <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What kind of certification or credentials will I receive upon completion?</p>
                             {dropDown[5] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
                         </div>
                         <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[5] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>

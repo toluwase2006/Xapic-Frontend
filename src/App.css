@@ -12,12 +12,7 @@
   font-weight: 700;
   font-display: swap;
 }
-@font-face{
-  font-family: Mont;
-  src: url("./assets/fonts/Mont-SemiBold.ttf");
-  font-weight: 500;
-  font-display: swap;
-}
+
 @font-face{
   font-family: Mont;
   src: url("./assets/fonts/Mont-Light.ttf");
@@ -88,6 +83,10 @@
 }
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
