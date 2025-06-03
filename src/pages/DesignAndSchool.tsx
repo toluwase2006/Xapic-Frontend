@@ -48,6 +48,10 @@ const DesignAndSchool = () => {
             duration: 800,
         });
     }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
     {/* heroSection */}
@@ -278,7 +282,7 @@ const DesignAndSchool = () => {
             <div className="w-[57.5625rem] text-center">
               <h2 className="text-5xl font-bold mb-[1.25rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Hire from Our Talent pool</h2>
               <p className="font-normal text-[1.25rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Are you looking to fill key positions with talented individuals who are eager to contribute? Partner with us to access a pool of motivated graduates ready to elevate your team.</p>
-              <button className="button bg-[#00011B] w-[14.25rem] font-medium mx-auto mt-[3rem] text-[1.25rem]">
+              <button className="button bg-[#00011B] w-[14.25rem] relative z-10 font-medium mx-auto mt-[3rem]  text-[1.25rem]">
                 <p>HIRE OUR TALENT</p>
                 <RiArrowRightLine />
               </button>
