@@ -9,7 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import Schools from "./pages/Schools";
 import DesignAndSchool from "./pages/DesignAndSchool"
 import Engineering from "./pages/Engineering";
-import SummerSchool from "./pages/summerSchool"
+import SummerSchool from "./pages/SummerSchool";
 function App() {
   return (
     <>
