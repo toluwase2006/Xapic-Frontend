@@ -13,8 +13,8 @@ import desktopAgapeSpringSiteImg from "../assets/images/Group 45.png";
 import mobileAgapeSpringSiteImg from "../assets/images/Frame 1618872418 (1).png";
 import edulyncxaSiteImg from "../assets/images/Group 44.png";
 import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png";
-import companiesLogo1 from "../assets/Logos/Frame 313.png";
-import companiesLogo2 from "../assets/Logos/Frame 314.png";
+import companiesLogo1 from "../assets/Logos/Frame 313 (1).png";
+import companiesLogo2 from "../assets/Logos/Frame 314 (1).png";
 import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -174,14 +174,14 @@ const LandingPage = () => {
 			{/* Second Section */}
 
 			<div className="overflow-hidden">
-				<div className="container pt-[3.625rem]">
-					<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9  mt-[1.125rem]">
-						<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[12.5625rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-							<div className="text-[1.25rem] w-full flex flex-col lg:flex-row   justify-between">
-								<p className="md:text-5xl text-[1.75rem] md:w-56 w-[13.375rem] font-bold">
+				<div className="container pt-[5.375rem]">
+					<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9">
+						<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[6.375rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+							<div className="text-[1.25rem] w-full flex items-center flex-col lg:flex-row justify-between">
+								<p className="md:text-5xl text-[3rem] md:w-[14.6875rem]  font-bold">
 									See What Drives Us
 								</p>
-								<p className="md:min-w-[23.9375rem] lg:max-w-[23.9375rem] md:text-[1.25rem] text-[0.875rem] sm:[1.25rem] md:mt-14">
+								<p className="max-w-[22.125rem] md:text-[1.25rem] text-[0.875rem]">
 									As a leading software and training company in Africa, we are
 									dedicated to fostering a culture of innovation, collaboration,
 									and continuous learning
@@ -198,12 +198,12 @@ const LandingPage = () => {
 								className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full object-contain"
 							/>
 						</div>
-						<div className="flex md:flex-col flex-col-reverse gap-[2rem] md:gap-[3.3rem] md:w-[34.8125rem] mt-3 md:mt-14" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-							<div className="relative w-full bg-[#00011B] md:h-[44.0625rem] pt-24 ">
+						<div className="flex md:flex-col flex-col-reverse  md:w-[34.8125rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+							<div className="relative w-full bg-[#00011B] md:h-[39.625rem] pt-24 ">
 								<img
 									src={secondSectionRightImage}
 									alt=""
-									className="h-96 w-96  mx-auto rounded-full"
+									className="h-80 w-80  mx-auto rounded-full"
 								/>
 								<div className="ms-6 my-10 md:mt-10  max-w-96">
 									<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
@@ -213,19 +213,19 @@ const LandingPage = () => {
 									</p>
 								</div>
 							</div>
-							<div className="">
-								<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem] w-[9.5rem] md:w-full">
+							<div className="mt-10">
+								<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem]! w-[9.5rem] md:w-full">
 									The Mission we are on
 								</p>
-								<p className="mt-8 text-[0.875rem] sm:text-[1.25rem] font-extralight w-full">
+								<p className="mt-4 text-[0.875rem] sm:text-[1.25rem]! font-extralight w-full">
 									Our commitment is to simplify technology, making it accessible
 									and impactful for everyone, while nurturing a community of
 									skilled professionals who drive change and inspire innovation.{" "}
 								</p>
 							</div>
 							<Link
-								className="button hover:bg-[#001e6afc] w-[8.875rem] md:w-[14.25rem]"
-								to="/AboutUs"
+								className="button hover:bg-[#001e6afc] w-[8.875rem] md:w-[14.25rem] mt-6"
+								to="/AboutUs" 
 							>
 								<p>Learn more</p>
 								<FaArrowRight className="RightArrow" />
@@ -239,7 +239,7 @@ const LandingPage = () => {
 
 			{/* Third Section */}
 
-			<div className="md:h-[62.625rem] h-[83.375rem] bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[10.625rem] pt-[2.4375rem] overflow-hidden">
+			<div className="bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[6.25rem] py-[2.4375rem] overflow-hidden">
 				<div className="container flex flex-col md:flex-row gap-[1.375rem] md:justify-between">
 					<div className="max-w-[24.1875rem] w-full leading-[1.75rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
 						<p className="md:text-5xl text-[1.75rem] font-bold text-white">
@@ -430,23 +430,27 @@ const LandingPage = () => {
 					<p className="md:text-[2.5rem] text-[1rem] text-[#F2F2F2CC] w-[20rem] md:w-full mx-auto font-bold">
 						Our services are trusted by companies around the world
 					</p>
-					<div className="md:flex hidden flex-col  justify-center items-center gap-[2.34375rem]">
-						<img
-							src={companiesLogo1}
-							alt=""
-							className="w-[45.496875rem] h-[6.25rem]"
-							data-aos="fade-right"
-							data-aos-delay="400"
-							data-aos-duration="1000"
-						/>
-						<img
-							src={companiesLogo2}
-							alt=""
-							className="w-[45.496875rem] h-[6.25rem]"
-							data-aos="fade-left"
-							data-aos-delay="400"
-							data-aos-duration="1000"
-						/>
+					<div className="md:flex hidden flex-col mx-auto gap-[2.34375rem]">
+						<div className=" w-[45.496875rem]">
+							<img
+								src={companiesLogo1}
+								alt=""
+								className=""
+								data-aos="fade-right"
+								data-aos-delay="400"
+								data-aos-duration="1000"
+							/>
+						</div>
+						<div className=" w-[41rem]">
+							<img
+								src={companiesLogo2}
+								alt=""
+								className=""
+								data-aos="fade-left"
+								data-aos-delay="400"
+								data-aos-duration="1000"
+							/>
+						</div>
 					</div>
 					<Marquee
 						className="md:hidden flex flex-row  justify-center items-center gap-[2.34375rem]"
