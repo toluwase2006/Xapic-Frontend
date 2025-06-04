@@ -8,6 +8,8 @@ import ContactUs from "./pages/ContactUs";
 import Portfolio from "./pages/Portfolio";
 import Schools from "./pages/Schools";
 import DesignAndSchool from "./pages/DesignAndSchool"
+import Engineering from "./pages/Engineering";
+import SummerSchool from "./pages/summerSchool"
 function App() {
   return (
     <>
@@ -19,7 +21,9 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />}></Route>
         <Route path="/whoWeAre" element={<WhoWeAre />}></Route>
         <Route path="/contactUs" element={<ContactUs />}></Route>
-        <Route path="/designAndSchool" element={<DesignAndSchool />}></Route>
+        <Route path="/schools/designAndSchool" element={<DesignAndSchool />}></Route>
+        <Route path="/schools/engineering" element={<Engineering />}></Route>
+        <Route path="/schools/summerSchool" element={<SummerSchool />}></Route>
       </Routes>
     </>
   );

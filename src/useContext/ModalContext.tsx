@@ -3,6 +3,7 @@ import { createContext, useState, type ReactNode } from 'react';
 export type VideoModalType = "home" | "tommy" | "jeff" | "mercy" | "ayo" | "close"
 
 
+
 type modalProp = {
   videoType: VideoModalType,
   url: string;

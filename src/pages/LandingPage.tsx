@@ -34,7 +34,6 @@ import "aos/dist/aos.css";
 
 const LandingPage = () => {
 	const {controlVideoModal, videoValues} = useContext(ModalContext)!;
-
 	const [projectCount, setProjectCount] = useState(0);
 	const [studentCount, setStudentCount] = useState(0);
 	const [hasAnimated, setHasAnimated] = useState(false);

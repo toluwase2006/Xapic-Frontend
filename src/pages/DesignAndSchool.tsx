@@ -26,6 +26,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Typed from 'typed.js';
 import orbitTalentImg from "../assets/images/Orbit talent pool.png"
 
+
 const DesignAndSchool = () => {
   const typedRef = useRef<HTMLSpanElement | null>(null);
   const {controlVideoModal } = useContext(ModalContext)!
@@ -201,7 +202,7 @@ const DesignAndSchool = () => {
             <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">TESTIMONIALS</p>
             <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
         </div>
-        <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MMt5nJnRmNA", videoType:"tommy" })}>
+        <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/OwmXnEHG0aI", videoType:"tommy" })}>
             <img src={tomiwaTestimonialVideo} alt="" className="hidden md:block w-full hover:scale-105 transition-all duration-500" />
             <img src={tomiwaTestimonialMobileVideo} alt="" className="md:hidden w-full" />
         </div>

@@ -3,7 +3,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import actionKeyImage from "../assets/images/action-key 1.png"
 import browseActivityImage from "../assets/images/browse-activity 1.png"
 import Typed from 'typed.js';
-import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import learnFromIndustrialExpertImage1 from "../assets/images/Group 6.png"
 import getCertifiedOnCompletionImage1 from "../assets/images/Union.png"
 import learnFromIndustrialExpertImage2 from "../assets/images/Frame 72.png"
@@ -31,17 +32,16 @@ import { IoIosArrowDown } from "react-icons/io";
 import Marquee from "react-fast-marquee";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
 import VideoModal from "../components/VideoModal";
 import { ModalContext } from "../useContext/ModalContext";
-import { useContext } from "react";
+import { useContext } from 'react';
+
 
 
 const Schools = () => {
     const typedRef = useRef<HTMLSpanElement | null>(null);
     const [dropDown, setDropDown] = useState<{ [key: number]: boolean }>({});
     const {controlVideoModal } = useContext(ModalContext)!
-
     useEffect(() => {
         if (typedRef.current) {
             const typed = new Typed(typedRef.current, {
@@ -183,7 +183,8 @@ const Schools = () => {
                         <p className="sm:text-[1.75rem] text-[1rem] max-w-[75rem] font-normal" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Whether you're a beginner looking to build foundational skills or an experienced professional seeking advanced training, our diverse course offerings are designed to help you succeed. Dive in and find the perfect course to elevate your expertise!</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-6 sm:mt-[7.5rem]">
-                        {School.map((school) => (<Link to='/designAndSchool' className="max-w-[40.1875rem] sm:max-h-[42.1875rem] bg-white mt-[4.0625rem] cursor-pointer overflow-hidden">
+                        {School.map((school) => (
+                        <Link key={school.id} type={school.type} to={school.to} className="max-w-[40.1875rem] sm:max-h-[42.1875rem] bg-white mt-[4.0625rem] cursor-pointer overflow-hidden">
                             <div className="md:h-[25.1875rem] overflow-hidden" data-aos="zoom-in" data-aos-delay="  200" data-aos-duration="1000">
                                 <img src={school.imgSrc} alt="" className=" w-full md:h-full hover:scale-105 transition-all duration-500" />
                             </div>
@@ -207,7 +208,7 @@ const Schools = () => {
                     <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">TESTIMONIALS</p>
                     <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
                 </div>
-                <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MMt5nJnRmNA", videoType:"tommy" })}>
+                <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/OwmXnEHG0aI", videoType:"tommy" })}>
                     <img src={tomiwaTestimonialVideo} alt="" className="hidden md:block w-full hover:scale-105 transition-all duration-500" />
                     <img src={tomiwaTestimonialMobileVideo} alt="" className="md:hidden w-full" />
                 </div>

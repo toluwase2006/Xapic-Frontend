@@ -35,7 +35,7 @@ const Navbar = () => {
                 <nav className='flex items-center w-full  py-6  md:h-[6.75rem] justify-between'>
                     <a href="/"><img src={xapicLogo} alt="" className='sm:w-[11.4375rem] sm:h-[3.75rem] h-10 w-[7rem] '  /></a>
                     <ul className='text-[1.25rem] text-[#3E4C57] gap-[1.875rem] hidden lg:flex'>
-                        <li className={`${(location == "/schools" || location == "/designAndSchool") && navActiveStyle} px-2`}><Link to="/schools">Schools</Link></li>
+                        <li className={`${(location == "/schools" || location == "/schools/designAndSchool" || location == "/schools/engineering" ) && navActiveStyle} px-2`}><Link to="/schools">Schools</Link></li>
                         <li className={`${location == "/services" && navActiveStyle} px-2`}><Link to="/services">Services</Link></li>
                         <li className={`${location == "/portfolio" && navActiveStyle} px-2`}><Link to="/portfolio">Portolio</Link></li>
                         <li className={`${location == "/whoWeAre" && navActiveStyle} px-2`}><Link to="/whoWeAre">Who we are</Link></li>
