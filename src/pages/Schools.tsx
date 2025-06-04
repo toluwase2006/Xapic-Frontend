@@ -4,7 +4,7 @@ import actionKeyImage from "../assets/images/action-key 1.png"
 import browseActivityImage from "../assets/images/browse-activity 1.png"
 import Typed from 'typed.js';
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
 import learnFromIndustrialExpertImage1 from "../assets/images/Group 6.png"
 import getCertifiedOnCompletionImage1 from "../assets/images/Union.png"
 import learnFromIndustrialExpertImage2 from "../assets/images/Frame 72.png"
