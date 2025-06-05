@@ -93,105 +93,105 @@ const DesignAndSchool = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[3.25rem] md:mt-24">
             <div className="px-[1rem] bg-white py-6" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000">
-              <p className="text-[1.75rem] text-[#3E4C57] font-bold mb-2">Product (UI/UX ) Design</p>
-              <p className="text-[1rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
-              <p className="text-[2.625rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
+              <p className="md:text-[1.75rem] text-[1.25rem] text-[#3E4C57] font-bold mb-2">Product (UI/UX ) Design</p>
+              <p className="md:text-[1rem] text-[0.875rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
+              <p className="md:text-[2.625rem] text-[2rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
               <button className="button h-[2.875rem] w-full">Enrol now</button>
-              <div className="flex flex-col gap-3 my-2.5">
+              <div className="flex md:text-[1rem] text-[0.875rem] flex-col gap-3 my-2.5">
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Earn a certificate</p>
+                  <p className="">Earn a certificate</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Portfolio worthy projects</p>
+                  <p className="">Portfolio worthy projects</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Access to conducive workspace</p>
+                  <p className="">Access to conducive workspace</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Installment-based payment plan</p>
+                  <p className="">Installment-based payment plan</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Beginner-friendly! No experience needed</p>
+                  <p className="">Beginner-friendly! No experience needed</p>
                 </div>
               </div>
               <div className="h-20 flex gap-[0.75rem] items-center border-[1px] border-[#00000026] ps-2">
                 <div className="h-[2.5rem] w-[6.5rem]">
                   <img src={designProductSchoolIcon} alt="" className=""/>
                 </div>
-                <p className="text-[1rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these UX tools</p>
+                <p className="md:text-[1rem] text-[0.875rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these UX tools</p>
               </div>
             </div>
             <div className="px-[1rem] bg-white py-6" data-aos="fade-up" data-aos-delay='200' data-aos-duration="1000">
-              <p className="text-[1.75rem] text-[#3E4C57] font-bold mb-2">Product Management</p>
-              <p className="text-[1rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
-              <p className="text-[2.625rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
+              <p className="md:text-[1.75rem] text-[1.25rem] text-[#3E4C57] font-bold mb-2">Product Management</p>
+              <p className="md:text-[1rem] text-[0.875rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
+              <p className="md:text-[2.625rem] text-[2rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
               <button className="button h-[2.875rem] w-full">Enrol now</button>
-              <div className="flex flex-col gap-3 my-2.5">
+              <div className="md:text-[1rem] text-[0.875rem] flex flex-col gap-3 my-2.5">
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Earn a certificate</p>
+                  <p className="">Earn a certificate</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Portfolio worthy projects</p>
+                  <p className="">Portfolio worthy projects</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Access to conducive workspace</p>
+                  <p className="">Access to conducive workspace</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Installment-based payment plan</p>
+                  <p className="">Installment-based payment plan</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Beginner-friendly! No experience needed</p>
+                  <p className="">Beginner-friendly! No experience needed</p>
                 </div>
               </div>
               <div className="h-20 flex gap-[0.75rem] items-center border-[1px] border-[#00000026] ps-2">
                 <div className="h-[2.5rem] w-[6.5rem]">
                   <img src={productManagementSchoolIcon} alt="" className=""/>
                 </div>
-                <p className="text-[1rem] font-medium max-w-[14.375rem] h-[2.5rem]">Become an expert in these product management tools.</p>
+                <p className="md:text-[1rem] text-[0.875rem] font-medium max-w-[14.375rem] h-[2.5rem]">Become an expert in these product management tools.</p>
               </div>
             </div>
             <div className="px-[1rem] bg-white py-6" data-aos="fade-right" data-aos-delay='200' data-aos-duration="1000">
-              <p className="text-[1.75rem] text-[#3E4C57] font-bold mb-2">Graphic Design</p>
-              <p className="text-[1rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
-              <p className="text-[2.625rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
+              <p className="md:text-[1.75rem] text-[1.25rem] text-[#3E4C57] font-bold mb-2">Graphic Design</p>
+              <p className="md:text-[1rem] text-[0.875rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
+              <p className="md:text-[2.625rem] text-[2rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
               <button className="button h-[2.875rem] w-full">Enrol now</button>
-              <div className="flex flex-col gap-3 my-2.5">
+              <div className="flex md:text-[1rem] text-[0.875rem] flex-col gap-3 my-2.5">
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Earn a certificate</p>
+                  <p className="">Earn a certificate</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Portfolio worthy projects</p>
+                  <p className="">Portfolio worthy projects</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Access to conducive workspace</p>
+                  <p className="">Access to conducive workspace</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Installment-based payment plan</p>
+                  <p className="">Installment-based payment plan</p>
                 </div>
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
-                  <p className="text-[1rem]">Beginner-friendly! No experience needed</p>
+                  <p className="">Beginner-friendly! No experience needed</p>
                 </div>
               </div>
               <div className="h-20 flex gap-[0.75rem] items-center border-[1px] border-[#00000026] ps-2">
                 <div className="h-[2.5rem] w-[6.5rem]">
                   <img src={graphicDesignSchoolIcon} alt="" className=""/>
                 </div>
-                <p className="text-[1rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these design  tools</p>
+                <p className="md:text-[1rem] text-[0.875rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these design  tools</p>
               </div>
             </div>
           </div>
