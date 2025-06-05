@@ -1,32 +1,32 @@
-import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png"
+import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.webp"
 import { FaArrowRight } from "react-icons/fa6";
-import actionKeyImage from "../assets/images/action-key 1.png"
-import browseActivityImage from "../assets/images/browse-activity 1.png"
+import actionKeyImage from "../assets/images/action-key 1.webp"
+import browseActivityImage from "../assets/images/browse-activity 1.webp"
 import Typed from 'typed.js';
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import learnFromIndustrialExpertImage1 from "../assets/images/Group 6.png"
-import getCertifiedOnCompletionImage1 from "../assets/images/Union.png"
-import learnFromIndustrialExpertImage2 from "../assets/images/Frame 72.png"
-import getCertifiedOnCompletionImage2 from "../assets/images/Frame 72 (1).png"
-import masterDemandSkillsImage from "../assets/images/Frame (3).png"
-import careerGrowthImage from "../assets/images/Frame (4).png"
-import communityImage from "../assets/images/Frame (5).png"
-import startLearningImg from "../assets/images/image (3).png"
+import learnFromIndustrialExpertImage1 from "../assets/images/Group 6.webp"
+import getCertifiedOnCompletionImage1 from "../assets/images/Union.webp"
+import learnFromIndustrialExpertImage2 from "../assets/images/Frame 72.webp"
+import getCertifiedOnCompletionImage2 from "../assets/images/Frame 72 (1).webp"
+import masterDemandSkillsImage from "../assets/images/Frame (3).webp"
+import careerGrowthImage from "../assets/images/Frame (4).webp"
+import communityImage from "../assets/images/Frame (5).webp"
+import startLearningImg from "../assets/images/image (3).webp"
 import { School } from "../components/SchoolsDetails";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { CurveArrowIcon } from "../assets/icons";
-import tomiwaTestimonialVideo from "../assets/images/image (5).png"
-import tomiwaTestimonialMobileVideo from "../assets/images/image (8).png"
-import mercyTestimonialVideo from "../assets/images/image (6).png"
-import jeffreyTestimonialVideo from "../assets/images/image (7).png"
-import simisolaTestimonialVideo from "../assets/images/image (9).png"
-import ceoImageWithStudent from "../assets/images/Container (4).png"
+import tomiwaTestimonialVideo from "../assets/images/image (5).webp"
+import tomiwaTestimonialMobileVideo from "../assets/images/image (8).webp"
+import mercyTestimonialVideo from "../assets/images/image (6).webp"
+import jeffreyTestimonialVideo from "../assets/images/image (7).webp"
+import simisolaTestimonialVideo from "../assets/images/image (9).webp"
+import ceoImageWithStudent from "../assets/images/Container (4).webp"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png"
+import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.webp"
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import Marquee from "react-fast-marquee";

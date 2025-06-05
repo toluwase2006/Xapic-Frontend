@@ -1,30 +1,30 @@
 import { RiArrowRightLine } from "react-icons/ri";
-import heroSectionImage from "../assets/images/Group 29 (3).png"
-import checkIcon from "../assets/images/ei_check.png"
-import designProductSchoolIcon from "../assets/images/Frame 367.png"
-import productManagementSchoolIcon from "../assets/images/Frame 367 (1).png"
-import graphicDesignSchoolIcon from "../assets/images/Frame 367 (2).png"
+import heroSectionImage from "../assets/images/Group 29 (3).webp"
+import checkIcon from "../assets/images/ei_check.webp"
+import designProductSchoolIcon from "../assets/images/Frame 367.webp"
+import productManagementSchoolIcon from "../assets/images/Frame 367 (1).webp"
+import graphicDesignSchoolIcon from "../assets/images/Frame 367 (2).webp"
 import VideoModal from "../components/VideoModal";
 import { ModalContext } from "../useContext/ModalContext";
 import { useContext } from "react";
-import tomiwaTestimonialVideo from "../assets/images/image (5).png"
-import tomiwaTestimonialMobileVideo from "../assets/images/image (8).png"
-import mercyTestimonialVideo from "../assets/images/image (6).png"
-import jeffreyTestimonialVideo from "../assets/images/image (7).png"
-import simisolaTestimonialVideo from "../assets/images/image (9).png"
+import tomiwaTestimonialVideo from "../assets/images/image (5).webp"
+import tomiwaTestimonialMobileVideo from "../assets/images/image (8).webp"
+import mercyTestimonialVideo from "../assets/images/image (6).webp"
+import jeffreyTestimonialVideo from "../assets/images/image (7).webp"
+import simisolaTestimonialVideo from "../assets/images/image (9).webp"
 import { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png"
+import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.webp"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import Typed from 'typed.js';
-import orbitTalentImg from "../assets/images/Orbit talent pool.png"
+import orbitTalentImg from "../assets/images/Orbit talent pool.webp"
 
 
 const DesignAndSchool = () => {
