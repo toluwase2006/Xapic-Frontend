@@ -1,30 +1,31 @@
 import { RiArrowRightLine } from "react-icons/ri";
-import heroSectionImage from "../assets/images/Group 29 (3).webp"
-import checkIcon from "../assets/images/ei_check.webp"
-import designProductSchoolIcon from "../assets/images/Frame 367.webp"
-import productManagementSchoolIcon from "../assets/images/Frame 367 (1).webp"
-import graphicDesignSchoolIcon from "../assets/images/Frame 367 (2).webp"
+import heroSectionImage from "../assets/images/Group 29 (3).png"
+import checkIcon from "../assets/images/ei_check.png"
+import designProductSchoolIcon from "../assets/images/Frame 367.png"
+import productManagementSchoolIcon from "../assets/images/Frame 367 (1).png"
+import graphicDesignSchoolIcon from "../assets/images/Frame 367 (2).png"
 import VideoModal from "../components/VideoModal";
 import { ModalContext } from "../useContext/ModalContext";
 import { useContext } from "react";
-import tomiwaTestimonialVideo from "../assets/images/image (5).webp"
-import tomiwaTestimonialMobileVideo from "../assets/images/image (8).webp"
-import mercyTestimonialVideo from "../assets/images/image (6).webp"
-import jeffreyTestimonialVideo from "../assets/images/image (7).webp"
-import simisolaTestimonialVideo from "../assets/images/image (9).webp"
+import tomiwaTestimonialVideo from "../assets/images/image (5).png"
+import tomiwaTestimonialMobileVideo from "../assets/images/image (8).png"
+import mercyTestimonialVideo from "../assets/images/image (6).png"
+import jeffreyTestimonialVideo from "../assets/images/image (7).png"
+import simisolaTestimonialVideo from "../assets/images/image (9).png"
 import { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.webp"
+import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import Typed from 'typed.js';
-import orbitTalentImg from "../assets/images/Orbit talent pool.webp"
+import orbitTalentImg from "../assets/images/Orbit talent pool.png"
+import orbitTalentImg2 from "../assets/images/Orbit talent pool (1).png"
 
 
 const DesignAndSchool = () => {
@@ -57,38 +58,40 @@ const DesignAndSchool = () => {
     <>
     {/* heroSection */}
       <VideoModal />
-      <div className="container flex items-center justify-between pt-16 md:pt-[15.75rem] pb-[4.11625rem]">
-          <div className="w-[40.25rem]" >
-            <h2 className="text-5xl font-bold text-[#3E4C57] mb-[5.75rem] leading-[3.75rem]">
-              <p>Welcome to Design and</p>
-              <span ref={typedRef}></span>
-            </h2>
-            <p className="text-[1.5rem] mb-[5.875rem] font-normal leading-7" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Congratulations on taking this important step towards enhancing your skills and advancing your career! we are dedicated to providing you with an exceptional learning experience that empowers you to achieve your goals</p>
-            <div className="flex h-[3.5rem] gap-6 items-center" >
-                <button className="button h-full text-2xl font-medium  w-[14.1875rem] gap-[0.625rem]">
-                    <p className="w-[10.0625rem">Apply Now</p>
-                    <RiArrowRightLine className="w-6 h-6"/>
-                </button>
-                <button className="button text-2xl leading-0 w-[20.3125rem] bg-white border-[1px] border-[#00036A] text-[#00036A] font-medium">
-                  <p>Download curriculum</p>
-                  <RiArrowRightLine className="text-[#00036A] w-6 h-6"/>
-                </button>
+      <div className="overflow-hidden">
+        <div className="container flex flex-col md:flex-row items-center justify-between pt-32 md:pt-[15.75rem] pb-[4.11625rem]">
+            <div className="max-w-[40.25rem]" >
+              <h2 className="md:text-5xl text-2xl  text-center md:text-left font-bold text-[#3E4C57] mb-[1.3125rem] md:mb-[5.75rem] md:leading-[3.75rem]">
+                <p>Welcome to Design and</p>
+                <span ref={typedRef}></span>
+              </h2>
+              <p className="md:text-[1.5rem] text-[0.875rem] text-center md:text-left mb-[0.9375rem] md:mb-[5.875rem] font-normal leading-7" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Congratulations on taking this important step towards enhancing your skills and advancing your career! we are dedicated to providing you with an exceptional learning experience that empowers you to achieve your goals</p>
+              <div className="flex flex-col md:flex-row gap-[0.9375rem] md:gap-6 items-center" >
+                  <button className="button md:h-[3.5rem] h-[2.5rem] md:text-2xl text-[1rem] font-medium  w-[9.0625rem] md:w-[14.1875rem] gap-[0.625rem]">
+                      <p className="md:w-[10.0625rem]">Apply Now</p>
+                      <RiArrowRightLine className="w-6 h-6"/>
+                  </button>
+                  <button className="button md:text-2xl text-[1rem] md:h-[3.5rem] h-[2.5rem] leading-0 w-[14.9375rem] md:w-[20.3125rem] bg-white border-[1px] border-[#00036A] text-[#00036A] font-medium">
+                    <p>Download curriculum</p>
+                    <RiArrowRightLine className="text-[#00036A] w-6 h-6"/>
+                  </button>
+              </div>
             </div>
-          </div>
-          <div className="w-[39.3125rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-            <img src={heroSectionImage}alt="" />
-          </div>
+            <div className="max-w-[39.3125rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+              <img src={heroSectionImage}alt="" />
+            </div>
+        </div>
       </div>
 
      {/* SecondSection */}
 
-      <div className="bg-[#EBECFF]">
-        <div className="container pt-[7rem] pb-[4.625rem]">
-          <div className="w-[61.0625rem] flex flex-col gap-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
-            <p className="font-bold text-5xl text-[#3E4C57]">Choose your Course Package</p>
-            <p className="font-normal text-[1.75rem]">Empowering innovation with a cutting-edge tech stack designed for speed, scalability, quality and seamless collaboration.</p>
+      <div className="bg-[#EBECFF] overflow-hidden">
+        <div className="container pt-[3.25rem] md:pt-[7rem] pb-[4.625rem]">
+          <div className="md:w-[61.0625rem] w-[21.875rem] flex md:ml-0 mx-auto text-center md:text-left flex-col gap-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <p className="font-bold md:text-5xl text-[1.25rem] text-[#3E4C57]">Choose your Course Package</p>
+            <p className="font-normal text-[1rem] md:text-[1.75rem]">Empowering innovation with a cutting-edge tech stack designed for speed, scalability, quality and seamless collaboration.</p>
           </div>
-          <div className="flex gap-6 mt-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[3.25rem] md:mt-24">
             <div className="px-[1rem] bg-white py-6" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000">
               <p className="text-[1.75rem] text-[#3E4C57] font-bold mb-2">Product (UI/UX ) Design</p>
               <p className="text-[1rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
@@ -120,7 +123,7 @@ const DesignAndSchool = () => {
                 <div className="h-[2.5rem] w-[6.5rem]">
                   <img src={designProductSchoolIcon} alt="" className=""/>
                 </div>
-                <p className="text-[1rem] font-medium w-[11.1875rem] h-[2.5rem]">Become an expert in these UX tools</p>
+                <p className="text-[1rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these UX tools</p>
               </div>
             </div>
             <div className="px-[1rem] bg-white py-6" data-aos="fade-up" data-aos-delay='200' data-aos-duration="1000">
@@ -154,7 +157,7 @@ const DesignAndSchool = () => {
                 <div className="h-[2.5rem] w-[6.5rem]">
                   <img src={productManagementSchoolIcon} alt="" className=""/>
                 </div>
-                <p className="text-[1rem] font-medium w-[14.375rem] h-[2.5rem]">Become an expert in these product management tools.</p>
+                <p className="text-[1rem] font-medium max-w-[14.375rem] h-[2.5rem]">Become an expert in these product management tools.</p>
               </div>
             </div>
             <div className="px-[1rem] bg-white py-6" data-aos="fade-right" data-aos-delay='200' data-aos-duration="1000">
@@ -188,7 +191,7 @@ const DesignAndSchool = () => {
                 <div className="h-[2.5rem] w-[6.5rem]">
                   <img src={graphicDesignSchoolIcon} alt="" className=""/>
                 </div>
-                <p className="text-[1rem] font-medium w-[11.1875rem] h-[2.5rem]">Become an expert in these design  tools</p>
+                <p className="text-[1rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these design  tools</p>
               </div>
             </div>
           </div>
@@ -221,9 +224,9 @@ const DesignAndSchool = () => {
       </div>
 
       {/* fourthSection */}
-         <div className="container mt-[6rem]">
-              <p className="font-semibold text-[2.5rem] text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
-              <div className="bg-[#000235]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
+         <div className="container mt-0 md:mt-[6rem]">
+              <p className="font-semibold md:text-[2.5rem] text-[1.25rem] text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
+              <div className="bg-[#000235]  flex flex-col mt-0 md:mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
                   <div className="max-w-[69.8125rem] container mx-auto">
                       <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [1]: !dropDown[1] })}>
                           <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">How do I register?</p>
@@ -274,16 +277,17 @@ const DesignAndSchool = () => {
 
         {/* Fifth Section */}
 
-          <div className="relative flex justify-center items-center  h-[36.0625rem] bg-[#CACCFF] mt-24">
+          <div className="relative overflow-hidden flex justify-center items-center  h-[19.125rem] md:h-[36.0625rem] bg-[#CACCFF] mt-24">
             <div className="absolute inset-0  flex justify-center items-center">
               <div className="w-[63.8125rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
-                <img src={orbitTalentImg } alt="" />
+                <img src={orbitTalentImg } alt=""  className="hidden md:block"/>
+                <img src={orbitTalentImg2 } alt="" className="block md:hidden" />
               </div>
             </div>
-            <div className="w-[57.5625rem] text-center">
-              <h2 className="text-5xl font-bold mb-[1.25rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Hire from Our Talent pool</h2>
-              <p className="font-normal text-[1.25rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Are you looking to fill key positions with talented individuals who are eager to contribute? Partner with us to access a pool of motivated graduates ready to elevate your team.</p>
-              <button className="button bg-[#00011B] w-[14.25rem] relative z-10 font-medium mx-auto mt-[3rem]  text-[1.25rem]">
+            <div className="md:w-[57.5625rem] w-[17.5625rem] text-center">
+              <h2 className="md:text-5xl text-[1.25rem] w-[8.9375rem] mx-auto md:w-full text-[#3E4C57] font-semibold md:font-bold mb-[0.75rem] md:mb-[1.25rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Hire from Our Talent pool</h2>
+              <p className="font-normal md:text-[1.25rem] text-[0.875rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Are you looking to fill key positions with talented individuals who are eager to contribute? Partner with us to access a pool of motivated graduates ready to elevate your team.</p>
+              <button className="button bg-[#00011B] md:w-[14.25rem] w-[12.125rem] relative z-1 font-medium mx-auto mt-6 md:mt-[3rem] text-[1rem] md:text-[1.25rem]">
                 <p>HIRE OUR TALENT</p>
                 <RiArrowRightLine />
               </button>

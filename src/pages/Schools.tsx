@@ -1,32 +1,32 @@
-import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.webp"
+import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png"
 import { FaArrowRight } from "react-icons/fa6";
-import actionKeyImage from "../assets/images/action-key 1.webp"
-import browseActivityImage from "../assets/images/browse-activity 1.webp"
+import actionKeyImage from "../assets/images/action-key 1.png"
+import browseActivityImage from "../assets/images/browse-activity 1.png"
 import Typed from 'typed.js';
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import learnFromIndustrialExpertImage1 from "../assets/images/Group 6.webp"
-import getCertifiedOnCompletionImage1 from "../assets/images/Union.webp"
-import learnFromIndustrialExpertImage2 from "../assets/images/Frame 72.webp"
-import getCertifiedOnCompletionImage2 from "../assets/images/Frame 72 (1).webp"
-import masterDemandSkillsImage from "../assets/images/Frame (3).webp"
-import careerGrowthImage from "../assets/images/Frame (4).webp"
-import communityImage from "../assets/images/Frame (5).webp"
-import startLearningImg from "../assets/images/image (3).webp"
+import learnFromIndustrialExpertImage1 from "../assets/images/Group 6.png"
+import getCertifiedOnCompletionImage1 from "../assets/images/Union.png"
+import learnFromIndustrialExpertImage2 from "../assets/images/Frame 72.png"
+import getCertifiedOnCompletionImage2 from "../assets/images/Frame 72 (1).png"
+import masterDemandSkillsImage from "../assets/images/Frame (3).png"
+import careerGrowthImage from "../assets/images/Frame (4).png"
+import communityImage from "../assets/images/Frame (5).png"
+import startLearningImg from "../assets/images/image (3).png"
 import { School } from "../components/SchoolsDetails";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { CurveArrowIcon } from "../assets/icons";
-import tomiwaTestimonialVideo from "../assets/images/image (5).webp"
-import tomiwaTestimonialMobileVideo from "../assets/images/image (8).webp"
-import mercyTestimonialVideo from "../assets/images/image (6).webp"
-import jeffreyTestimonialVideo from "../assets/images/image (7).webp"
-import simisolaTestimonialVideo from "../assets/images/image (9).webp"
-import ceoImageWithStudent from "../assets/images/Container (4).webp"
+import tomiwaTestimonialVideo from "../assets/images/image (5).png"
+import tomiwaTestimonialMobileVideo from "../assets/images/image (8).png"
+import mercyTestimonialVideo from "../assets/images/image (6).png"
+import jeffreyTestimonialVideo from "../assets/images/image (7).png"
+import simisolaTestimonialVideo from "../assets/images/image (9).png"
+import ceoImageWithStudent from "../assets/images/Container (4).png"
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.webp"
+import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png"
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import Marquee from "react-fast-marquee";
@@ -184,7 +184,7 @@ const Schools = () => {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-6 sm:mt-[7.5rem]">
                         {School.map((school) => (
-                        <Link key={school.id} type={school.type} to={school.to} className="max-w-[40.1875rem] sm:max-h-[42.1875rem] bg-white mt-[4.0625rem] cursor-pointer overflow-hidden">
+                        <Link key={school.id} type={school.type} to={school.to} className="max-w-[40.1875rem] sm:max-h-[42.1875rem] bg-white cursor-pointer overflow-hidden">
                             <div className="md:h-[25.1875rem] overflow-hidden" data-aos="zoom-in" data-aos-delay="  200" data-aos-duration="1000">
                                 <img src={school.imgSrc} alt="" className=" w-full md:h-full hover:scale-105 transition-all duration-500" />
                             </div>
@@ -250,8 +250,8 @@ const Schools = () => {
 
             {/* Seventh Section */}
 
-            <div className="container mt-[6rem]">
-                <p className="font-semibold text-[2.5rem] text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
+            <div className="container mt-0 md:mt-[6rem]">
+                <p className="font-semibold md:text-[2.5rem] text-[1.25rem] text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
                 <div className="bg-[#000235]  flex flex-col mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
                     <div className="max-w-[69.8125rem] container mx-auto">
                         <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [1]: !dropDown[1] })}>
