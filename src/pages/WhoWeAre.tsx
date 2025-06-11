@@ -126,14 +126,14 @@ const WhoWeAre = () => {
       {/* Fourth Section */}
       <div className="container mt-[7.5rem]">
         <p className="font-bold max-w-[40.25rem] mx-auto text-5xl mb-[2rem] leading-14 text-center">Meet Our Team of Experts shaping the Future</p>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 items-center gap-6">
           {teamBios.map((teamBio) => (
             <div key={teamBio.id} className="mt-[4.3125rem]">
               <div className="relative h-[20.625rem] w-[19.375rem] overflow-hidden">
                 <img src={teamBio.memberImg} alt="" className={`aboslute h-full transition-all duration-500 hover:scale-105 w-full object-cover inset-0 ${openBios[teamBio.id] ? '' : 'sample'}`} />
               </div>
               <div className="flex justify-between mt-[1rem]">
-                <div className="max-w-[12.375rem]">
+                <div className="max-w-[12.375rem] h-[4.75rem]">
                   <p className="text-[1.25rem] font-semibold">{teamBio.memberName}</p>
                   <p className="font-medium text-[1.125rem] leading-5">{teamBio.memberTitle}</p>
                 </div>
