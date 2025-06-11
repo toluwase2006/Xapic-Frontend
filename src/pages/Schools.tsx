@@ -59,6 +59,9 @@ const Schools = () => {
             duration: 800,
         });
     }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="overflow-y-scroll">

@@ -30,8 +30,8 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`${location !== "/" && navStyle} header z-10 fixed  left-0 top-0 w-full`}>
-            <div className="container relative w-full">
+        <div className={`${location !== "/" && navStyle} header z-10 fixed border-b-[#00000026] border-[0.5px] left-0 top-0 w-full`}>
+            <div className="container  relative w-full">
                 <nav className='flex items-center w-full  py-6  md:h-[6.75rem] justify-between'>
                     <a href="/"><img src={xapicLogo} alt="" className='sm:w-[11.4375rem] sm:h-[3.75rem] h-10 w-[7rem] '  /></a>
                     <ul className='text-[1.25rem] text-[#3E4C57] gap-[1.875rem] hidden lg:flex'>

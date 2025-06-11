@@ -5,13 +5,11 @@ import gameDevelopmentSchoolIcon from "../assets/images/Frame 367 (3).png"
 import webDesignIcon from "../assets/images/Frame 367 (4).png"
 import graphicDesignSchoolIcon from "../assets/images/Frame 367 (2).png"
 import VideoModal from "../components/VideoModal";
-import { ModalContext } from "../useContext/ModalContext";
-import { useContext } from "react";
-import tomiwaTestimonialVideo from "../assets/images/image (5).png"
-import tomiwaTestimonialMobileVideo from "../assets/images/image (8).png"
-import mercyTestimonialVideo from "../assets/images/image (6).png"
-import jeffreyTestimonialVideo from "../assets/images/image (7).png"
-import simisolaTestimonialVideo from "../assets/images/image (9).png"
+import testimonialImage1 from "../assets/images/Group 3 (1).webp"
+import testimonialImage2 from "../assets/images/Group 4.webp"
+import testimonialImage3 from "../assets/images/Group 3.webp"
+import testimonialImage4 from "../assets/images/Group 2 (1).webp"
+import testimonialImage5 from "../assets/images/Group 2.webp"
 import { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,12 +22,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import Typed from 'typed.js';
-import orbitTalentImg from "../assets/images/Orbit talent pool.png"
-import orbitTalentImg2 from "../assets/images/Orbit talent pool (1).png"
+import childImage from "../assets/images/pikin 1.webp"
 
 const SummerSchool = () => {
     const typedRef = useRef<HTMLSpanElement | null>(null);
-    const {controlVideoModal } = useContext(ModalContext)!
     const [dropDown, setDropDown] = useState<{ [key: number]: boolean }>({});
 
     useEffect(() => {
@@ -198,26 +194,33 @@ const SummerSchool = () => {
 
       {/* Third Section */}
 
-      <div className="container py-[4.5rem]">
-        <div className="max-w-[81.75rem] flex flex-col text-center justify-center sm:gap-12 gap-4 items-center mb-16">
-            <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">TESTIMONIALS</p>
-            <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
+      <div className="container flex flex-col md:flex-row items-center gap-[3.6875rem] pt-[8.4375rem] pb-[4.5rem]">
+        <div className="max-w-[40.25rem] text-center md:text-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          <p className="md:text-5xl text-2xl text-[#3E4C57] font-bold md:mb-12 mb-4">ICT Seminars In schools</p>
+          <p className="md:text-[1.75rem] text-[1rem] italic font-semibold md:leading-10 md:mb-8 mb-4">Helping kids and teens connect with the possibilities of the digital age</p>
+          <p className="md:text-[1.75rem] text-[1rem] font-medium text-[#3E4C57]">Digital literacy is not only computer usage, it is how to navigate an online world safely and in a responsible manner. Our programs enable children to evaluate, communicate and create across a range of digital contexts. We do this to build up those skills that will not just help them get ahead in school but will also get them ahead in life</p>
+          <button className="button w-[11.375rem] mt-8 mx-auto md:ml-0">Contact us</button>
         </div>
-        <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/OwmXnEHG0aI", videoType:"tommy" })}>
-            <img src={tomiwaTestimonialVideo} alt="" className="hidden md:block w-full hover:scale-105 transition-all duration-500" />
-            <img src={tomiwaTestimonialMobileVideo} alt="" className="md:hidden w-full" />
-        </div>
-        <div className="flex flex-col md:flex-row w-full gap-4">
-            <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/p2OG-Tej0GA", videoType:"mercy"})}>
-                <img src={mercyTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
+        <div className="flex md:gap-[1.25rem] gap-[0.7175rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div className="flex flex-col md:gap-[1.25rem] gap-[0.7175rem]">
+            <div className="overflow-hidden">
+              <img src={testimonialImage5} alt="" className="hover:scale-105 transition-all duration-500" />
             </div>
-            <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/YQNbR6xbvs0", videoType:"jeff"})}>
-                <img src={jeffreyTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
+            <div className="overflow-hidden">
+              <img src={testimonialImage4} alt="" className="hover:scale-105 transition-all duration-500" />
             </div>
-            <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MnCxaEqgAzA", videoType:"ayo"})}>
-                <img src={simisolaTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
-
+          </div>
+          <div className="flex flex-col md:gap-[1.25rem] gap-[0.7175rem]">
+            <div className="overflow-hidden">
+              <img src={testimonialImage3} alt="" className="hover:scale-105 transition-all duration-500" />
             </div>
+            <div className="overflow-hidden">
+              <img src={testimonialImage2} alt="" className="hover:scale-105 transition-all duration-500" />
+            </div>
+            <div className="overflow-hidden">
+              <img src={testimonialImage1} alt="" className="hover:scale-105 transition-all duration-500" />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -274,21 +277,16 @@ const SummerSchool = () => {
           </div>
 
         {/* Fifth Section */}
-
-          <div className="relative overflow-hidden flex justify-center items-center  h-[19.125rem] md:h-[36.0625rem] bg-[#CACCFF] mt-24">
-            <div className="absolute inset-0  flex justify-center items-center">
-              <div className="w-[63.8125rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
-                <img src={orbitTalentImg } alt=""  className="hidden md:block"/>
-                <img src={orbitTalentImg2 } alt="" className="block md:hidden" />
+          <div className="bg-[#00011B] h-[25.0625rem]  md:h-[30.5rem]">
+            <div className="overflow-hidden container h-full relative pt-[1.5625rem] flex flex-col md:flex-row justify-between items-center  mt-24">
+              <div className="max-w-[47.6875rem] text-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <p className="font-bold md:text-[2.5rem] text-2xl">Enroll Your Child Today!</p>
+                <p className="font-medium md:text-[1.75rem] text-[1rem] md:mt-[3.3125rem] mt-2 leading-9">Empower the next generation with the skills they need to succeed in an increasingly connected world.</p>
+                <button className="button md:w-[13.9375rem] w-[6.875rem] md:mt-[1.5rem] mt-[1rem] border-[1px] border-[#F2F2F2CC]">Enroll now</button>
               </div>
-            </div>
-            <div className="md:w-[57.5625rem] w-[17.5625rem] text-center">
-              <h2 className="md:text-5xl text-[1.25rem] w-[8.9375rem] mx-auto md:w-full text-[#3E4C57] font-semibold md:font-bold mb-[0.75rem] md:mb-[1.25rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Hire from Our Talent pool</h2>
-              <p className="font-normal md:text-[1.25rem] text-[0.875rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Are you looking to fill key positions with talented individuals who are eager to contribute? Partner with us to access a pool of motivated graduates ready to elevate your team.</p>
-              <button className="button bg-[#00011B] md:w-[14.25rem] w-[12.125rem] relative z-1 font-medium mx-auto mt-6 md:mt-[3rem] text-[1rem] md:text-[1.25rem]">
-                <p>HIRE OUR TALENT</p>
-                <RiArrowRightLine />
-              </button>
+              <div className="absolute bottom-0 right-0  w-[14.949375rem] md:w-[26.6875rem]" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <img src={childImage} alt="" className="w-full" />
+              </div>
             </div>
           </div>
 
