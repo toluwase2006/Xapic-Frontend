@@ -65,6 +65,18 @@
     transform: translate(0, 0) scale(1);
   }
 }
+
+@keyframes lineRight {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(10px, -10px) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
 .videoPlayer {
   animation: ZoomIn 2s infinite;
 }
@@ -75,6 +87,10 @@
 
 .RightArrow{
   animation: arrowRight 2s infinite;
+}
+
+.LineRight{
+  animation: lineRight 2s infinite;
 }
 @theme {
 

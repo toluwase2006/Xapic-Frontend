@@ -4,7 +4,9 @@ import productDesignerImage1 from "../assets/images/image (11).png"
 import fullstackEngineerImage from "../assets/images/Component 6 (1).png"
 import programManagerImage from "../assets/images/Component 6 (2).png"
 import socialMediaManagerImage from "../assets/images/Component 6 (3).png"
-import productDesignerImage2 from "../assets/images/WhatsApp Image 2025-06-11 at 11.54.50_a595710b.jpg"
+import productDesignerImage2 from "../assets/images/Component 6 (5).webp"
+import devopsEngineerImage1 from "../assets/images/Component 6 (6).webp"
+import devopsEngineerImage2 from "../assets/images/Component 6 (7).webp"
 
 export const teamBios  = [
     {
@@ -54,6 +56,20 @@ export const teamBios  = [
         memberImg: productDesignerImage2,
         memberName: 'Ajayi Ayomidotun',
         memberTitle: 'Product Designer II',
+        memberBio:"Ajayi Ayomidotun is a Creative mind with a builder’s spirit, designing intuitive products that solve real problems. Always curious, always iterating and emphasizing on “User First”."
+    },
+    {
+        id: 8,
+        memberImg: devopsEngineerImage1,
+        memberName: 'Edeh Anthony',
+        memberTitle: 'DevOps Engineer',
+        memberBio:"Anthony Edeh is a Senior DevOps Engineer at Xapic Technologies, specializing in streamlining the software development lifecycle through robust CI/CD pipelines. With extensive experience in automation, infrastructure scaling, and continuous delivery practices, Anthony ensures that development teams can deploy faster, more reliably, and with confidence"
+    },
+    {
+        id: 9,
+        memberImg: devopsEngineerImage2,
+        memberName: 'Tomiwa Monehin',
+        memberTitle: 'DevOps Engineer',
         memberBio:"Ajayi Ayomidotun is a Creative mind with a builder’s spirit, designing intuitive products that solve real problems. Always curious, always iterating and emphasizing on “User First”."
     }
 ]
