@@ -13,6 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png";
+import { InnovationIcon } from "../assets/icons";
 
 const WhoWeAre = () => {
   const [openBios, setOpenBios] = useState<{ [key in string]: boolean }>({})
@@ -106,7 +107,7 @@ const WhoWeAre = () => {
               <p className="md:text-[1.25rem] text-[1rem] font-medium leading-7 mt-4">Integrity is the foundation of our relationships with clients, partners, and team members. We believe in doing the right thing, even when it’s difficult, and we take responsibility for our action</p>
             </div>
             <div className="">
-              <IntegrityIcon className="w-12 h-12 mb-6" />
+              <InnovationIcon className="w-12 h-12 mb-6" />
               <p className="text-[1.75rem] font-bold mb-[1rem]">Innovation</p>
               <p className="md:text-[1.25rem] text-[1rem] font-medium leading-7 mt-4">Innovation drives us to continuously improve and adapt in a fast-paced digital landscape.</p>
             </div>

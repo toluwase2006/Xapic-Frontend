@@ -113,7 +113,7 @@ export const IntegrityIcon: React.FC<IconProps> = (props) => (
 
 );
 export const InnovationIcon: React.FC<IconProps> = (props) => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
 <path d="M16.8535 7.68823V15.7362L20.3576 17.7629V13.7362L23.8668 15.7629V11.7362L16.8535 7.68823Z" fill="#33369D" stroke="#99E4FF" stroke-width="0.533333" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M36.1441 32.9095V40.9628L29.1309 36.9095V32.8882L32.6349 34.9095V30.8882L33.0082 31.1015L36.1441 32.9095Z" fill="#33369D" stroke="#99E4FF" stroke-width="0.533333" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M29.7016 19.1282L27.5202 20.2215L23.5576 22.2002L20.3576 23.8002L16.8535 21.7735L20.0482 20.1789L27.5202 16.4402L29.1308 17.3735V18.7975L29.7016 19.1282Z" fill="#33369D" stroke="#99E4FF" stroke-width="0.533333" stroke-linecap="round" stroke-linejoin="round"/>
