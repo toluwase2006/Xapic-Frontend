@@ -85,9 +85,9 @@ const DesignAndSchool = () => {
 
      {/* SecondSection */}
 
-      <div className="bg-[#EBECFF] overflow-hidden">
+      <div className="bg-[#FCFCFF] overflow-hidden">
         <div className="container pt-[3.25rem] md:pt-[7rem] pb-[4.625rem]">
-          <div className="md:w-[61.0625rem] w-[21.875rem] flex md:ml-0 mx-auto text-center md:text-left flex-col gap-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+          <div className="max-w-[61.0625rem] flex md:ml-0 mx-auto text-center md:text-left flex-col gap-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
             <p className="font-bold md:text-5xl text-[1.25rem] text-[#3E4C57]">Choose your Course Package</p>
             <p className="font-normal text-[1rem] md:text-[1.75rem]">Empowering innovation with a cutting-edge tech stack designed for speed, scalability, quality and seamless collaboration.</p>
           </div>

@@ -177,11 +177,11 @@ const LandingPage = () => {
 				<div className="container pt-[5.375rem]">
 					<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9">
 						<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[6.375rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-							<div className="text-[1.25rem] w-full flex items-center flex-col lg:flex-row justify-between">
-								<p className="md:text-5xl text-[3rem] md:w-[14.6875rem]  font-bold">
+							<div className="text-[1.25rem] w-full flex lg:items-center items-start flex-col lg:flex-row justify-between">
+								<p className="md:text-5xl text-[1.75rem] w-[9.3125rem] md:w-[14.6875rem]  font-bold">
 									See What Drives Us
 								</p>
-								<p className="max-w-[22.125rem] md:text-[1.25rem] text-[0.875rem]">
+								<p className="lg:max-w-[22.125rem] min-w-[22.125rem] md:text-[1.25rem] text-[0.875rem]">
 									As a leading software and training company in Africa, we are
 									dedicated to fostering a culture of innovation, collaboration,
 									and continuous learning
@@ -195,7 +195,7 @@ const LandingPage = () => {
 							<img
 								src={secondSectionLeftImage2}
 								alt=""
-								className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full object-contain"
+								className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full"
 							/>
 						</div>
 						<div className="flex md:flex-col flex-col-reverse  md:w-[34.8125rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
@@ -205,7 +205,7 @@ const LandingPage = () => {
 									alt=""
 									className="h-80 w-80  mx-auto rounded-full"
 								/>
-								<div className="ms-6 my-10 md:mt-10  max-w-96">
+								<div className="md:ms-6 ms-2 my-10 md:mt-10  max-w-96">
 									<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
 									<p className="text-white font-extralight text-[0.875rem]md:text-[1.25rem]">
 										Our vision is to be the leading catalyst for technological
@@ -213,7 +213,7 @@ const LandingPage = () => {
 									</p>
 								</div>
 							</div>
-							<div className="mt-10">
+							<div className="mt-10 md:mb-0 mb-4">
 								<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem]! w-[9.5rem] md:w-full">
 									The Mission we are on
 								</p>
