@@ -133,8 +133,8 @@ const WhoWeAre = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 items-center gap-6">
           {teamBios.map((teamBio) => (
             <div key={teamBio.id} className="mt-[2.3125rem]">
-              <div className="relative overflow-hidden">
-                <img src={teamBio.memberImg} alt="" className={`aboslute h-full transition-all duration-500 hover:scale-105 w-full object-cover inset-0 ${openBios[teamBio.id] ? '' : 'sample'}`} />
+              <div className="overflow-hidden">
+                <img src={teamBio.memberImg} alt="" className={`h-full transition-all duration-500 hover:scale-105 w-full object-cover inset-0 ${openBios[teamBio.id] ? '' : 'sample'}`} />
               </div>
               <div className="flex justify-between mt-[1rem]">
                 <div className="max-w-[12.375rem] h-[4.75rem]">
@@ -158,8 +158,8 @@ const WhoWeAre = () => {
             </div>
           ))}
           <div className="mt-[4.3125rem]">
-            <div className="relative h-[20.625rem] w-[19.375rem] ">
-              <img src={whoWeAreJoinTeamImage} alt="" className="w-full h-full hover:scale-105 transition-all duration-500 absolute inset-0 sample" />
+            <div className="overflow-hidden">
+              <img src={whoWeAreJoinTeamImage} alt="" className="w-full h-full hover:scale-105 transition-all duration-500 inset-0 sample" />
             </div>
             <div className="mt-[1rem] h-[4.75rem]">
               <p className="underline text-[#00036A] font-semibold text-[1.25rem] cursor-pointer">Join the Team</p>
