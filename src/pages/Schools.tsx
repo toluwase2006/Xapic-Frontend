@@ -1,5 +1,5 @@
 import circuitLinesBackground from "../assets/images/circuit-lines@2xl.ee1ad3dd.webp.png"
-import { FaArrowRight, FaQ } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 import actionKeyImage from "../assets/images/action-key 1.png"
 import browseActivityImage from "../assets/images/browse-activity 1.png"
 import Typed from 'typed.js';
