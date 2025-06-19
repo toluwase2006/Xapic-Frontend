@@ -1,8 +1,8 @@
 import imgSrc1 from "../assets/images/Group 14 (3).png"
 import imgSrc2 from "../assets/images/Group 14 (4).png"
-import imgSrc3 from "../assets/images/Group 14 (5).png"
-import imgSrc4 from "../assets/images/Group 14 (6).png"
-import imgSrc5 from "../assets/images/Group 14 (7).png"
+import imgSrc3 from "../assets/images/1681850214171 1.webp"
+import imgSrc4 from "../assets/images/image (13).webp"
+import imgSrc5 from "../assets/images/1681850214171 1 (1).webp"
 
 
 

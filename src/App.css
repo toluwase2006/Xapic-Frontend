@@ -3,12 +3,18 @@
 @font-face {
   font-family: Mont;
   src: url("./assets/fonts/Mont-Regular.ttf");
-  font-weight: 400;
+  font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: Mont;
   src: url("./assets/fonts/Mont-Bold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-SemiBold.ttf");
   font-weight: 700;
   font-display: swap;
 }
@@ -19,12 +25,14 @@
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face{
   font-family: Mont;
-  src: url("./assets/fonts/Mont-Regular.ttf");
-  font-weight: 600;
+  src: url("./assets/fonts/Mont-Book.ttf");
+  font-weight: 300;
   font-display: swap;
 }
+
 @font-face{
   font-family: Mont;
   src: url("./assets/fonts/Mont-Light.ttf");
@@ -95,7 +103,7 @@
 @theme {
 
   --color-primary: #3E4C57;
-  --font-mont: Mont
+  --font-mont: Mont;
 }
 * {
   box-sizing: border-box;
@@ -112,13 +120,16 @@ body {
 
 @layer components {
   .container {
-    @apply  w-[95%]! mx-auto max-w-[81.8125rem]!
+    @apply  w-[95%]! mx-auto max-w-[81.8125rem]!;
   }
   .button {
-    @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A] h-14 cursor-pointer hover:scale-105 transition-transform duration-300;
+    @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A] h-14 cursor-pointer;
   }
   .navLinks {
-    @apply hover:text-[#3e4c57bd] transition-all duration-300
+    @apply hover:text-[#3e4c57bd] transition-all duration-300;
+  }
+  .buttonScaleUp {
+    @apply flex items-center justify-center gap-2.5 text-[1rem] text-white bg-[#00036A] h-14 cursor-pointer hover:scale-105 transition-all duration-500 ;
   }
 }
 

@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const location = useLocation().pathname
     const navStyle = "md:bg-white bg-transparent"
-    const navActiveStyle = "border-b-[1.5px] border-b-[#000485]"
     const [navOpen, setNavOpen]= useState(false) 
 
     useEffect(() => {
@@ -35,13 +34,24 @@ const Navbar = () => {
                 <nav className='flex items-center w-full  py-6  md:h-[6.75rem] justify-between'>
                     <a href="/"><img src={xapicLogo} alt="" className='sm:w-[11.4375rem] sm:h-[3.75rem] h-10 w-[7rem] '  /></a>
                     <ul className='text-[1.25rem] text-[#3E4C57] gap-[1.875rem] hidden lg:flex'>
-                        <li className={`${(location == "/schools" || location == "/schools/designAndSchool" || location == "/schools/engineering" || location == "/schools/summerSchool" ) && navActiveStyle} px-2`}><Link to="/schools">Schools</Link></li>
-                        <li className={`${location == "/services" && navActiveStyle} px-2`}><Link to="/services">Services</Link></li>
-                        <li className={`${location == "/portfolio" && navActiveStyle} px-2`}><Link to="/portfolio">Portolio</Link></li>
-                        <li className={`${location == "/whoWeAre" && navActiveStyle} px-2`}><Link to="/whoWeAre">Who we are</Link></li>
-                        <li className={`${location == "/contactUs" && navActiveStyle} px-2`}><Link to="/contactUs">Contact Us</Link></li>
+                        <li className={`relative group px-2`}><Link to="/schools">Schools
+                            <span className={`absolute bottom-0 left-0 h-[1px] w-full bg-[#000485] origin-left transition-transform duration-300  ${location == "/schools" || location == "/schools/designAndSchool" || location == "/schools/engineering" || location == "/schools/summerSchool"  ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}></span>
+                        </Link></li>
+                        <li className={`px-2 group relative`}><Link to="/services">
+                        Services
+                            <span className={`absolute bottom-0 left-0 h-[1px] w-full bg-[#000485] origin-left transition-transform duration-300  ${location == "/services" ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}></span>
+                        </Link></li>
+                        <li className={`${location == "/portfolio"} relative group px-2`}><Link to="/portfolio">Portfolio
+                            <span className={`absolute bottom-0 left-0 h-[1px] w-full bg-[#000485] origin-left transition-transform duration-300  ${location == "/portfolio" ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}></span>
+                        </Link></li>
+                        <li className={`${location == "/whoWeAre"} group relative px-2`}><Link to="/whoWeAre">Who we are
+                            <span className={`absolute bottom-0 left-0 h-[1px] w-full bg-[#000485] origin-left transition-transform duration-300  ${location == "/whoWeAre" ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}></span>
+                        </Link></li>
+                        <li className={`${location == "/contactUs"} group relative px-2`}><Link to="/contactUs">Contact Us
+                            <span className={`absolute bottom-0 left-0 h-[1px] w-full bg-[#000485] origin-left transition-transform duration-300  ${location == "/contactUs" ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}></span>
+                        </Link></li>
                     </ul>
-                    <button className='button w-[14.3125rem] hidden lg:flex'>
+                    <button className='buttonScaleUp w-[14.3125rem] hidden lg:flex'>
                         <p>Book a Consultation</p>
                         <FaArrowRight />
                     </button>

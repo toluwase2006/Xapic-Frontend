@@ -14,12 +14,19 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import footerXapicLogo from "../assets/images/Xapic Logo - Full Colour with White  1.png";
 import { InnovationIcon } from "../assets/icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhoWeAre = () => {
   const [openBios, setOpenBios] = useState<{ [key in string]: boolean }>({})
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useEffect(() => {
+  AOS.init({
+    duration: 800,
+  });
+	}, []);
   return (
     <>
       {/* heroSection */}
@@ -29,7 +36,7 @@ const WhoWeAre = () => {
             <p>Reshaping the</p>
             <div className="flex items-center">
               <p>Future Through</p>
-              <p className="md:h-[1.0625rem] w-[4.5rem] md:w-[10.125rem] bg-[#00011B] LineRight h-[0.875rem]"></p>
+              <p className="md:h-[1.0625rem] w-[4.5rem] md:w-[10.125rem] bg-[#00011B] h-[0.875rem]"></p>
             </div>
             <p>Simplified Technology</p>
           </div>
@@ -131,7 +138,7 @@ const WhoWeAre = () => {
       {/* Fourth Section */}
       <div className="container mt-[7.5rem]">
         <p className="font-bold max-w-[40.25rem] mx-auto text-5xl mb-[3rem] leading-14 text-center">Meet Our Team of Experts shaping the Future</p>
-        <div className="grid grid-cols-1 md:grid-cols-4 items-center gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {teamBios.map((teamBio) => (
             <div key={teamBio.id} className="mt-[2.3125rem]">
               <div className="overflow-hidden">

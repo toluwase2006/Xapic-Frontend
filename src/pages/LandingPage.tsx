@@ -1,10 +1,11 @@
 import { LongArrowIcon } from "../assets/icons";
 import heroImage from "../assets/images/Mask group (2).png";
+import heroImage2 from "../assets/images/Mask group (4).webp";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import heroVector from "../assets/images/Vector 165.png";
 import secondSectionleftImage1 from "../assets/images/Group 17 (1) (2).png";
 import { FaArrowRight } from "react-icons/fa6";
-import secondSectionRightImage from "../assets/gif/xap gif 1.gif";
+import secondSectionRightImage from "../assets/images/Circle.png";
 import recruitmentIcon from "../assets/images/fluent-mdl2_recruitment-management.png";
 import softwareDevelopmentIcon from "../assets/images/carbon_development.png";
 import cloudSolutionIcon from "../assets/images/eos-icons_cloud-computing-outlined.png";
@@ -28,9 +29,11 @@ import { ModalContext } from "../useContext/ModalContext";
 import VideoModal from "../components/VideoModal";
 import roundVideoCover from "../assets/images/rounds (1).png";
 import videoPayerIcon from "../assets/images/Group 36.png";
+import videoPayerIcon2 from "../assets/images/video player (1).webp";
 import secondSectionLeftImage2 from "../assets/images/bum.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import gifBackgroundImg from "../assets/gif/ggif.mp4"
 
 const LandingPage = () => {
 	const {controlVideoModal, videoValues} = useContext(ModalContext)!;
@@ -91,10 +94,10 @@ const LandingPage = () => {
 			<VideoModal/>
 
 			<div className="bg-gradient-to-br from-[#00BBFF1A] pt-12 to-[#FE006F1A] md:h-[66.625rem] w-full overflow-hidden">
-				<div className=" max-w-[85.3125rem] mx-auto md:pt-[10.375rem] pt-[3.375rem] flex justify-end ">
-					<div className="flex gap-[2.3125rem]">
+				<div className="container md:pt-[10.375rem] pt-[5.5rem] flex">
+					<div className="flex lg:gap-[2.3125rem]">
 						<div className="relative">
-							<h1 className="font-extrabold text-[2.5rem] md:text-[4.75rem] max-w-[20rem] md:max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+							<h1 className="font-extrabold text-[2.5rem] md:text-[4.75rem] max-w-[59.625rem]  md:leading-24 mb-[1.125rem] md:mb-10"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
 								Your Partner in Innovation and Learning
 							</h1>
 							<div className="md:flex justify-end w-full max-w-[62rem] gap-14">
@@ -104,40 +107,59 @@ const LandingPage = () => {
 									technology solutions and comprehensive learning programs.
 								</p>
 							</div>
+							<button className="flex md:hidden button items-center mt-[1.0875rem] mb-[1.3125rem] w-[10.375rem]">
+								<p>Know More</p>
+								<RiArrowRightUpLine className="w-6 h-6 diagonalArrow" />
+							</button>
 						</div>
 
 						<div
-							className="hero-img relative  w-full max-w-[23.375rem] cursor-pointer"
+							className="hero-img relative hidden sm:block w-full max-w-[19.375rem] cursor-pointer"
 							onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/TE023mMMMJM", videoType: "home"})}
 						>
 							<img src={roundVideoCover} alt="" className="w-full h-full" />
 							<div className="w-full absolute inset-0 h-full flex justify-center items-center">
-								<img
-									src={videoPayerIcon}
-									alt=""
-									className="videoPlayer w-[2.125rem] h-[2.125rem] sm:w-[5.25rem] sm:h-[5.25rem]"
-								/>
+								<div className="md:w-[3rem] lg:w-[4.25rem] lg:h-[4.25rem]">
+									<img
+										src={videoPayerIcon}
+										alt=""
+										className="videoPlayer "
+									/>
+
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="container">
-					<div className="relative md:flex items-center mt-[1.625rem] md:mt-[5.8125rem] gap-[3.125rem]">
-						<div className="w-full h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative overflow-hidden">
-							<img
-								src={heroImage}
-								alt=""
-								className="heroImage w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-							/>
-							<button className="hidden md:flex button cursor-pointer  md:w-[10rem] lg:w-[13.4375rem] absolute bottom-0 -right-0 hover:bg-[#00036A] ">
+					<div className="relative md:flex items-center mt-[1.625rem] md:mt-[2.5rem] gap-[3.125rem]">
+						<div className="w-full hidden md:block h-[9.25rem] md:w-[48.5625rem] md:h-[20.4375rem] z-5 relative overflow-hidden">
+							<div className="w-full h-full">
+								<img
+									src={heroImage}
+									alt=""
+									className="heroImage w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+								/>
+							</div>
+							<button className="hidden md:flex buttonScaleUp cursor-pointer  md:w-[10rem] lg:w-[13.4375rem] absolute bottom-0 -right-0 hover:bg-[#00036A] ">
 								<p>Know More</p>
 								<RiArrowRightUpLine className="diagonalArrow" />
 							</button>
 						</div>
-						<div className="-top-[2rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
+						<div className="w-full block md:hidden relative z-5">
+							<div className="w-full h-full">
+								<img src={heroImage2} alt="" className="" />
+							</div>
+							<div className="absolute inset-0 flex justify-center items-center" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/TE023mMMMJM", videoType: "home"})}>
+								<div className="w-[5.125rem] h-[5.125rem]">
+									<img src={videoPayerIcon2} alt="" className="w-full h-full videoPlayer" />
+								</div>
+							</div>
+						</div>
+						<div className="-top-[5rem] sm:top-0 relative w-full h-[16.136875rem] md:w-[27.6875rem] md:h-[21.8125rem]">
 							<img src={heroVector} alt="" className="w-full h-full" />
 							<div className="absolute top-[4.5625rem] left-[1rem] sm:left-[2.5rem]">
-								<p className="font-semibold text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+								<p className="font-medium text-[1rem] md:text-[1.25rem] w-80 text-[#1E254C]"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
 									We are shaping the future by harnessing the power of
 									technology.
 								</p>
@@ -163,11 +185,6 @@ const LandingPage = () => {
 							</div>
 						</div>
 					</div>
-
-					<button className="flex md:hidden items-center button mt-[1.0875rem] mb-[1.3125rem] w-[8.375rem]">
-						<p>Know More</p>
-						<RiArrowRightUpLine className="w-6 h-6 diagonalArrow" />
-					</button>
 				</div>
 			</div>
 
@@ -176,12 +193,12 @@ const LandingPage = () => {
 			<div className="overflow-hidden">
 				<div className="container pt-[5.375rem]">
 					<div className="relative flex flex-col md:flex-row sm:justify-between md:gap-9">
-						<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[6.375rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-							<div className="text-[1.25rem] w-full flex lg:items-center items-start flex-col lg:flex-row justify-between">
-								<p className="md:text-5xl text-[1.75rem] w-[9.3125rem] md:w-[14.6875rem]  font-bold">
+						<div className="md:w-[40.1875rem] flex flex-col gap-[2rem] md:gap-[6.375rem] mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+							<div className="text-[1.25rem] w-full flex  flex-col lg:flex-row justify-between">
+								<p className="md:text-5xl text-[1.75rem] w-[9.3125rem] md:w-[14.6875rem] mb-8 font-semibold">
 									See What Drives Us
 								</p>
-								<p className="lg:max-w-[22.125rem] min-w-[22.125rem] md:text-[1.25rem] text-[0.875rem]">
+								<p className="lg:max-w-[22.125rem] font-light min-w-[22.125rem] md:text-[1.25rem] text-[0.875rem]">
 									As a leading software and training company in Africa, we are
 									dedicated to fostering a culture of innovation, collaboration,
 									and continuous learning
@@ -198,15 +215,20 @@ const LandingPage = () => {
 								className="sm:hidden h-[22.9375rem] sm:h-[30rem] w-full"
 							/>
 						</div>
-						<div className="flex md:flex-col flex-col-reverse  md:w-[34.8125rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-							<div className="relative w-full bg-[#00011B] md:h-[39.625rem] pt-24 ">
-								<img
-									src={secondSectionRightImage}
-									alt=""
-									className="h-80 w-80  mx-auto rounded-full"
-								/>
-								<div className="md:ms-6 ms-2 my-10 md:mt-10  max-w-96">
-									<p className="text-[#F2F2F2CC] text-[2rem]">Our Vision</p>
+						<div className="flex md:flex-col flex-col-reverse  md:w-[34.8125rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+							<div className="relative w-full md:h-[39.625rem] pt-24 ">
+								<div className="w-full h-full absolute inset-0">
+									<video src={gifBackgroundImg} autoPlay muted loop  className="w-full h-full object-cover"></video>
+								</div>
+								<div className="relative z-1 w-[20rem] h-[22rem] mx-auto ">
+									<img
+										src={secondSectionRightImage}
+										alt=""
+										className="h-full w-full opacity-50 rounded-full"
+									/>
+								</div> 
+								<div className="md:ms-6 relative z-1 ms-4 my-10 md:mt-10  max-w-96">
+									<p className="text-[#F2F2F2CC] font-bold text-[2rem]">Our Vision</p>
 									<p className="text-white font-extralight text-[0.875rem]md:text-[1.25rem]">
 										Our vision is to be the leading catalyst for technological
 										advancement and personal growth across Africa.
@@ -214,7 +236,7 @@ const LandingPage = () => {
 								</div>
 							</div>
 							<div className="mt-10 md:mb-0 mb-4">
-								<p className="text-[#3E4C57] text-[1.25rem]! font-bold md:text-[2.5rem]! w-[9.5rem] md:w-full">
+								<p className="text-[#3E4C57] text-[1.25rem]! font-semibold md:text-[2.5rem]! w-full">
 									The Mission we are on
 								</p>
 								<p className="mt-4 text-[0.875rem] sm:text-[1.25rem]! font-extralight w-full">
@@ -239,14 +261,14 @@ const LandingPage = () => {
 
 			{/* Third Section */}
 
-			<div className="bg-[#00011B] mt-[1.4375rem] md:mt-[10.0625rem] md:pt-[6.25rem] py-[2.4375rem] overflow-hidden">
+			<div className="bg-[#00011B] mt-[1.4375rem] md:mt-[4rem] md:py-[5rem] py-[2.4375rem] overflow-hidden">
 				<div className="container flex flex-col md:flex-row gap-[1.375rem] md:justify-between">
-					<div className="max-w-[24.1875rem] w-full leading-[1.75rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+					<div className="max-w-[24.1875rem] w-full leading-[1.75rem]">
 						<p className="md:text-5xl text-[1.75rem] font-bold text-white">
 							What We Do
 						</p>
 						<p className="mt-8 md:text-[1.75rem] text-[0.875rem] font-light w-full text-white">
-							As a leading sottware and training company in Africa, we offer a
+							As a leading software and training company in Africa, we offer a
 							range of services designed to meet the diverse needs of our
 							clients.
 						</p>
@@ -260,7 +282,7 @@ const LandingPage = () => {
 					</div>
 					<div className="flex flex-col gap-[1.25rem] md:gap-0">
 						<div className="flex flex-col md:flex-row gap-[1.25rem] md:gap-0">
-							<div className="md:w-[23.8125rem] hover:bg-[#00036A]  cursor-pointer flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+							<div className="md:w-[23.8125rem] hover:bg-[#00046a65]  cursor-pointer flex flex-col gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img src={recruitmentIcon} alt="" className="w-12 h-12" />
 								</div>
@@ -275,7 +297,7 @@ const LandingPage = () => {
 									</p>
 								</div>
 							</div>
-							<div className="md:w-[23.8125rem] cursor-pointer transition-all duration-500 flex flex-col text-white  gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+							<div className="md:w-[23.8125rem] cursor-pointer transition-all duration-500 flex flex-col text-white  gap-[1.25rem] md:gap-[5.375rem] md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
 								<div className="w-20 h-20  rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img
 										src={softwareDevelopmentIcon}
@@ -294,7 +316,7 @@ const LandingPage = () => {
 							</div>
 						</div>
 						<div className="flex flex-col-reverse gap-[1.25rem]  md:gap-0 md:flex-row overflow-hidden">
-							<div className="md:w-[23.8125rem] flex flex-col text-white cursor-pointer  transition-all duration-500 gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+							<div className="md:w-[23.8125rem] flex flex-col text-white cursor-pointer  transition-all duration-500 gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem]" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img src={cloudSolutionIcon} alt="" className="w-12 h-12" />
 								</div>
@@ -308,7 +330,7 @@ const LandingPage = () => {
 									</p>
 								</div>
 							</div>
-							<div className="md:w-[23.8125rem] flex hover:bg-[#00036A]  cursor-pointer text-white transition-all duration-500  flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+							<div className="md:w-[23.8125rem] flex hover:bg-[#00046a65]  cursor-pointer text-white transition-all duration-500  flex-col gap-[1.25rem] md:justify-between md:h-[23.8125rem] h-[14.25rem] px-[1.25rem] py-[2.5rem] bg-[#2F2F2F66]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
 								<div className="w-20 h-20   rounded-[62.5rem] flex justify-center items-center bg-[#2F2F2F99]">
 									<img
 										src={trainingDevelopmentIcon}
@@ -349,7 +371,7 @@ const LandingPage = () => {
 				/>
 				<div className="container pt-[3.875rem] ">
 					<div className="flex flex-col-reverse md:flex-row gap-[1rem] md: text-[1.125rem] justify-between">
-						<div className="flex flex-col gap-[0.5rem] md:gap-[0rem]"  data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+						<div className="flex flex-col gap-[0.5rem] md:gap-[0rem]">
 							<p className="md:text-[2.5rem] w-full text-2xl font-bold md:font-extrabold">
 								Things We Are Currently Building
 							</p>
@@ -365,7 +387,7 @@ const LandingPage = () => {
 							See more
 						</Link>
 					</div>
-					<div className="flex flex-col md:flex-row item-center justify-between mt-[5.6875rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5 overflow-hidden">
+					<div className="flex flex-col md:flex-row item-center justify-between mt-[4rem] gap-[2rem] md:border-b-[#C9C5C5CC] md:border-b-8 pb-5 overflow-hidden">
 						<div className="">
 							<div className=" flex flex-col justify-center items-center bg-white md:bg-[#CCCDE74D] rounded-[4px] shadow-md">
 								{/* Mobile image */}
@@ -427,7 +449,7 @@ const LandingPage = () => {
 
 			<div className="md:h-[28.0625rem] h-[10.625rem] mt-16 bg-[#000000]">
 				<div className="container text-center flex flex-col justify-center md:gap-[2.21875rem]  h-full md:pt-[3.875rem]">
-					<p className="md:text-[2.5rem] text-[1rem] text-[#F2F2F2CC] w-[20rem] md:w-full mx-auto font-bold">
+					<p className="md:text-[2.5rem] text-[1rem] text-[#F2F2F2CC] w-[20rem] md:w-full mx-auto font-semibold">
 						Our services are trusted by companies around the world
 					</p>
 					<div className="md:flex hidden flex-col mx-auto gap-[2.34375rem]">
@@ -437,7 +459,7 @@ const LandingPage = () => {
 								alt=""
 								className=""
 								data-aos="fade-right"
-								data-aos-delay="400"
+								data-aos-delay="100"
 								data-aos-duration="1000"
 							/>
 						</div>
@@ -447,7 +469,7 @@ const LandingPage = () => {
 								alt=""
 								className=""
 								data-aos="fade-left"
-								data-aos-delay="400"
+								data-aos-delay="100"
 								data-aos-duration="1000"
 							/>
 						</div>
@@ -475,10 +497,10 @@ const LandingPage = () => {
 			<div className="bg-[#F7F7F8]">
 				<div className="container py-[5.8125rem]">
 					<div className="md:w-[44.3125rem] w-full text-center mx-auto">
-						<p className="text-[#FE006F] md:text-2xl text-[0.875rem]">
+						<p className="text-[#FE006F] font-extralight md:text-2xl text-[0.875rem]">
 							WHAT PEOPLE ARE SAYING
 						</p>
-						<p className="mt-10 md:text-[2.5rem] text-2xl text-[#323D46] font-bold">
+						<p className="mt-10 md:text-[2.5rem] text-2xl text-[#323D46] font-semibold">
 							Don’t Just Take Our Words For It, Hear Our Client’s Review
 						</p>
 					</div>
@@ -489,11 +511,13 @@ const LandingPage = () => {
 									key={index}
 									className="flex gap-2 items-center max-w-[40rem]  bg-white overflow-hidden rounded-[12px]"
 								>
-									<img
+									<div className="max-w-[9.5625rem] overflow-hidden rounded-[12px]">
+										<img
 										src={testimonial.imgSrc}
 										alt=""
-										className="max-w-[9.5625rem]  transition-all overflow-hidden duration-200 hover:scale-105 object-contain"
+										className="  transition-all duration-200 hover:scale-105 object-contain"
 									/>
+									</div>
 									<div className="">
 										<p className="text-[#3E4C57] text-[1rem] mb-2 font-bold">
 											{testimonial.name}
@@ -541,7 +565,7 @@ const LandingPage = () => {
 
 			{/* Seventh Section */}
 
-			<div className="bg-[#00011B] mt-[6.9375rem] h-[18.375rem] flex justify-center items-center">
+			<div className="bg-[#00011B] h-[18.375rem] flex justify-center items-center">
 				<div className="container flex flex-col md:flex-row  justify-between h-[9rem]">
 					<p className="max-w-[36.0625rem] w-full md:text-[2.5rem] text-[1.25rem] text-white">
 						Interested in joining Xapic team or partnering with us for a
@@ -565,8 +589,8 @@ const LandingPage = () => {
 
 			<div className="bg-[#00011B] relative mt-[8.4375rem] w-full">
 				<div className="flex justify-center w-[95%]! md:w-full mx-auto! items-center md[21.875rem]">
-					<div className="flex flex-col md:flex-row justify-center w-[95%] mx-auto md:items-center gap-6 ps-6 md:gap-[3rem] bg-[#000250] max-w-[90.8125rem]  h-[10.875rem] absolute -top-20">
-						<p className="md:text-[1.75rem] text-white font-600 text-[1rem]">
+					<div className="flex flex-col md:flex-row justify-center w-[95%] mx-auto md:items-center gap-6 ps-6 md:gap-[3rem] bg-[#000250] max-w-[90.8125rem]  h-[10.875rem] absolute -top-15">
+						<p className="md:text-[1.75rem] text-white font-semibold text-[1rem]">
 							We are excited to be part of your educational journey!
 						</p>
 						<div className="flex gap-6">

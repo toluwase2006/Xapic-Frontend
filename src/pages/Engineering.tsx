@@ -27,11 +27,13 @@ import Typed from 'typed.js';
 import orbitTalentImg from "../assets/images/Orbit talent pool.png"
 import GridImage from "../assets/images/Group (1).png"
 import orbitTalentImg2 from "../assets/images/Orbit talent pool (1).png"
+import { Faqs } from "../components/Faqs";
 
 const Engineering = () => {
-     const typedRef = useRef<HTMLSpanElement | null>(null);
+  const typedRef = useRef<HTMLSpanElement | null>(null);
   const {controlVideoModal } = useContext(ModalContext)!
   const [dropDown, setDropDown] = useState<{ [key: number]: boolean }>({});
+
 
   useEffect(() => {
       if (typedRef.current) {
@@ -59,16 +61,16 @@ const Engineering = () => {
         {/* heroSection */}
       <VideoModal />
       <div className="overflow-hidden">
-        <div className="container relative flex flex-col md:flex-row items-center justify-between pt-32 md:pt-[7.4375rem] pb-[4.11625rem]">
+        <div className="relative flex flex-col md:flex-row items-center gap-[0rem] lg:gap-[2.1875rem] justify-end pt-32 md:pt-[7.4375rem] pb-[4.11625rem]">
             <div className="absolute -bottom-7 hidden md:block right-[6.25rem] w-32">
               <img src={GridImage} alt="" />
             </div>
             <div className="max-w-[40.25rem]" >
-              <h2 className="md:text-5xl text-2xl  text-center md:text-left font-bold text-[#3E4C57] mb-[1.3125rem] md:mb-[5.75rem] md:leading-[3.75rem]">
+              <h2 className="md:text-5xl text-2xl  text-center md:text-left font-bold text-[#3E4C57] mb-[1.3125rem] md:mb-[1.5rem] md:leading-[3.75rem]">
                 <p>Gain Valuable tech</p>
                 <span ref={typedRef}></span>
               </h2>
-              <p className="md:text-[1.5rem] text-[0.875rem] text-center md:text-left mb-[0.9375rem] md:mb-[5.875rem] font-normal leading-7" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Our cutting-edge programs are designed to equip you with the essential skills and knowledge needed to excel in the ever-evolving engineering landscape</p>
+              <p className="md:text-[1.5rem] text-[0.875rem] text-center md:text-left mb-[0.9375rem] md:mb-[6.25rem] font-normal leading-7" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Our cutting-edge programs are designed to equip you with the essential skills and knowledge needed to excel in the ever-evolving engineering landscape</p>
               <div className="flex flex-col md:flex-row gap-[0.9375rem] md:gap-6 items-center" >
                   <button className="button md:h-[3.5rem] h-[2.5rem] md:text-2xl text-[1rem] font-medium  w-[9.0625rem] md:w-[14.1875rem] gap-[0.625rem]">
                       <p className="md:w-[10.0625rem]">Apply Now</p>
@@ -80,7 +82,7 @@ const Engineering = () => {
                   </button>
               </div>
             </div>
-            <div className="max-w-[39.3125rem] mt-[2rem] md:mt-0" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <div className="max-w-[50.625rem] mt-[2rem] md:mt-0" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
               <img src={heroSectionImage}alt="" />
             </div>
         </div>
@@ -89,17 +91,17 @@ const Engineering = () => {
      {/* SecondSection */}
 
        <div className="bg-[#FCFCFF] overflow-hidden">
-        <div className="container pt-[3.25rem] md:pt-[7rem] pb-[4.625rem]">
-          <div className="max-w-[61.0625rem] flex md:ml-0 mx-auto text-center md:text-left flex-col gap-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+        <div className="container pt-[3.25rem] md:pt-[2.5rem] pb-[4.625rem]">
+          <div className="max-w-[61.0625rem] flex md:ml-0 mx-auto text-center md:text-left flex-col gap-6">
             <p className="font-bold md:text-5xl text-[1.25rem] text-[#3E4C57]">Choose your Course Package</p>
             <p className="font-normal text-[1rem] md:text-[1.75rem]">Empowering innovation with a cutting-edge tech stack designed for speed, scalability, quality and seamless collaboration.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[3.25rem] md:mt-24">
-            <div className="px-[1rem] bg-white py-6" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[4rem]">
+            <div className="px-[1rem] bg-white py-6 shadow-md" data-aos="fade-left" data-aos-delay='200' data-aos-duration="1000">
               <p className="md:text-[1.75rem] text-[1.25rem] text-[#3E4C57] font-bold mb-2">DevOps/Cloud Engineering</p>
               <p className="md:text-[1rem] text-[0.875rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
               <p className="md:text-[2.625rem] text-[2rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#250,000</p>
-              <button className="button h-[2.875rem] w-full">Enrol now</button>
+              <button className="buttonScaleUp h-[2.875rem] w-full">Enrol now</button>
               <div className="flex flex-col gap-3 my-2.5">
                 <div className="flex md:text-[1rem] text-[0.875rem]  items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
@@ -129,11 +131,11 @@ const Engineering = () => {
                 <p className="md:text-[1rem] text-[0.875rem] font-medium max-w-[11.1875rem] h-[2.5rem]">Become an expert in these UX tools</p>
               </div>
             </div>
-            <div className="px-[1rem] bg-white py-6" data-aos="fade-up" data-aos-delay='200' data-aos-duration="1000">
+            <div className="px-[1rem] bg-white py-6 shadow-md" data-aos="fade-up" data-aos-delay='200' data-aos-duration="1000">
               <p className="md:text-[1.75rem] text-[1.25rem] text-[#3E4C57] font-bold mb-2">Software engineering</p>
               <p className="md:text-[1rem] text-[0.875rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
               <p className="md:text-[2.625rem] text-[2rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#250,000</p>
-              <button className="button h-[2.875rem] w-full">Enrol now</button>
+              <button className="buttonScaleUp h-[2.875rem] w-full">Enrol now</button>
               <div className="flex md:text-[1rem] text-[0.875rem] flex-col gap-3 my-2.5">
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
@@ -163,11 +165,11 @@ const Engineering = () => {
                 <p className="md:text-[1rem] text-[0.875rem] font-medium max-w-[14.375rem] h-[2.5rem]">Become an expert in these product management tools.</p>
               </div>
             </div>
-            <div className="px-[1rem] bg-white py-6" data-aos="fade-right" data-aos-delay='200' data-aos-duration="1000">
+            <div className="px-[1rem] bg-white py-6 shadow-md" data-aos="fade-right" data-aos-delay='200' data-aos-duration="1000">
               <p className="md:text-[1.75rem] text-[1.25rem] text-[#3E4C57] font-bold mb-2">Data Analysis</p>
               <p className="md:text-[1rem] text-[0.875rem] font-medium">Invest in yourself, Unlock premium user experience and user interface skills,</p>
               <p className="md:text-[2.625rem] text-[2rem] font-extrabold text-[#3E4C57] mt-4 mb-6">#150,000</p>
-              <button className="button h-[2.875rem] w-full">Enrol now</button>
+              <button className="buttonScaleUp h-[2.875rem] w-full">Enrol now</button>
               <div className="flex md:text-[1rem] text-[0.875rem] flex-col gap-3 my-2.5">
                 <div className="flex items-center">
                   <img src={checkIcon} alt="" className="w-6 h-6" />
@@ -202,12 +204,12 @@ const Engineering = () => {
       </div>
       {/* Third Section */}
 
-      <div className="container py-[4.5rem]">
+      <div className="container pt-[4.5rem]">
         <div className="max-w-[81.75rem] flex flex-col text-center justify-center sm:gap-12 gap-4 items-center mb-16">
             <p className="sm:text-[1.75rem] text-[0.875rem] text-[#FE006F] font-semibold" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">TESTIMONIALS</p>
             <p className="sm:text-[2.5rem] font-semibold text-[#3E4C57] text-[1.25rem]  max-w-[73.0625rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Don’t Jut Take Our Word For It, Hear From Our Past Students As They Share Their Experience</p>
         </div>
-        <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-16 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/OwmXnEHG0aI", videoType:"tommy" })}>
+        <div className=" w-full rounded-tl-2xl rounded-tr-2xl cursor-pointer mb-4 md:mb-6 overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/OwmXnEHG0aI", videoType:"tommy" })}>
             <img src={tomiwaTestimonialVideo} alt="" className="hidden md:block w-full hover:scale-105 transition-all duration-500" />
             <img src={tomiwaTestimonialMobileVideo} alt="" className="md:hidden w-full" />
         </div>
@@ -218,7 +220,7 @@ const Engineering = () => {
             <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/YQNbR6xbvs0", videoType:"jeff"})}>
                 <img src={jeffreyTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
             </div>
-            <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/MnCxaEqgAzA", videoType:"ayo"})}>
+            <div className="cursor-pointer overflow-hidden" onClick={() => controlVideoModal({url: "https://www.youtube.com/embed/l9QvbcbVgMo", videoType:"ayo"})}>
                 <img src={simisolaTestimonialVideo} alt="" className="hover:scale-105 transition-all duration-500" />
 
             </div>
@@ -226,60 +228,24 @@ const Engineering = () => {
       </div>
 
       {/* fourthSection */}
-         <div className="container mt-0 md:mt-[6rem]">
-              <p className="font-semibold md:text-[2.5rem] text-[1.25rem] text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
-              <div className="bg-[#000235]  flex flex-col mt-0 md:mt-24 gap-[2rem] text-white sm:py-[6.625rem] py-[2.5rem]">
-                  <div className="max-w-[69.8125rem] container mx-auto">
-                      <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[1] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [1]: !dropDown[1] })}>
-                          <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">How do I register?</p>
-                          {dropDown[1] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
-                      </div>
-                      <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[1] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
-                          <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
-                      </div>
-                  </div>
-                  <div className="max-w-[69.8125rem] container mx-auto">
-                      <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[2] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [2]: !dropDown[2] })}>
-                          <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What is the level of experience required for enrollment?</p>
-                          {dropDown[2] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
-                      </div>
-                      <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[2] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
-                          <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
-                      </div>
-                  </div>
-                  <div className="max-w-[69.8125rem] container mx-auto">
-                      <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[3] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [3]: !dropDown[3] })}>
-                          <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What payment options do you offer, and can I pay in installments?</p>
-                          {dropDown[3] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
-                      </div>
-                      <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[3] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
-                          <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
-                      </div>
-                  </div>
-                  <div className="max-w-[69.8125rem] container mx-auto">
-                      <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[4] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [4]: !dropDown[4] })}>
-                          <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">Are the courses offered online, and if so, what is the format like?Does Xapictech offer online learning?</p>
-                          {dropDown[4] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
-                      </div>
-                      <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[4] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
-                          <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
-                      </div>
-                  </div>
-                  <div className="max-w-[69.8125rem] container mx-auto">
-                      <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[5] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [5]: !dropDown[5] })}>
-                          <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">What kind of certification or credentials will I receive upon completion?</p>
-                          {dropDown[5] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
-                      </div>
-                      <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ${dropDown[5] ? "max-h-[1000px] ps-[0.75rem] pt-[2.375rem]" : "max-h-0"}`}>
-                          <p className="md:text-[1.125rem] text-[0.875rem] ">Our courses vary in duration, ranging from a few weeks to several months. Please check the specific course page for detailed information on duration and schedule.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
+          <div className="container mt-[5.375rem]">
+            <p className="font-semibold md:text-[2.5rem] text-[1.25rem] text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Frequently  Asked Questions</p>
+            <div className="bg-[#000235]  flex flex-col mt-3 gap-[2rem] text-white sm:py-[5.0625rem] py-[2.5rem]">
+              {Faqs.map((faq) => (
+                <div key={faq.id} className="max-w-[69.8125rem] container mx-auto">
+                    <div className={`flex items-center text-2xl cursor-pointer  w-full justify-between min-h-[4.4375rem]  border-b-[2px] border-b-white px-[1.3125rem] ${dropDown[faq.id] && "border-[2px] border-white"}`} onClick={() => setDropDown({ [faq.id]: !dropDown[faq.id]})}>
+                        <p className=" font-semibold md:text-[1.125rem] text-[1rem] max-w-[18.0625rem] sm:max-w-[57.4375rem]">{faq.question}</p>
+                        {dropDown[1] ? <IoIosArrowUp className="w-6 h-6" /> : <IoIosArrowDown className="w-6 h-6" />}
+                    </div>
+                    <div className={`font-normal w-full transition-all duration-500 ease-in-out overflow-hidden ps-[0.75rem] ${dropDown[faq.id] ? "max-h-[1000px]  pt-[2.375rem]" : "max-h-0"}`}>
+                        <p className="md:text-[1.125rem] text-[0.875rem] ">{faq.answer}</p>
+                    </div>
+                </div>))}
+            </div>
+        </div>
         {/* Fifth Section */}
 
-          <div className="relative overflow-hidden flex justify-center items-center  h-[19.125rem] md:h-[36.0625rem] bg-[#CACCFF] mt-24">
+          <div className="relative overflow-hidden flex justify-center items-center  h-[19.125rem] md:h-[36.0625rem] bg-[#FCFCFF] mt-24">
             <div className="absolute inset-0  flex justify-center items-center">
               <div className="w-[63.8125rem]" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
                 <img src={orbitTalentImg } alt=""  className="hidden md:block"/>
@@ -289,9 +255,12 @@ const Engineering = () => {
             <div className="md:w-[57.5625rem] w-[17.5625rem] text-center">
               <h2 className="md:text-5xl text-[1.25rem] w-[8.9375rem] mx-auto md:w-full text-[#3E4C57] font-semibold md:font-bold mb-[0.75rem] md:mb-[1.25rem]" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">Hire from Our Talent pool</h2>
               <p className="font-normal md:text-[1.25rem] text-[0.875rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Are you looking to fill key positions with talented individuals who are eager to contribute? Partner with us to access a pool of motivated graduates ready to elevate your team.</p>
-              <button className="button bg-[#00011B] md:w-[14.25rem] w-[12.125rem] relative z-1 font-medium mx-auto mt-6 md:mt-[3rem] text-[1rem] md:text-[1.25rem]">
-                <p>HIRE OUR TALENT</p>
-                <RiArrowRightLine />
+              <button className="button group  bg-[#00011B] md:w-[14.25rem] w-[12.125rem] relative z-1 font-medium mx-auto mt-6 md:mt-[3rem] text-[1rem] md:text-[1.25rem]">
+                <div className="flex relative z-10 h-full w-full hover:text-black justify-center gap-2 items-center">
+                  <p>HIRE OUR TALENT</p>
+                  <RiArrowRightLine />
+                </div>
+                <span className="absolute top-0 left-0 flex items-center justify-center border-[1px] border-[#00036A] h-full w-full text-[#00036A] bg-white origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></span>
               </button>
             </div>
           </div>
